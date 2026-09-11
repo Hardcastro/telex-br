@@ -11,16 +11,22 @@ from __future__ import annotations
 
 import csv
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from .curate import CurationResult, item_id
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "cycles"
 
+# Fuso fixo, não ".astimezone()" — o pipeline roda em máquinas com fuso
+# variado (local, Render em UTC, GitHub Actions em UTC), e o cycle_id deve
+# sempre refletir BRT como o resto do projeto assume (Brasil não observa
+# horário de verão desde 2019, então o offset -3 é fixo).
+BRT = timezone(timedelta(hours=-3))
+
 
 def build_envelope(result: CurationResult, window_hours: int = 12, macro_snapshot: dict | None = None) -> dict:
-    now = datetime.now(timezone.utc).astimezone()
+    now = datetime.now(BRT)
     balance = {lean: v["filled"] for lean, v in result.quota_status.items()}
 
     items_payload = []

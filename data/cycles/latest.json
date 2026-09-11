@@ -1,6 +1,6 @@
 {
-  "cycle_id": "2026-09-11T12:04:39.714081+00:00",
-  "generated_at": "2026-09-11T12:04:39.714081+00:00",
+  "cycle_id": "2026-09-11T09:05:30.520692-03:00",
+  "generated_at": "2026-09-11T09:05:30.520692-03:00",
   "window_hours": 12,
   "total_items": 20,
   "macro_snapshot": {
@@ -34,12 +34,12 @@
     }
   },
   "highlights": {
-    "top_view_id": "esquerda-1:a76239",
-    "top_reply_id": "esquerda-1:a76239"
+    "top_view_id": "esquerda-1:2fd493",
+    "top_reply_id": "esquerda-1:2fd493"
   },
   "items": [
     {
-      "id": "agencia-brasil:e1b01d",
+      "id": "agencia-brasil:caafe0",
       "headline": "Copom mantém Selic em 10,75% ao ano pela terceira reunião seguida",
       "source": "Agência Brasil",
       "source_lean": "tecnica_neutra",
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "id": "valor-economico:828634",
+      "id": "valor-economico:5d9974",
       "headline": "Selic é mantida em 10,75% e mercado revisa projeção de inflação",
       "source": "Valor Econômico",
       "source_lean": "tecnica_neutra",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "id": "direita-1:4ed290",
+      "id": "direita-1:7c0770",
       "headline": "Oposição cobra explicações sobre execução do orçamento no STF",
       "source": "[Exemplo] Veículo Direita 1",
       "source_lean": "direita",
@@ -95,7 +95,7 @@
       ]
     },
     {
-      "id": "infomoney:14b2ec",
+      "id": "infomoney:8e3ae6",
       "headline": "Copom mantém juros e sinaliza cautela com IPCA",
       "source": "InfoMoney",
       "source_lean": "tecnica_neutra",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "id": "esquerda-1:a76239",
+      "id": "esquerda-1:2fd493",
       "headline": "Movimentos sociais pressionam Congresso por regulamentação da reforma tributária",
       "source": "[Exemplo] Veículo Esquerda 1",
       "source_lean": "esquerda",
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "id": "reuters-brasil:b81dd3",
+      "id": "reuters-brasil:2cca09",
       "headline": "Brazil central bank holds Selic rate at 10.75%",
       "source": "Reuters Brasil",
       "source_lean": "tecnica_neutra",
@@ -151,7 +151,7 @@
       ]
     },
     {
-      "id": "poder360:7ea4f0",
+      "id": "poder360:821142",
       "headline": "Congresso retoma pauta de regulamentação da reforma tributária",
       "source": "Poder360",
       "source_lean": "tecnica_neutra",
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "id": "centro-1:a1e352",
+      "id": "centro-1:d62b0e",
       "headline": "Câmara e Senado divergem sobre prazo da reforma tributária",
       "source": "[Exemplo] Veículo Centro 1",
       "source_lean": "centro",
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "id": "direita-2:4d51f9",
+      "id": "direita-2:fb3e33",
       "headline": "Governo é criticado por aumento de gastos em ano eleitoral",
       "source": "[Exemplo] Veículo Direita 2",
       "source_lean": "direita",
@@ -202,7 +202,7 @@
       "tags": []
     },
     {
-      "id": "g1:5f08c7",
+      "id": "g1:904560",
       "headline": "Oposição critica meta fiscal em sessão no Senado",
       "source": "G1",
       "source_lean": "tecnica_neutra",
@@ -219,7 +219,7 @@
       ]
     },
     {
-      "id": "cnn-brasil:171821",
+      "id": "cnn-brasil:efdb5b",
       "headline": "Senado debate meta fiscal em sessão tensa nesta quarta",
       "source": "CNN Brasil",
       "source_lean": "tecnica_neutra",
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "id": "esquerda-3:214416",
+      "id": "esquerda-3:323bc7",
       "headline": "Ministério defende meta fiscal e rebate críticas da oposição",
       "source": "[Exemplo] Veículo Esquerda 3",
       "source_lean": "esquerda",
@@ -253,7 +253,7 @@
       ]
     },
     {
-      "id": "agencia-brasil:6d7097",
+      "id": "agencia-brasil:648318",
       "headline": "IBGE confirma alta de 0,9% do PIB no trimestre",
       "source": "Agência Brasil",
       "source_lean": "tecnica_neutra",
@@ -270,7 +270,7 @@
       ]
     },
     {
-      "id": "esquerda-2:ae6cc7",
+      "id": "esquerda-2:92c58c",
       "headline": "Governo anuncia ampliação de programa social para 2027",
       "source": "[Exemplo] Veículo Esquerda 2",
       "source_lean": "esquerda",
@@ -285,7 +285,7 @@
       "tags": []
     },
     {
-      "id": "esquerda-4:2c568b",
+      "id": "esquerda-4:08b9e6",
       "headline": "PIB do trimestre reflete recuperação do mercado interno, diz governo",
       "source": "[Exemplo] Veículo Esquerda 4",
       "source_lean": "esquerda",
@@ -302,7 +302,7 @@
       ]
     },
     {
-      "id": "direita-3:ecbcb7",
+      "id": "direita-3:095e1e",
       "headline": "Senado aprova requerimento de CPI para investigar contratos",
       "source": "[Exemplo] Veículo Direita 3",
       "source_lean": "direita",
@@ -320,7 +320,7 @@
       ]
     },
     {
-      "id": "centro-2:08d7d2",
+      "id": "centro-2:0cb30b",
       "headline": "Analistas dividem opiniões sobre efeito da Selic na atividade",
       "source": "[Exemplo] Veículo Centro 2",
       "source_lean": "centro",
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "id": "centro-3:06c997",
+      "id": "centro-3:2ca062",
       "headline": "STF retoma julgamento sobre marco de licenciamento ambiental",
       "source": "[Exemplo] Veículo Centro 3",
       "source_lean": "centro",
@@ -355,7 +355,7 @@
       ]
     },
     {
-      "id": "direita-4:a2fee4",
+      "id": "direita-4:0ed17a",
       "headline": "Ministério é alvo de críticas por atraso em obra federal",
       "source": "[Exemplo] Veículo Direita 4",
       "source_lean": "direita",
@@ -372,7 +372,7 @@
       ]
     },
     {
-      "id": "centro-4:5fc076",
+      "id": "centro-4:4fb4dc",
       "headline": "Desemprego recua para 6,8% na média móvel trimestral, diz IBGE",
       "source": "[Exemplo] Veículo Centro 4",
       "source_lean": "centro",
