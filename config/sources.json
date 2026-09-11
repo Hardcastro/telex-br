@@ -1,0 +1,44 @@
+{
+  "_readme": "Tabela de classificação fonte -> espectro editorial. NÃO decidimos rótulos político-partidários por conta própria (ver blueprint, seção b) — os buckets 'direita', 'esquerda' e 'centro' vêm com slots vazios (status: pending_review) para o time preencher e validar contra observatórios de mídia reconhecidos. O bucket 'tecnica_neutra' já vem preenchido: são fontes institucionais/factuais de baixa carga opinativa (agências públicas, dados oficiais, imprensa econômica, checagem), o que é uma classificação factual, não política. Enquanto os slots pending_review não forem preenchidos, curate.py roda só com o que estiver 'active' e avisa no log o que falta.",
+  "_status_values": ["active", "pending_review", "disabled"],
+
+  "tecnica_neutra": [
+    { "id": "agencia-brasil", "name": "Agência Brasil", "rss": "https://agenciabrasil.ebc.com.br/rss.xml", "status": "active", "note": "Agência pública federal — cobertura factual" },
+    { "id": "valor-economico", "name": "Valor Econômico", "rss": "https://valor.globo.com/rss/home/", "status": "active", "note": "Imprensa econômica — baixa carga opinativa" },
+    { "id": "infomoney", "name": "InfoMoney", "rss": "https://www.infomoney.com.br/feed/", "status": "active", "note": "Imprensa de mercado" },
+    { "id": "aos-fatos", "name": "Aos Fatos", "rss": "https://aosfatos.org/feed/", "status": "active", "note": "Checagem — metodologia não opinativa" },
+    { "id": "agencia-lupa", "name": "Agência Lupa", "rss": "https://lupa.uol.com.br/feed", "status": "active", "note": "Checagem" },
+    { "id": "reuters-brasil", "name": "Reuters Brasil", "rss": "https://feeds.reuters.com/reuters/BRtopNews", "status": "active", "note": "Agência internacional de notícias" },
+    { "id": "bcb-sgs", "name": "Banco Central do Brasil (SGS)", "rss": null, "api": "bcb_sgs", "status": "active", "note": "Dado institucional, não é notícia — usado no ticker macro" },
+    { "id": "ibge-sidra", "name": "IBGE (SIDRA)", "rss": null, "api": "ibge_sidra", "status": "active", "note": "Dado institucional — usado no ticker macro" }
+  ],
+
+  "direita": [
+    { "id": "direita-1", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 1/4 — validar contra observatório de mídia antes de ativar" },
+    { "id": "direita-2", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 2/4" },
+    { "id": "direita-3", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 3/4" },
+    { "id": "direita-4", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 4/4" }
+  ],
+
+  "esquerda": [
+    { "id": "esquerda-1", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 1/4 — validar contra observatório de mídia antes de ativar" },
+    { "id": "esquerda-2", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 2/4" },
+    { "id": "esquerda-3", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 3/4" },
+    { "id": "esquerda-4", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 4/4" }
+  ],
+
+  "centro": [
+    { "id": "centro-1", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 1/4 — o mais contestado dos quatro buckets; validar com cuidado extra" },
+    { "id": "centro-2", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 2/4" },
+    { "id": "centro-3", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 3/4" },
+    { "id": "centro-4", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 4/4" }
+  ],
+
+  "manchete_pool": [
+    { "id": "g1", "name": "G1", "rss": "https://g1.globo.com/rss/g1/", "status": "active" },
+    { "id": "cnn-brasil", "name": "CNN Brasil", "rss": "https://www.cnnbrasil.com.br/feed/", "status": "active" },
+    { "id": "uol", "name": "UOL Notícias", "rss": "https://rss.uol.com.br/feed/noticias.xml", "status": "active" },
+    { "id": "poder360", "name": "Poder360", "rss": "https://www.poder360.com.br/feed/", "status": "active" },
+    { "id": "metropoles", "name": "Metrópoles", "rss": "https://www.metropoles.com/brasil/feed", "status": "active" }
+  ]
+}

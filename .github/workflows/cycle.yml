@@ -1,0 +1,42 @@
+name: Ciclo Telex BR (12h)
+
+on:
+  schedule:
+    # 03:00 e 15:00 UTC == 00:00 e 12:00 BRT (Brasil não observa horário
+    # de verão desde 2019, então o offset -3 é fixo).
+    - cron: "0 3,15 * * *"
+  workflow_dispatch: {}  # permite disparar manualmente pela aba Actions
+
+permissions:
+  contents: write  # necessário para commitar data/cycles/latest.{json,csv} de volta
+
+jobs:
+  run-cycle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Rodar o pipeline
+        env:
+          # Descomente e configure em Settings > Secrets se for usar o
+          # proxy de réplica via Reddit (ver .env.example).
+          # REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          # REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          # REDDIT_USER_AGENT: ${{ secrets.REDDIT_USER_AGENT }}
+          PYTHONIOENCODING: "utf-8"
+        run: python -m src.pipeline
+
+      - name: Commitar o ciclo mais recente
+        run: |
+          git config user.name "telex-br-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/cycles/latest.json data/cycles/latest.csv
+          git diff --cached --quiet || git commit -m "ciclo: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          git push

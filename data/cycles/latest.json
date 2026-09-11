@@ -1,0 +1,392 @@
+{
+  "cycle_id": "2026-09-11T08:26:06.146899-03:00",
+  "generated_at": "2026-09-11T08:26:06.146899-03:00",
+  "window_hours": 12,
+  "total_items": 20,
+  "macro_snapshot": {
+    "selic_meta": 10.75,
+    "ipca_mensal": 0.35,
+    "cambio_usd": 5.31,
+    "_fonte": "valores de amostra — modo --demo"
+  },
+  "editorial_balance": {
+    "direita": 4,
+    "esquerda": 4,
+    "centro": 4,
+    "tecnica_neutra": 8
+  },
+  "quota_status": {
+    "direita": {
+      "target": 4,
+      "filled": 4
+    },
+    "esquerda": {
+      "target": 4,
+      "filled": 4
+    },
+    "centro": {
+      "target": 4,
+      "filled": 4
+    },
+    "tecnica_neutra": {
+      "target": 8,
+      "filled": 8
+    }
+  },
+  "highlights": {
+    "top_view_id": "esquerda-1:59189c",
+    "top_reply_id": "esquerda-1:59189c"
+  },
+  "items": [
+    {
+      "id": "agencia-brasil:e98d1c",
+      "headline": "Copom mantém Selic em 10,75% ao ano pela terceira reunião seguida",
+      "source": "Agência Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/agencia-brasil/0",
+      "published_at": "2026-09-11T09:54:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom",
+        "juros",
+        "banco central"
+      ]
+    },
+    {
+      "id": "valor-economico:c5107a",
+      "headline": "Selic é mantida em 10,75% e mercado revisa projeção de inflação",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/valor-economico/1",
+      "published_at": "2026-09-11T09:36:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom",
+        "inflacao"
+      ]
+    },
+    {
+      "id": "direita-1:2ae5f4",
+      "headline": "Oposição cobra explicações sobre execução do orçamento no STF",
+      "source": "[Exemplo] Veículo Direita 1",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://exemplo.invalid/direita-1/18",
+      "published_at": "2026-09-11T09:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "infomoney:87ac0b",
+      "headline": "Copom mantém juros e sinaliza cautela com IPCA",
+      "source": "InfoMoney",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/infomoney/2",
+      "published_at": "2026-09-11T09:18:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom",
+        "ipca",
+        "juros",
+        "banco central"
+      ]
+    },
+    {
+      "id": "esquerda-1:59189c",
+      "headline": "Movimentos sociais pressionam Congresso por regulamentação da reforma tributária",
+      "source": "[Exemplo] Veículo Esquerda 1",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://exemplo.invalid/esquerda-1/22",
+      "published_at": "2026-09-11T09:06:04.247689+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": true,
+      "is_top_reply": true,
+      "tags": [
+        "congresso",
+        "reforma tributaria"
+      ]
+    },
+    {
+      "id": "reuters-brasil:0461da",
+      "headline": "Brazil central bank holds Selic rate at 10.75%",
+      "source": "Reuters Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/reuters-brasil/3",
+      "published_at": "2026-09-11T09:00:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic"
+      ]
+    },
+    {
+      "id": "poder360:d82496",
+      "headline": "Congresso retoma pauta de regulamentação da reforma tributária",
+      "source": "Poder360",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://exemplo.invalid/poder360/14",
+      "published_at": "2026-09-11T08:48:04.247689+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "congresso",
+        "reforma tributaria"
+      ]
+    },
+    {
+      "id": "centro-1:d4a79d",
+      "headline": "Câmara e Senado divergem sobre prazo da reforma tributária",
+      "source": "[Exemplo] Veículo Centro 1",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://exemplo.invalid/centro-1/26",
+      "published_at": "2026-09-11T08:18:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado",
+        "reforma tributaria"
+      ]
+    },
+    {
+      "id": "direita-2:48dff7",
+      "headline": "Governo é criticado por aumento de gastos em ano eleitoral",
+      "source": "[Exemplo] Veículo Direita 2",
+      "source_lean": "direita",
+      "category": "manchete",
+      "url": "https://exemplo.invalid/direita-2/19",
+      "published_at": "2026-09-11T08:12:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "g1:a73317",
+      "headline": "Oposição critica meta fiscal em sessão no Senado",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://exemplo.invalid/g1/16",
+      "published_at": "2026-09-11T07:54:04.247689+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado"
+      ]
+    },
+    {
+      "id": "cnn-brasil:a030fb",
+      "headline": "Senado debate meta fiscal em sessão tensa nesta quarta",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://exemplo.invalid/cnn-brasil/17",
+      "published_at": "2026-09-11T07:42:04.247689+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado"
+      ]
+    },
+    {
+      "id": "esquerda-3:3263ec",
+      "headline": "Ministério defende meta fiscal e rebate críticas da oposição",
+      "source": "[Exemplo] Veículo Esquerda 3",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://exemplo.invalid/esquerda-3/24",
+      "published_at": "2026-09-11T07:30:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministerio"
+      ]
+    },
+    {
+      "id": "agencia-brasil:af4d14",
+      "headline": "IBGE confirma alta de 0,9% do PIB no trimestre",
+      "source": "Agência Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/agencia-brasil/4",
+      "published_at": "2026-09-11T07:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "pib"
+      ]
+    },
+    {
+      "id": "esquerda-2:ae9d70",
+      "headline": "Governo anuncia ampliação de programa social para 2027",
+      "source": "[Exemplo] Veículo Esquerda 2",
+      "source_lean": "esquerda",
+      "category": "manchete",
+      "url": "https://exemplo.invalid/esquerda-2/23",
+      "published_at": "2026-09-11T06:48:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "esquerda-4:4cc398",
+      "headline": "PIB do trimestre reflete recuperação do mercado interno, diz governo",
+      "source": "[Exemplo] Veículo Esquerda 4",
+      "source_lean": "esquerda",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/esquerda-4/25",
+      "published_at": "2026-09-11T06:30:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "pib"
+      ]
+    },
+    {
+      "id": "direita-3:850695",
+      "headline": "Senado aprova requerimento de CPI para investigar contratos",
+      "source": "[Exemplo] Veículo Direita 3",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://exemplo.invalid/direita-3/20",
+      "published_at": "2026-09-11T05:54:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado",
+        "cpi"
+      ]
+    },
+    {
+      "id": "centro-2:b30c0c",
+      "headline": "Analistas dividem opiniões sobre efeito da Selic na atividade",
+      "source": "[Exemplo] Veículo Centro 2",
+      "source_lean": "centro",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/centro-2/27",
+      "published_at": "2026-09-11T05:36:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom"
+      ]
+    },
+    {
+      "id": "centro-3:88bac3",
+      "headline": "STF retoma julgamento sobre marco de licenciamento ambiental",
+      "source": "[Exemplo] Veículo Centro 3",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://exemplo.invalid/centro-3/28",
+      "published_at": "2026-09-11T05:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "direita-4:81ebe3",
+      "headline": "Ministério é alvo de críticas por atraso em obra federal",
+      "source": "[Exemplo] Veículo Direita 4",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://exemplo.invalid/direita-4/21",
+      "published_at": "2026-09-11T04:36:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministerio"
+      ]
+    },
+    {
+      "id": "centro-4:7f7710",
+      "headline": "Desemprego recua para 6,8% na média móvel trimestral, diz IBGE",
+      "source": "[Exemplo] Veículo Centro 4",
+      "source_lean": "centro",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/centro-4/29",
+      "published_at": "2026-09-11T04:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "desemprego"
+      ]
+    }
+  ]
+}

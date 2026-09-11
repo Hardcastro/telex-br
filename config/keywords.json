@@ -1,0 +1,19 @@
+{
+  "_readme": "Taxonomia de categorias por palavra-chave, aplicada sobre título + resumo (minúsculo, sem acento). Ordem de checagem: politica -> macroeconomia -> manchete (fallback). Ajuste livremente; para algo mais robusto no futuro, trocar por NLP (spaCy pt_core_news), ver README.",
+
+  "politica": [
+    "congresso", "camara dos deputados", "senado", "stf", "supremo tribunal",
+    "planalto", "presidencia da republica", "ministerio", "eleicao", "eleicoes",
+    "partido", "deputado", "senador", "governador", "prefeito", "tse",
+    "tribunal superior eleitoral", "reforma tributaria", "reforma administrativa",
+    "cpi", "impeachment", "veto presidencial", "medida provisoria"
+  ],
+
+  "macroeconomia": [
+    "selic", "copom", "ipca", "inflacao", "cambio", "dolar", "real",
+    "pib", "produto interno bruto", "desemprego", "pnad", "balanca comercial",
+    "juros", "banco central", "bcb", "divida publica", "deficit fiscal",
+    "superavit", "arcabouco fiscal", "investimento estrangeiro", "bolsa de valores",
+    "ibovespa", "commodities", "exportacao", "importacao"
+  ]
+}

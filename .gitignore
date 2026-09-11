@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.pytest_cache/
+
+# O GitHub Actions (ver .github/workflows/cycle.yml) commita latest.json e
+# latest.csv de volta no repo — é o que o Power BI/Looker vão ler. Os
+# arquivos com timestamp (cycle_AAAAMMDDThhmmssZ.json) são histórico local
+# e ficam de fora por padrão; remova a linha abaixo se quiser versionar
+# todo o histórico de ciclos no próprio git (ver README, pergunta sobre
+# retenção histórica).
+data/cycles/cycle_*.json

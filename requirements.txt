@@ -1,0 +1,7 @@
+# Núcleo — necessário para o pipeline rodar (coleta, classificação, pontuação por
+# cluster, curadoria, exportação).
+feedparser==6.0.11
+requests==2.32.3
+
+# Testes
+pytest==8.3.3
