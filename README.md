@@ -69,7 +69,11 @@ data/
   sample/       fixture usada pelo --demo
   cycles/       saída real (latest.json, latest.csv, histórico com timestamp)
 tests/          smoke test em cima do modo --demo
-.github/workflows/cycle.yml   gatilho de 12h (GitHub Actions)
+web/
+  app.py         endpoint HTTP que roda o pipeline (gatilho via Render)
+  github_sync.py commita latest.json/latest.csv de volta no repo via API
+render.yaml     blueprint do Render (deploy do web/app.py)
+.github/workflows/cycle.yml   disparo manual (cron original, hoje pausado — ver seção de gatilho)
 ```
 
 ## Proxies de impacto — o que é real e o que é estimado
@@ -92,39 +96,78 @@ um app tipo "script" em reddit.com/prefs/apps).
 
 ## Ligar ao Power BI (grátis)
 
-1. `.github/workflows/cycle.yml` já commita `data/cycles/latest.csv` de
-   volta no repositório a cada ciclo (veja abaixo).
+1. O gatilho de 12h (ver abaixo) mantém `data/cycles/latest.csv` sempre
+   atualizado no repositório.
 2. No Power BI Desktop: **Obter Dados → Web** → cole a URL "raw" do
-   arquivo no GitHub, algo como
-   `https://raw.githubusercontent.com/SEU_USUARIO/telex-br/main/data/cycles/latest.csv`.
+   arquivo no GitHub:
+   `https://raw.githubusercontent.com/Hardcastro/telex-br/main/data/cycles/latest.csv`.
 3. Publique no Power BI Service. Free tier: até 8 atualizações/dia em
    "Minha área de trabalho" — sobra folga para os 2 refreshes/dia do ciclo
    de 12h. Compartilhar exige **Publicar na Web** (público, sem login) —
    é a única forma de compartilhar sem licença Pro.
 4. Se a atualização agendada do Service recusar o Web connector por
-   detecção de fonte dinâmica, troque a URL no editor poder Query para uma
+   detecção de fonte dinâmica, troque a URL no editor Power Query para uma
    string estática fixa (sem parâmetros) — normalmente resolve.
 
 Looker Studio segue a mesma lógica (Conectar → URL) e não tem o limite de
 8 atualizações/dia, se isso virar um problema no futuro.
 
-## Ativar o gatilho de 12h (GitHub Actions)
+## Gatilho de 12h — via Render (grátis, é o que está ativo hoje)
 
-1. `git init && git add . && git commit -m "telex-br: pipeline inicial"` (se
-   ainda não fez isso).
-2. Crie o repositório no GitHub e faça `git push`.
-3. Pronto — `.github/workflows/cycle.yml` já está configurado para rodar às
-   00:00 e 12:00 BRT (`cron: "0 3,15 * * *"`, em UTC) e commitar
-   `data/cycles/latest.{json,csv}` de volta. Também dá pra disparar na mão
-   pela aba **Actions → Ciclo Telex BR (12h) → Run workflow**.
-4. Se for usar o proxy de Reddit: adicione `REDDIT_CLIENT_ID`,
-   `REDDIT_CLIENT_SECRET` e `REDDIT_USER_AGENT` em **Settings → Secrets and
-   variables → Actions**, e descomente as três linhas correspondentes no
-   `cycle.yml`.
+O GitHub Actions da conta ficou bloqueado por faturamento, então o "relógio"
+de 12h saiu de dentro do GitHub: `web/app.py` sobe um endpoint HTTP minúsculo
+no [Render](https://render.com) (free, sem cartão de crédito) que roda o
+pipeline quando chamado, e um cron externo gratuito — [cron-job.org](https://cron-job.org)
+— bate nesse endpoint duas vezes por dia. O resultado volta pro GitHub via
+API (`web/github_sync.py`), porque o disco do Render free não é persistente.
 
-100% gratuito nesse desenho: GitHub Actions (cron), RSS + BCB/IBGE (coleta),
-Power BI free (visualização). Nenhuma peça paga é necessária para o ciclo
-de 12h funcionar de ponta a ponta.
+Duas contas grátis pra criar (não dá pra automatizar isso por você — as duas
+exigem confirmar login/e-mail no navegador):
+
+**1. Render — subir o serviço**
+1. Crie conta em [render.com](https://render.com) (dá pra entrar direto com
+   a conta do GitHub).
+2. **New → Blueprint**, conecte o repositório `telex-br`. O Render lê o
+   `render.yaml` do repo sozinho e propõe o serviço `telex-br-trigger`.
+3. Preencha as duas env vars que o blueprint deixa em aberto:
+   - `RUN_TOKEN` — invente uma string aleatória qualquer (é a "senha" do
+     endpoint — sem ela, qualquer um que ache a URL consome suas horas
+     grátis do Render disparando ciclos à toa).
+   - `GITHUB_TOKEN` — um [personal access token](https://github.com/settings/tokens)
+     (fine-grained, só no repo `telex-br`, permissão **Contents: Read and
+     write**) — é o que deixa o serviço commitar `latest.json`/`latest.csv`
+     de volta.
+4. Deploy. Quando subir, teste na mão:
+   `https://telex-br-trigger.onrender.com/run-cycle?token=SEU_RUN_TOKEN`
+   — deve responder `{"ok": true, ...}` e, minutos depois, aparecer um novo
+   commit em `data/cycles/` no GitHub.
+
+**2. cron-job.org — o relógio**
+1. Crie conta grátis em [cron-job.org](https://cron-job.org).
+2. Novo cronjob → URL:
+   `https://telex-br-trigger.onrender.com/run-cycle?token=SEU_RUN_TOKEN`,
+   método `POST`, horário: `0 e 12` (duas vezes ao dia — o serviço já
+   assume janela de 12h por padrão, então basta rodar a cada 12h; não
+   precisa bater exatamente 00:00/12:00 BRT).
+3. Pronto — isso é literalmente o gatilho de 12h rodando.
+
+O serviço do Render "dorme" depois de 15min sem uso e leva ~1min pra
+acordar na chamada seguinte — sem problema aqui, já que só é chamado 2x/dia.
+
+**Se resolver o problema de faturamento do GitHub depois:** o workflow
+`.github/workflows/cycle.yml` continua no repo, só sem o `schedule:` (fica
+só como disparo manual pela aba Actions). Para voltar a usá-lo como cron,
+é só devolver o bloco:
+```yaml
+schedule:
+  - cron: "0 3,15 * * *"
+```
+e pode desligar o Render/cron-job.org se preferir manter tudo dentro do
+GitHub.
+
+100% gratuito nos dois desenhos: RSS + BCB/IBGE (coleta), Render + cron-job.org
+*ou* GitHub Actions (gatilho), Power BI free (visualização). Nenhuma peça
+paga é necessária para o ciclo de 12h funcionar de ponta a ponta.
 
 ## Limitações conhecidas / próximos passos
 

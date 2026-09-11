@@ -1,0 +1,3 @@
+# Só necessário para rodar web/app.py (o gatilho HTTP no Render). O
+# pipeline em si (src/) não depende disso.
+flask==3.0.3

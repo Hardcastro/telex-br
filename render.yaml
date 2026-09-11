@@ -1,0 +1,18 @@
+# Blueprint do Render (render.com/docs/blueprint-spec). No dashboard:
+# New > Blueprint > conecte o repo telex-br > o Render lê este arquivo
+# sozinho e propõe o serviço abaixo — só falta você preencher as env vars
+# marcadas "sync: false" (ver README, seção "Gatilho de 12h via Render").
+services:
+  - type: web
+    name: telex-br-trigger
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt -r requirements-web.txt"
+    startCommand: "python -m web.app"
+    envVars:
+      - key: RUN_TOKEN
+        sync: false   # gere um valor aleatório qualquer — é a "senha" do endpoint
+      - key: GITHUB_TOKEN
+        sync: false   # personal access token com escopo "repo" (contents: write)
+      - key: GITHUB_REPO
+        value: Hardcastro/telex-br
