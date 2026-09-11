@@ -1,32 +1,31 @@
 {
-  "cycle_id": "2026-09-11T09:08:08.379330-03:00",
-  "generated_at": "2026-09-11T09:08:08.379330-03:00",
+  "cycle_id": "2026-09-11T09:19:26.643513-03:00",
+  "generated_at": "2026-09-11T09:19:26.643513-03:00",
   "window_hours": 12,
-  "total_items": 20,
+  "total_items": 8,
   "macro_snapshot": {
-    "selic_meta": 10.75,
-    "ipca_mensal": 0.35,
-    "cambio_usd": 5.31,
-    "_fonte": "valores de amostra — modo --demo"
+    "selic_meta": 14.0,
+    "ipca_mensal": 0.07,
+    "cambio_usd": 5.1149
   },
   "editorial_balance": {
-    "direita": 4,
-    "esquerda": 4,
-    "centro": 4,
+    "direita": 0,
+    "esquerda": 0,
+    "centro": 0,
     "tecnica_neutra": 8
   },
   "quota_status": {
     "direita": {
       "target": 4,
-      "filled": 4
+      "filled": 0
     },
     "esquerda": {
       "target": 4,
-      "filled": 4
+      "filled": 0
     },
     "centro": {
       "target": 4,
-      "filled": 4
+      "filled": 0
     },
     "tecnica_neutra": {
       "target": 8,
@@ -34,320 +33,113 @@
     }
   },
   "highlights": {
-    "top_view_id": "esquerda-1:7b385e",
-    "top_reply_id": "esquerda-1:7b385e"
+    "top_view_id": "valor-economico:87c796",
+    "top_reply_id": "valor-economico:87c796"
   },
   "items": [
     {
-      "id": "agencia-brasil:14e2a7",
-      "headline": "Copom mantém Selic em 10,75% ao ano pela terceira reunião seguida",
-      "source": "Agência Brasil",
+      "id": "g1:f1b0a4",
+      "headline": "VÍDEOS: Bom Dia PE de sexta-feira, 11 de setembro de 2026",
+      "source": "G1",
       "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/agencia-brasil/0",
-      "published_at": "2026-09-11T09:54:04.247689+00:00",
-      "coverage_cluster_size": 1,
+      "category": "manchete",
+      "url": "https://g1.globo.com/pe/pernambuco/videos-bom-dia-pe/playlist/videos-bom-dia-pe-de-sexta-feira-11-de-setembro-de-2026.ghtml",
+      "published_at": "2026-09-11T12:09:18+00:00",
+      "coverage_cluster_size": 4,
       "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 4.0,
       "is_top_view": false,
       "is_top_reply": false,
-      "tags": [
-        "selic",
-        "copom",
-        "juros",
-        "banco central"
-      ]
+      "tags": []
     },
     {
-      "id": "valor-economico:0a59c8",
-      "headline": "Selic é mantida em 10,75% e mercado revisa projeção de inflação",
+      "id": "g1:b63d0b",
+      "headline": "VÍDEOS: Bom Dia Cidade Sul de Minas de sexta-feira, 11 de setembro de 2026",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://g1.globo.com/mg/sul-de-minas/edicao/2026/09/11/videos-bom-dia-cidade-sul-de-minas-de-sexta-feira-11-de-setembro-de-2026.ghtml",
+      "published_at": "2026-09-11T11:59:40+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "g1:328da2",
+      "headline": "VÍDEOS: Bom Dia DF de sexta-feira, 11 de setembro de 2026",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://g1.globo.com/df/distrito-federal/videos-bom-dia-df/playlist/videos-bom-dia-df-de-sexta-feira-11-de-setembro-de-2026.ghtml",
+      "published_at": "2026-09-11T11:58:08+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "bbc-brasil:b4f4f8",
+      "headline": "Fachin pede e Mendonça anuncia fim do sigilo de parte do caso Master",
+      "source": "BBC News Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.bbc.com/portuguese/articles/c3revjrgz88o?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-11T10:35:53+00:00",
+      "coverage_cluster_size": 5,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 5.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "valor-economico:87c796",
+      "headline": "Fachin solicita e Mendonça quebra sigilo do Master",
       "source": "Valor Econômico",
       "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/valor-economico/1",
-      "published_at": "2026-09-11T09:36:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "selic",
-        "copom",
-        "inflacao"
-      ]
-    },
-    {
-      "id": "direita-1:2b9911",
-      "headline": "Oposição cobra explicações sobre execução do orçamento no STF",
-      "source": "[Exemplo] Veículo Direita 1",
-      "source_lean": "direita",
       "category": "politica",
-      "url": "https://exemplo.invalid/direita-1/18",
-      "published_at": "2026-09-11T09:24:04.247689+00:00",
-      "coverage_cluster_size": 1,
+      "url": "https://valor.globo.com/impresso/noticia/2026/09/11/fachin-solicita-e-mendonca-quebra-sigilo-do-master.ghtml",
+      "published_at": "2026-09-11T08:00:01+00:00",
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf"
-      ]
-    },
-    {
-      "id": "infomoney:993db2",
-      "headline": "Copom mantém juros e sinaliza cautela com IPCA",
-      "source": "InfoMoney",
-      "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/infomoney/2",
-      "published_at": "2026-09-11T09:18:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "selic",
-        "copom",
-        "ipca",
-        "juros",
-        "banco central"
-      ]
-    },
-    {
-      "id": "esquerda-1:7b385e",
-      "headline": "Movimentos sociais pressionam Congresso por regulamentação da reforma tributária",
-      "source": "[Exemplo] Veículo Esquerda 1",
-      "source_lean": "esquerda",
-      "category": "politica",
-      "url": "https://exemplo.invalid/esquerda-1/22",
-      "published_at": "2026-09-11T09:06:04.247689+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": true,
       "is_top_reply": true,
       "tags": [
-        "congresso",
-        "reforma tributaria"
+        "supremo tribunal"
       ]
     },
     {
-      "id": "reuters-brasil:282ac5",
-      "headline": "Brazil central bank holds Selic rate at 10.75%",
-      "source": "Reuters Brasil",
+      "id": "metropoles:713245",
+      "headline": "Jorge Messias enaltece Fachin por pedir a quebra de sigilo do caso Master",
+      "source": "Metrópoles",
       "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/reuters-brasil/3",
-      "published_at": "2026-09-11T09:00:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "selic"
-      ]
-    },
-    {
-      "id": "poder360:cc3fa0",
-      "headline": "Congresso retoma pauta de regulamentação da reforma tributária",
-      "source": "Poder360",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://exemplo.invalid/poder360/14",
-      "published_at": "2026-09-11T08:48:04.247689+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "congresso",
-        "reforma tributaria"
-      ]
-    },
-    {
-      "id": "centro-1:0f1377",
-      "headline": "Câmara e Senado divergem sobre prazo da reforma tributária",
-      "source": "[Exemplo] Veículo Centro 1",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://exemplo.invalid/centro-1/26",
-      "published_at": "2026-09-11T08:18:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "reforma tributaria"
-      ]
-    },
-    {
-      "id": "direita-2:040dfa",
-      "headline": "Governo é criticado por aumento de gastos em ano eleitoral",
-      "source": "[Exemplo] Veículo Direita 2",
-      "source_lean": "direita",
       "category": "manchete",
-      "url": "https://exemplo.invalid/direita-2/19",
-      "published_at": "2026-09-11T08:12:04.247689+00:00",
-      "coverage_cluster_size": 1,
+      "url": "https://www.metropoles.com/brasil/jorge-messias-enaltece-fachin-por-pedir-a-quebra-de-sigilo-do-caso-master",
+      "published_at": "2026-09-11T02:48:23+00:00",
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": []
     },
     {
-      "id": "g1:cbe483",
-      "headline": "Oposição critica meta fiscal em sessão no Senado",
-      "source": "G1",
+      "id": "metropoles:ae88e8",
+      "headline": "Mendonça atende Fachin e retira sigilo de parte da investigação do Master",
+      "source": "Metrópoles",
       "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://exemplo.invalid/g1/16",
-      "published_at": "2026-09-11T07:54:04.247689+00:00",
-      "coverage_cluster_size": 2,
+      "url": "https://www.metropoles.com/brasil/mendonca-atende-fachin-e-retira-sigilo-da-investigacao-do-caso-master",
+      "published_at": "2026-09-11T02:38:35+00:00",
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado"
-      ]
-    },
-    {
-      "id": "cnn-brasil:5be0bc",
-      "headline": "Senado debate meta fiscal em sessão tensa nesta quarta",
-      "source": "CNN Brasil",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://exemplo.invalid/cnn-brasil/17",
-      "published_at": "2026-09-11T07:42:04.247689+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado"
-      ]
-    },
-    {
-      "id": "esquerda-3:a073c1",
-      "headline": "Ministério defende meta fiscal e rebate críticas da oposição",
-      "source": "[Exemplo] Veículo Esquerda 3",
-      "source_lean": "esquerda",
-      "category": "politica",
-      "url": "https://exemplo.invalid/esquerda-3/24",
-      "published_at": "2026-09-11T07:30:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "ministerio"
-      ]
-    },
-    {
-      "id": "agencia-brasil:6b44d9",
-      "headline": "IBGE confirma alta de 0,9% do PIB no trimestre",
-      "source": "Agência Brasil",
-      "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/agencia-brasil/4",
-      "published_at": "2026-09-11T07:24:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "pib"
-      ]
-    },
-    {
-      "id": "esquerda-2:5f40d6",
-      "headline": "Governo anuncia ampliação de programa social para 2027",
-      "source": "[Exemplo] Veículo Esquerda 2",
-      "source_lean": "esquerda",
-      "category": "manchete",
-      "url": "https://exemplo.invalid/esquerda-2/23",
-      "published_at": "2026-09-11T06:48:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": []
-    },
-    {
-      "id": "esquerda-4:630dd1",
-      "headline": "PIB do trimestre reflete recuperação do mercado interno, diz governo",
-      "source": "[Exemplo] Veículo Esquerda 4",
-      "source_lean": "esquerda",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/esquerda-4/25",
-      "published_at": "2026-09-11T06:30:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "pib"
-      ]
-    },
-    {
-      "id": "direita-3:a41705",
-      "headline": "Senado aprova requerimento de CPI para investigar contratos",
-      "source": "[Exemplo] Veículo Direita 3",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://exemplo.invalid/direita-3/20",
-      "published_at": "2026-09-11T05:54:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "cpi"
-      ]
-    },
-    {
-      "id": "centro-2:5244c4",
-      "headline": "Analistas dividem opiniões sobre efeito da Selic na atividade",
-      "source": "[Exemplo] Veículo Centro 2",
-      "source_lean": "centro",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/centro-2/27",
-      "published_at": "2026-09-11T05:36:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "selic",
-        "copom"
-      ]
-    },
-    {
-      "id": "centro-3:eeb090",
-      "headline": "STF retoma julgamento sobre marco de licenciamento ambiental",
-      "source": "[Exemplo] Veículo Centro 3",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://exemplo.invalid/centro-3/28",
-      "published_at": "2026-09-11T05:24:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -355,38 +147,19 @@
       ]
     },
     {
-      "id": "direita-4:c118fc",
-      "headline": "Ministério é alvo de críticas por atraso em obra federal",
-      "source": "[Exemplo] Veículo Direita 4",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://exemplo.invalid/direita-4/21",
-      "published_at": "2026-09-11T04:36:04.247689+00:00",
-      "coverage_cluster_size": 1,
+      "id": "metropoles:1b31aa",
+      "headline": "Fachin pede derrubada de sigilo do inquérito no caso Master",
+      "source": "Metrópoles",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.metropoles.com/brasil/fachin-manda-derrubar-sigilo-do-inquerito-do-caso-master",
+      "published_at": "2026-09-11T01:25:48+00:00",
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
-      "tags": [
-        "ministerio"
-      ]
-    },
-    {
-      "id": "centro-4:0ffbd8",
-      "headline": "Desemprego recua para 6,8% na média móvel trimestral, diz IBGE",
-      "source": "[Exemplo] Veículo Centro 4",
-      "source_lean": "centro",
-      "category": "macroeconomia",
-      "url": "https://exemplo.invalid/centro-4/29",
-      "published_at": "2026-09-11T04:24:04.247689+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "desemprego"
-      ]
+      "tags": []
     }
   ]
 }
