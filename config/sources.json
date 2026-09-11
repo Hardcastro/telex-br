@@ -4,11 +4,11 @@
 
   "tecnica_neutra": [
     { "id": "agencia-brasil", "name": "Agência Brasil", "rss": "https://agenciabrasil.ebc.com.br/rss.xml", "status": "active", "note": "Agência pública federal — cobertura factual" },
-    { "id": "valor-economico", "name": "Valor Econômico", "rss": "https://valor.globo.com/rss/home/", "status": "active", "note": "Imprensa econômica — baixa carga opinativa" },
+    { "id": "valor-economico", "name": "Valor Econômico", "rss": "https://valor.globo.com/rss/valor/", "status": "active", "note": "Imprensa econômica — baixa carga opinativa" },
     { "id": "infomoney", "name": "InfoMoney", "rss": "https://www.infomoney.com.br/feed/", "status": "active", "note": "Imprensa de mercado" },
-    { "id": "aos-fatos", "name": "Aos Fatos", "rss": "https://aosfatos.org/feed/", "status": "active", "note": "Checagem — metodologia não opinativa" },
+    { "id": "aos-fatos", "name": "Aos Fatos", "rss": "https://aosfatos.org/noticias/feed/", "status": "active", "note": "Checagem — metodologia não opinativa" },
     { "id": "agencia-lupa", "name": "Agência Lupa", "rss": "https://lupa.uol.com.br/feed", "status": "active", "note": "Checagem" },
-    { "id": "reuters-brasil", "name": "Reuters Brasil", "rss": "https://feeds.reuters.com/reuters/BRtopNews", "status": "active", "note": "Agência internacional de notícias" },
+    { "id": "bbc-brasil", "name": "BBC News Brasil", "rss": "https://feeds.bbci.co.uk/portuguese/rss.xml", "status": "active", "note": "Agência internacional — Reuters descontinuou o RSS público; BBC Brasil testada e ativa em 2026-09" },
     { "id": "bcb-sgs", "name": "Banco Central do Brasil (SGS)", "rss": null, "api": "bcb_sgs", "status": "active", "note": "Dado institucional, não é notícia — usado no ticker macro" },
     { "id": "ibge-sidra", "name": "IBGE (SIDRA)", "rss": null, "api": "ibge_sidra", "status": "active", "note": "Dado institucional — usado no ticker macro" }
   ],
