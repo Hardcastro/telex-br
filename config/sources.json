@@ -14,23 +14,23 @@
   ],
 
   "direita": [
-    { "id": "direita-1", "name": "O Antagonista", "rss": "https://oantagonista.com.br/feed/", "status": "pending_review", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024) — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
-    { "id": "direita-2", "name": "Gazeta do Povo", "rss": "https://www.gazetadopovo.com.br/feed/rss/vida-publica.xml", "status": "pending_review", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK." },
-    { "id": "direita-3", "name": "Revista Crusoé", "rss": "https://crusoe.com.br/feed/", "status": "pending_review", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK." },
-    { "id": "direita-4", "name": "IstoÉ", "rss": "https://istoe.com.br/feed/", "status": "pending_review", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." }
+    { "id": "direita-1", "name": "O Antagonista", "rss": "https://oantagonista.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024) — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
+    { "id": "direita-2", "name": "Gazeta do Povo", "rss": "https://www.gazetadopovo.com.br/feed/rss/vida-publica.xml", "status": "active", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK." },
+    { "id": "direita-3", "name": "Revista Crusoé", "rss": "https://crusoe.com.br/feed/", "status": "active", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK." },
+    { "id": "direita-4", "name": "IstoÉ", "rss": "https://istoe.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." }
   ],
 
   "esquerda": [
-    { "id": "esquerda-1", "name": "Brasil 247", "rss": "https://www.brasil247.com/rss", "status": "pending_review", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024) — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
-    { "id": "esquerda-2", "name": "Diário do Centro do Mundo", "rss": "https://www.diariodocentrodomundo.com.br/feed/", "status": "pending_review", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
-    { "id": "esquerda-3", "name": "Revista Fórum", "rss": "https://revistaforum.com.br/feed/", "status": "pending_review", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
-    { "id": "esquerda-4", "name": "Jornal GGN", "rss": "https://jornalggn.com.br/feed/", "status": "pending_review", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." }
+    { "id": "esquerda-1", "name": "Brasil 247", "rss": "https://www.brasil247.com/rss", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024) — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
+    { "id": "esquerda-2", "name": "Diário do Centro do Mundo", "rss": "https://www.diariodocentrodomundo.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
+    { "id": "esquerda-3", "name": "Revista Fórum", "rss": "https://revistaforum.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
+    { "id": "esquerda-4", "name": "Jornal GGN", "rss": "https://jornalggn.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." }
   ],
 
   "centro": [
-    { "id": "centro-1", "name": "Folha de S.Paulo", "rss": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml", "status": "pending_review", "note": "O bucket mais contestado — ver alerta de metodologia em docs/pesquisa-classificacao-editorial.md antes de ativar. RSS testado 200 OK." },
-    { "id": "centro-2", "name": "O Globo", "rss": "https://oglobo.globo.com/rss/oglobo/", "status": "pending_review", "note": "Mesmo alerta do slot 1 — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
-    { "id": "centro-3", "name": "Veja", "rss": "https://veja.abril.com.br/feed/", "status": "pending_review", "note": "Mesmo alerta do slot 1 — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
+    { "id": "centro-1", "name": "Folha de S.Paulo", "rss": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml", "status": "active", "note": "O bucket mais contestado — ver alerta de metodologia em docs/pesquisa-classificacao-editorial.md antes de ativar. RSS testado 200 OK." },
+    { "id": "centro-2", "name": "O Globo", "rss": "https://oglobo.globo.com/rss/oglobo/", "status": "active", "note": "Mesmo alerta do slot 1 — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
+    { "id": "centro-3", "name": "Veja", "rss": "https://veja.abril.com.br/feed/", "status": "active", "note": "Mesmo alerta do slot 1 — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
     { "id": "centro-4", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 4/4 — Estadão e R7 são candidatos citados na pesquisa, mas nenhum tem RSS público funcional hoje (ver docs/pesquisa-classificacao-editorial.md). Precisa de outro candidato." }
   ],
 
