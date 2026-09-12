@@ -22,7 +22,7 @@ import logging
 import os
 from pathlib import Path
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 
 from src.pipeline import run as run_pipeline
 from web.github_sync import push_file
@@ -32,7 +32,8 @@ logger = logging.getLogger("telexbr.web")
 
 app = Flask(__name__)
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data" / "cycles"
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = PROJECT_ROOT / "data" / "cycles"
 
 RUN_TOKEN = os.environ.get("RUN_TOKEN")  # obrigatório em produção — ver checagem abaixo
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
@@ -41,7 +42,16 @@ GITHUB_REPO = os.environ.get("GITHUB_REPO")  # ex.: "Hardcastro/telex-br"
 
 @app.get("/")
 def health():
-    return "Telex BR — gatilho web ativo. Use POST /run-cycle (com token) para disparar um ciclo.", 200
+    return "Telex BR — gatilho web ativo. Use POST /run-cycle (com token) para disparar um ciclo. Painel público em /dashboard.", 200
+
+
+@app.get("/dashboard")
+def dashboard():
+    """Página pública do painel — mesmo HTML publicado como Claude Artifact,
+    servido aqui pra quem não tem/não quer usar conta na claude.ai. Lê o
+    JSON do ciclo direto do GitHub no lado do cliente, não depende deste
+    servidor estar acordado no momento em que alguém abre a página."""
+    return send_from_directory(PROJECT_ROOT, "dashboard-live.html")
 
 
 @app.route("/run-cycle", methods=["GET", "POST"])

@@ -1,12 +1,13 @@
 {
-  "cycle_id": "2026-09-11T23:27:28.369945-03:00",
-  "generated_at": "2026-09-11T23:27:28.369945-03:00",
+  "cycle_id": "2026-09-11T23:44:56.657251-03:00",
+  "generated_at": "2026-09-11T23:44:56.657251-03:00",
   "window_hours": 12,
   "total_items": 20,
   "macro_snapshot": {
-    "selic_meta": 14.0,
-    "ipca_mensal": -0.32,
-    "cambio_usd": 5.0918
+    "selic_meta": 10.75,
+    "ipca_mensal": 0.35,
+    "cambio_usd": 5.31,
+    "_fonte": "valores de amostra — modo --demo"
   },
   "editorial_balance": {
     "direita": 4,
@@ -33,18 +34,166 @@
     }
   },
   "highlights": {
-    "top_view_id": "valor-economico:cd9191",
-    "top_reply_id": "valor-economico:cd9191"
+    "top_view_id": "esquerda-1:a92ef2",
+    "top_reply_id": "esquerda-1:a92ef2"
   },
   "items": [
     {
-      "id": "direita-1:1c5913",
-      "headline": "A cidade onde centenas de macacos vivem entre templos antigos e aprenderam a conviver diariamente com moradores e visitantes",
-      "source": "O Antagonista",
+      "id": "agencia-brasil:51f461",
+      "headline": "Copom mantém Selic em 10,75% ao ano pela terceira reunião seguida",
+      "source": "Agência Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/agencia-brasil/0",
+      "published_at": "2026-09-11T09:54:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom",
+        "juros",
+        "banco central"
+      ]
+    },
+    {
+      "id": "valor-economico:d3e69b",
+      "headline": "Selic é mantida em 10,75% e mercado revisa projeção de inflação",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/valor-economico/1",
+      "published_at": "2026-09-11T09:36:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom",
+        "inflacao"
+      ]
+    },
+    {
+      "id": "direita-1:b88a9e",
+      "headline": "Oposição cobra explicações sobre execução do orçamento no STF",
+      "source": "[Exemplo] Veículo Direita 1",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://exemplo.invalid/direita-1/18",
+      "published_at": "2026-09-11T09:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "infomoney:78efbe",
+      "headline": "Copom mantém juros e sinaliza cautela com IPCA",
+      "source": "InfoMoney",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/infomoney/2",
+      "published_at": "2026-09-11T09:18:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom",
+        "ipca",
+        "juros",
+        "banco central"
+      ]
+    },
+    {
+      "id": "esquerda-1:a92ef2",
+      "headline": "Movimentos sociais pressionam Congresso por regulamentação da reforma tributária",
+      "source": "[Exemplo] Veículo Esquerda 1",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://exemplo.invalid/esquerda-1/22",
+      "published_at": "2026-09-11T09:06:04.247689+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": true,
+      "is_top_reply": true,
+      "tags": [
+        "congresso",
+        "reforma tributaria"
+      ]
+    },
+    {
+      "id": "reuters-brasil:28b60a",
+      "headline": "Brazil central bank holds Selic rate at 10.75%",
+      "source": "Reuters Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/reuters-brasil/3",
+      "published_at": "2026-09-11T09:00:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic"
+      ]
+    },
+    {
+      "id": "poder360:0c4ec5",
+      "headline": "Congresso retoma pauta de regulamentação da reforma tributária",
+      "source": "Poder360",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://exemplo.invalid/poder360/14",
+      "published_at": "2026-09-11T08:48:04.247689+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "congresso",
+        "reforma tributaria"
+      ]
+    },
+    {
+      "id": "centro-1:644a85",
+      "headline": "Câmara e Senado divergem sobre prazo da reforma tributária",
+      "source": "[Exemplo] Veículo Centro 1",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://exemplo.invalid/centro-1/26",
+      "published_at": "2026-09-11T08:18:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado",
+        "reforma tributaria"
+      ]
+    },
+    {
+      "id": "direita-2:c4008a",
+      "headline": "Governo é criticado por aumento de gastos em ano eleitoral",
+      "source": "[Exemplo] Veículo Direita 2",
       "source_lean": "direita",
       "category": "manchete",
-      "url": "https://oantagonista.com.br/ladooa/entretenimento/a-cidade-onde-centenas-de-macacos-vivem-entre-templos-antigos-e-aprenderam-a-conviver-diariamente-com-moradores-e-visitantes/",
-      "published_at": "2026-09-12T05:23:00+00:00",
+      "url": "https://exemplo.invalid/direita-2/19",
+      "published_at": "2026-09-11T08:12:04.247689+00:00",
       "coverage_cluster_size": 1,
       "trends_interest_score": null,
       "engagement_proxy_index": 1.0,
@@ -53,69 +202,16 @@
       "tags": []
     },
     {
-      "id": "esquerda-1:b415ba",
-      "headline": "Rodrigo Pacheco nega presença em festa de Daniel Vorcaro",
-      "source": "Brasil 247",
-      "source_lean": "esquerda",
+      "id": "g1:247ef5",
+      "headline": "Oposição critica meta fiscal em sessão no Senado",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://www.brasil247.com/brasil/rodrigo-pacheco-nega-presenca-em-festa-de-daniel-vorcaro/",
-      "published_at": "2026-09-12T03:55:10+00:00",
+      "url": "https://exemplo.invalid/g1/16",
+      "published_at": "2026-09-11T07:54:04.247689+00:00",
       "coverage_cluster_size": 2,
       "trends_interest_score": null,
       "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "senador"
-      ]
-    },
-    {
-      "id": "esquerda-1:f14880",
-      "headline": "Sob governo de extrema direita, Chile passa aniversário do golpe sem ato oficial",
-      "source": "Brasil 247",
-      "source_lean": "esquerda",
-      "category": "macroeconomia",
-      "url": "https://www.brasil247.com/america-latina/sob-governo-de-extrema-direita-chile-passa-aniversario-do-golpe-sem-ato-oficial/",
-      "published_at": "2026-09-12T03:19:58+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "real"
-      ]
-    },
-    {
-      "id": "direita-4:03e2af",
-      "headline": "TSE rejeita por unanimidade o registro de candidatura de Pablo Marçal",
-      "source": "IstoÉ",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://istoe.com.br/tse-rejeita-candidatura-pablo-marcal-presidencia",
-      "published_at": "2026-09-12T01:39:00+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "presidencia da republica",
-        "tse"
-      ]
-    },
-    {
-      "id": "esquerda-3:f07d04",
-      "headline": "Datafolha: Benedita segue na liderança isolada na disputa pelo Senado no RJ",
-      "source": "Revista Fórum",
-      "source_lean": "esquerda",
-      "category": "politica",
-      "url": "https://revistaforum.com.br/politica/datafolha-benedita-segue-na-lideranca-isolada-na-disputa-pelo-senado-no-rj/",
-      "published_at": "2026-09-12T01:32:55+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -123,316 +219,173 @@
       ]
     },
     {
-      "id": "esquerda-4:55a1d7",
-      "headline": "Datafolha: Tarcísio chega a 49%",
-      "source": "Jornal GGN",
-      "source_lean": "esquerda",
+      "id": "cnn-brasil:315e2c",
+      "headline": "Senado debate meta fiscal em sessão tensa nesta quarta",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://jornalggn.com.br/noticia/datafolha-tarcisio-chega-a-49-e-pode-se-reeleger-ainda-no-1o-turno/",
-      "published_at": "2026-09-12T01:32:47+00:00",
-      "coverage_cluster_size": 7,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 7.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "presidencia da republica",
-        "eleicao",
-        "eleicoes",
-        "partido",
-        "governador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "direita-4:f0fb6f",
-      "headline": "Datafolha mostra disputa acirrada entre Lula e Flávio Bolsonaro no 1º turno",
-      "source": "IstoÉ",
-      "source_lean": "direita",
-      "category": "manchete",
-      "url": "https://istoe.com.br/datafolha-lula-lidera-pesquisa-presidencial-flavio-bolsonaro",
-      "published_at": "2026-09-12T01:13:00+00:00",
-      "coverage_cluster_size": 12,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 12.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": []
-    },
-    {
-      "id": "direita-4:73e962",
-      "headline": "Funcionários do Banco do Brasil encerram greve em parte do país",
-      "source": "IstoÉ",
-      "source_lean": "direita",
-      "category": "manchete",
-      "url": "https://istoe.com.br/funcionarios-do-banco-do-brasil-encerram-greve-em-parte-do-pais",
-      "published_at": "2026-09-12T01:01:29+00:00",
+      "url": "https://exemplo.invalid/cnn-brasil/17",
+      "published_at": "2026-09-11T07:42:04.247689+00:00",
       "coverage_cluster_size": 2,
       "trends_interest_score": null,
       "engagement_proxy_index": 2.0,
       "is_top_view": false,
       "is_top_reply": false,
+      "tags": [
+        "senado"
+      ]
+    },
+    {
+      "id": "esquerda-3:7c0fbc",
+      "headline": "Ministério defende meta fiscal e rebate críticas da oposição",
+      "source": "[Exemplo] Veículo Esquerda 3",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://exemplo.invalid/esquerda-3/24",
+      "published_at": "2026-09-11T07:30:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministerio"
+      ]
+    },
+    {
+      "id": "agencia-brasil:d7e2fb",
+      "headline": "IBGE confirma alta de 0,9% do PIB no trimestre",
+      "source": "Agência Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/agencia-brasil/4",
+      "published_at": "2026-09-11T07:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "pib"
+      ]
+    },
+    {
+      "id": "esquerda-2:c03c1f",
+      "headline": "Governo anuncia ampliação de programa social para 2027",
+      "source": "[Exemplo] Veículo Esquerda 2",
+      "source_lean": "esquerda",
+      "category": "manchete",
+      "url": "https://exemplo.invalid/esquerda-2/23",
+      "published_at": "2026-09-11T06:48:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
       "tags": []
     },
     {
-      "id": "centro-2:5d3907",
-      "headline": "Flávio Bolsonaro e Lula são rejeitados por 46% dos eleitores, mostra Datafolha",
-      "source": "O Globo",
+      "id": "esquerda-4:f36f44",
+      "headline": "PIB do trimestre reflete recuperação do mercado interno, diz governo",
+      "source": "[Exemplo] Veículo Esquerda 4",
+      "source_lean": "esquerda",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/esquerda-4/25",
+      "published_at": "2026-09-11T06:30:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "pib"
+      ]
+    },
+    {
+      "id": "direita-3:166e69",
+      "headline": "Senado aprova requerimento de CPI para investigar contratos",
+      "source": "[Exemplo] Veículo Direita 3",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://exemplo.invalid/direita-3/20",
+      "published_at": "2026-09-11T05:54:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado",
+        "cpi"
+      ]
+    },
+    {
+      "id": "centro-2:59163b",
+      "headline": "Analistas dividem opiniões sobre efeito da Selic na atividade",
+      "source": "[Exemplo] Veículo Centro 2",
+      "source_lean": "centro",
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/centro-2/27",
+      "published_at": "2026-09-11T05:36:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "selic",
+        "copom"
+      ]
+    },
+    {
+      "id": "centro-3:3ba80f",
+      "headline": "STF retoma julgamento sobre marco de licenciamento ambiental",
+      "source": "[Exemplo] Veículo Centro 3",
       "source_lean": "centro",
       "category": "politica",
-      "url": "https://oglobo.globo.com/blogs/pulso/post/2026/09/flavio-bolsonaro-e-lula-sao-rejeitados-por-46percent-dos-eleitores-mostra-datafolha.ghtml",
-      "published_at": "2026-09-12T00:46:12+00:00",
-      "coverage_cluster_size": 12,
+      "url": "https://exemplo.invalid/centro-3/28",
+      "published_at": "2026-09-11T05:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
       "trends_interest_score": null,
-      "engagement_proxy_index": 12.0,
+      "engagement_proxy_index": 1.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "senado",
-        "stf",
-        "supremo tribunal",
-        "senador",
-        "tse"
+        "stf"
       ]
     },
     {
-      "id": "centro-2:87f73f",
-      "headline": "Datafolha: Lula tem 39% no 1° turno, e Flávio Bolsonaro, 35%",
-      "source": "O Globo",
+      "id": "direita-4:4bec25",
+      "headline": "Ministério é alvo de críticas por atraso em obra federal",
+      "source": "[Exemplo] Veículo Direita 4",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://exemplo.invalid/direita-4/21",
+      "published_at": "2026-09-11T04:36:04.247689+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministerio"
+      ]
+    },
+    {
+      "id": "centro-4:5b7c4f",
+      "headline": "Desemprego recua para 6,8% na média móvel trimestral, diz IBGE",
+      "source": "[Exemplo] Veículo Centro 4",
       "source_lean": "centro",
-      "category": "politica",
-      "url": "https://oglobo.globo.com/blogs/pulso/post/2026/09/datafolha-lula-tem-39percent-no-1-turno-e-flavio-bolsonaro-35percent.ghtml",
-      "published_at": "2026-09-12T00:42:04+00:00",
-      "coverage_cluster_size": 12,
+      "category": "macroeconomia",
+      "url": "https://exemplo.invalid/centro-4/29",
+      "published_at": "2026-09-11T04:24:04.247689+00:00",
+      "coverage_cluster_size": 1,
       "trends_interest_score": null,
-      "engagement_proxy_index": 12.0,
+      "engagement_proxy_index": 1.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "senado",
-        "stf",
-        "supremo tribunal",
-        "presidencia da republica",
-        "senador",
-        "governador",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "centro-1:a87103",
-      "headline": "Datafolha: Flávio Bolsonaro e Lula são rejeitados por 46% dos eleitores",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/09/datafolha-flavio-bolsonaro-e-lula-sao-rejeitados-por-46-dos-eleitores.shtml",
-      "published_at": "2026-09-12T00:39:00+00:00",
-      "coverage_cluster_size": 12,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 12.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "senador"
-      ]
-    },
-    {
-      "id": "centro-1:0e913c",
-      "headline": "Datafolha: Lula tem 39%, e Flávio Bolsonaro, 35% no 1º turno; rivais empatam no 2º",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/09/datafolha-lula-tem-39-e-flavio-bolsonaro-35-em-primeiro-turno.shtml",
-      "published_at": "2026-09-12T00:33:00+00:00",
-      "coverage_cluster_size": 12,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 12.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "stf",
-        "supremo tribunal",
-        "planalto",
-        "senador"
-      ]
-    },
-    {
-      "id": "valor-economico:cd9191",
-      "headline": "Candidatos a senador pelo Tocantins (TO): veja a lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-pelo-tocantins-to-veja-a-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:24:07+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": true,
-      "is_top_reply": true,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:96caed",
-      "headline": "Candidatos a senador por Sergipe (SE): veja a lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-sergipe-se-veja-a-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:18:51+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:3287b0",
-      "headline": "Candidatos a senador por São Paulo (SP): veja lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-sao-paulo-sp-veja-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:13:55+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:90b9d6",
-      "headline": "Candidatos a senador por Santa Catarina (SC): veja lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-santa-catarina-sc-veja-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:10:16+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:52f11a",
-      "headline": "Candidatos a senador por Roraima (RR): veja a lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-roraima-rr-veja-a-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:08:38+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:3315f5",
-      "headline": "Candidatos a senador por Rondônia (RO): veja a lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-rondonia-ro-veja-a-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:07:10+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:2bde87",
-      "headline": "Candidatos ao senado no Rio Grande do Sul (RS): veja a lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-no-rio-grande-do-sul-rs-veja-a-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:05:43+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
-      ]
-    },
-    {
-      "id": "valor-economico:be3cca",
-      "headline": "Candidatos a senador no RN: veja a lista das eleições 2026",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-no-rn-veja-a-lista-das-eleicoes-2026.ghtml",
-      "published_at": "2026-09-12T00:04:23+00:00",
-      "coverage_cluster_size": 52,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 52.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senado",
-        "eleicoes",
-        "partido",
-        "senador",
-        "tse",
-        "tribunal superior eleitoral"
+        "desemprego"
       ]
     }
   ]
