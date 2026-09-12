@@ -1,19 +1,30 @@
 {
-  "_readme": "Taxonomia de categorias por palavra-chave, aplicada sobre título + resumo (minúsculo, sem acento). Ordem de checagem: politica -> macroeconomia -> manchete (fallback). Ajuste livremente; para algo mais robusto no futuro, trocar por NLP (spaCy pt_core_news), ver README.",
+  "_readme": "Taxonomia de categorias por palavra-chave, aplicada sobre título + resumo (minúsculo, sem acento). Ordem de checagem: politica -> macroeconomia -> manchete (fallback). Ajuste livremente; para algo mais robusto no futuro, trocar por NLP (spaCy pt_core_news), ver README. Ampliado em 2026-09-12 para focar mais em políticos (cargo/instituição, não nomes específicos — evita viés) e em dados/notícias de economia, depois que muita coisa relevante estava caindo em 'manchete' por falta de palavra-chave.",
 
   "politica": [
-    "congresso", "camara dos deputados", "senado", "stf", "supremo tribunal",
-    "planalto", "presidencia da republica", "ministerio", "eleicao", "eleicoes",
-    "partido", "deputado", "senador", "governador", "prefeito", "tse",
+    "congresso", "camara dos deputados", "senado", "senado federal", "stf", "supremo tribunal",
+    "planalto", "presidencia da republica", "presidente", "vice-presidente", "ministerio", "ministro", "ministra",
+    "eleicao", "eleicoes", "eleitoral", "candidato", "candidata", "candidatura",
+    "turno", "primeiro turno", "segundo turno", "datafolha", "ibope", "quaest",
+    "pesquisa eleitoral", "intencao de voto", "pesquisa de opiniao",
+    "partido", "deputado", "deputada", "senador", "senadora", "governador", "governadora",
+    "prefeito", "prefeita", "prefeitura", "vereador", "vereadora", "tse",
     "tribunal superior eleitoral", "reforma tributaria", "reforma administrativa",
-    "cpi", "impeachment", "veto presidencial", "medida provisoria"
+    "cpi", "impeachment", "cassacao", "veto presidencial", "medida provisoria",
+    "pgr", "procurador-geral", "tribunal de contas", "tcu", "inquerito", "delacao premiada",
+    "campanha eleitoral", "base aliada", "oposicao", "governo federal", "poder executivo",
+    "poder legislativo", "poder judiciario", "coligacao"
   ],
 
   "macroeconomia": [
-    "selic", "copom", "ipca", "inflacao", "cambio", "dolar", "real",
-    "pib", "produto interno bruto", "desemprego", "pnad", "balanca comercial",
-    "juros", "banco central", "bcb", "divida publica", "deficit fiscal",
+    "selic", "copom", "ipca", "inflacao", "taxa de cambio", "cambio comercial", "mercado de cambio", "cambio flutuante", "dolar", "real",
+    "pib", "produto interno bruto", "desemprego", "emprego", "pnad", "balanca comercial",
+    "juros", "banco central", "bcb", "divida publica", "deficit fiscal", "arrecadacao", "orcamento",
     "superavit", "arcabouco fiscal", "investimento estrangeiro", "bolsa de valores",
-    "ibovespa", "commodities", "exportacao", "importacao"
+    "ibovespa", "commodities", "exportacao", "importacao", "salario minimo", "reajuste salarial",
+    "renda", "consumo das familias", "producao industrial", "varejo", "agropecuaria",
+    "fed", "taxa de juros americana", "spread bancario", "credito", "inadimplencia",
+    "mercado financeiro", "acoes", "b3", "reservas internacionais",
+    "greve", "sindicato", "banco do brasil", "caixa economica"
   ]
 }

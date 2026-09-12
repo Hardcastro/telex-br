@@ -25,6 +25,22 @@ QUOTA = {
     "tecnica_neutra": 8,
 }
 
+# Política e macroeconomia entram na frente de manchete genérica dentro de
+# cada bucket de espectro — pedido explícito do usuário depois de ver o
+# ciclo dominado por conteúdo genérico. view_score continua desempatando
+# dentro da mesma prioridade, e continua sendo o critério puro pra top
+# view/réplica (não misturamos preferência editorial de pauta com o proxy
+# de audiência real).
+CATEGORY_PRIORITY = {"politica": 2, "macroeconomia": 2, "manchete": 0}
+
+# Evita uma única fonte encher a cota sozinha com conteúdo repetitivo/
+# templated (ex.: uma série "Candidatos a senador por <Estado>" — mesma
+# fonte, 8 itens quase idênticos só trocando o nome do estado, que não
+# ficam no mesmo cluster de cobertura por não terem título parecido o
+# suficiente). Só é ultrapassado se não sobrar fonte diferente pra
+# completar a cota — preferimos isso a deixar o ciclo incompleto.
+MAX_PER_SOURCE_PER_BUCKET = 2
+
 
 @dataclass
 class CurationResult:
@@ -39,6 +55,38 @@ def item_id(scored: ScoredItem) -> str:
     return f"{scored.item.source_id}:{hash(scored.item.url) & 0xFFFFFF:06x}"
 
 
+def _select_bucket(pool: list[ScoredItem], target: int, max_per_source: int) -> list[ScoredItem]:
+    """Ordena por (prioridade de categoria, view_score) e escolhe até
+    `target` itens, respeitando o teto por fonte — mas prefere completar
+    a cota a deixar vaga, então itens além do teto entram por último se
+    não houver alternativa de outra fonte."""
+    ranked = sorted(
+        pool,
+        key=lambda s: (CATEGORY_PRIORITY.get(s.item.category, 0), s.view_score),
+        reverse=True,
+    )
+    chosen: list[ScoredItem] = []
+    per_source: dict[str, int] = {}
+    overflow: list[ScoredItem] = []
+
+    for s in ranked:
+        if len(chosen) >= target:
+            break
+        src = s.item.source_id
+        if per_source.get(src, 0) < max_per_source:
+            chosen.append(s)
+            per_source[src] = per_source.get(src, 0) + 1
+        else:
+            overflow.append(s)
+
+    for s in overflow:
+        if len(chosen) >= target:
+            break
+        chosen.append(s)
+
+    return chosen
+
+
 def curate(scored_items: list[ScoredItem]) -> CurationResult:
     by_lean: dict[str, list[ScoredItem]] = {lean: [] for lean in QUOTA}
     for s in scored_items:
@@ -48,8 +96,7 @@ def curate(scored_items: list[ScoredItem]) -> CurationResult:
     quota_status: dict[str, dict[str, int]] = {}
 
     for lean, target in QUOTA.items():
-        pool = sorted(by_lean.get(lean, []), key=lambda s: s.view_score, reverse=True)
-        chosen = pool[:target]
+        chosen = _select_bucket(by_lean.get(lean, []), target, MAX_PER_SOURCE_PER_BUCKET)
         selected.extend(chosen)
         quota_status[lean] = {"target": target, "filled": len(chosen)}
 

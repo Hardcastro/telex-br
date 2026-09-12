@@ -19,6 +19,7 @@ import json
 import re
 import unicodedata
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 
 from .collect import RawItem
@@ -55,9 +56,23 @@ def load_keywords(config_dir: Path = CONFIG_DIR) -> dict:
 
 def _normalize(text: str) -> str:
     text = text.lower()
+    # indicadores ordinais (º/ª, comuns em "1º turno", "2ª instância") não são
+    # marca combinante — NFKD os decompõe em letra sobrescrita, não na letra
+    # normal, então sobrevivem ao strip de combining() abaixo intactos e nunca
+    # batem com uma palavra-chave escrita por extenso. Troca explícita primeiro.
+    text = text.replace("º", "o").replace("ª", "a")
     text = unicodedata.normalize("NFKD", text)
     text = "".join(c for c in text if not unicodedata.combining(c))
     return text
+
+
+@lru_cache(maxsize=None)
+def _keyword_pattern(kw: str) -> re.Pattern:
+    """Casa a palavra/frase inteira, não substring — sem isso, palavras-chave
+    curtas e comuns em português (ex.: 'real', 'fed', 'acoes') batem dentro de
+    'realizar', 'federal', 'negociações' etc. \\b funciona bem aqui porque
+    _normalize já tirou os acentos antes."""
+    return re.compile(r"\b" + re.escape(kw) + r"\b")
 
 
 def classify_category(text: str, keywords_cfg: dict) -> tuple[str, list[str]]:
@@ -65,7 +80,7 @@ def classify_category(text: str, keywords_cfg: dict) -> tuple[str, list[str]]:
     macroeconomia; o que não bate com nenhuma vira 'manchete'."""
     norm = _normalize(text)
     for category in ("politica", "macroeconomia"):
-        matched = [kw for kw in keywords_cfg.get(category, []) if kw in norm]
+        matched = [kw for kw in keywords_cfg.get(category, []) if _keyword_pattern(kw).search(norm)]
         if matched:
             return category, matched
     return "manchete", []
