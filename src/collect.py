@@ -108,15 +108,27 @@ def _entry_datetime(entry) -> datetime | None:
     return None
 
 
-def collect_all(sources_cfg: dict, window_hours: int = 12) -> list[RawItem]:
-    """Coleta todas as fontes ativas. Sequencial e simples de propósito —
-    ~15-20 feeds terminam em segundos; paralelizar só vale a pena se a
-    lista de fontes crescer muito."""
+def collect_all(sources_cfg: dict, window_hours: int = 12, max_workers: int = 10) -> list[RawItem]:
+    """Coleta todas as fontes ativas em paralelo (I/O-bound — cada feed é
+    uma requisição HTTP independente). Sequencial era razoável com ~13
+    fontes (~20-25s); com 23 fontes ativas passou de 39s no ciclo real,
+    perto do limite de timeout de cron externos (cron-job.org) — por
+    isso o pool de threads em vez de um loop simples."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
     all_items: list[RawItem] = []
-    for source in _active_feed_sources(sources_cfg):
-        items = fetch_rss(source, window_hours=window_hours)
-        logger.info("coletado: %-28s %d itens", source["name"], len(items))
-        all_items.extend(items)
+    sources = _active_feed_sources(sources_cfg)
+    with ThreadPoolExecutor(max_workers=max_workers) as pool:
+        future_to_source = {pool.submit(fetch_rss, s, window_hours): s for s in sources}
+        for future in as_completed(future_to_source):
+            source = future_to_source[future]
+            try:
+                items = future.result()
+            except Exception as exc:  # noqa: BLE001 — uma fonte não pode derrubar o ciclo
+                logger.warning("falha ao coletar %s: %s", source["name"], exc)
+                items = []
+            logger.info("coletado: %-28s %d itens", source["name"], len(items))
+            all_items.extend(items)
 
     pending = [
         s["id"]
