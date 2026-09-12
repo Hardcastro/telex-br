@@ -1,0 +1,374 @@
+<title>Sala de Redação</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+  :root{
+    --paper:      #eff1ec;
+    --paper-2:    #ffffff;
+    --paper-3:    #e6e8e0;
+    --ink:        #1a1d18;
+    --ink-soft:   #53564b;
+    --ink-faint:  #83857a;
+    --rule:       #cfd0c2;
+    --rule-strong:#a9ab9a;
+    --accent:     #a6791a;
+    --accent-text:#7a5713;
+    --accent-soft:#f1e2bc;
+    --lean-right: #2b5ea8;  --lean-right-bg: #dfe8f5;
+    --lean-left:  #a93a3a;  --lean-left-bg: #f3dcdc;
+    --lean-center:#6f5f97;  --lean-center-bg:#e6e0f0;
+    --lean-tech:  #3f6f63;  --lean-tech-bg:#dcece7;
+    --good: #3f6f63; --bad:#a93a3a;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#14160f; --paper-2:#1c1f15; --paper-3:#23261a;
+      --ink:#ece9da; --ink-soft:#b3b09c; --ink-faint:#86846f;
+      --rule:#34372a; --rule-strong:#454838;
+      --accent:#d6a53a; --accent-text:#f0c868; --accent-soft:#3a2f14;
+      --lean-right:#6fa0e0; --lean-right-bg:#1c2c40;
+      --lean-left:#de8a8a;  --lean-left-bg:#3a2222;
+      --lean-center:#b3a1d9; --lean-center-bg:#2c2538;
+      --lean-tech:#7fc0ac;  --lean-tech-bg:#1e352d;
+      --good:#7fc0ac; --bad:#de8a8a;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#14160f; --paper-2:#1c1f15; --paper-3:#23261a;
+    --ink:#ece9da; --ink-soft:#b3b09c; --ink-faint:#86846f;
+    --rule:#34372a; --rule-strong:#454838;
+    --accent:#d6a53a; --accent-text:#f0c868; --accent-soft:#3a2f14;
+    --lean-right:#6fa0e0; --lean-right-bg:#1c2c40;
+    --lean-left:#de8a8a;  --lean-left-bg:#3a2222;
+    --lean-center:#b3a1d9; --lean-center-bg:#2c2538;
+    --lean-tech:#7fc0ac;  --lean-tech-bg:#1e352d;
+    --good:#7fc0ac; --bad:#de8a8a;
+  }
+
+  *{ box-sizing:border-box; }
+  body{ background:var(--paper); color:var(--ink); font-family:'IBM Plex Sans',system-ui,sans-serif; font-size:16px; line-height:1.5; }
+  a{ color:var(--accent-text); }
+  h1,h2,h3{ font-family:'Fraunces',Georgia,serif; text-wrap:balance; font-weight:700; color:var(--ink); margin:0; }
+  code,.mono{ font-family:'IBM Plex Mono',ui-monospace,monospace; }
+  button:focus-visible, a:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  .wrap{ max-width:1080px; margin:0 auto; padding:1.8rem 1.3rem 4rem; }
+
+  /* ---- Masthead ---- */
+  .masthead-top{ display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; }
+  .brand{ display:flex; align-items:baseline; gap:.6rem; }
+  .brand h1{ font-size:1.7rem; }
+  .brand .tag{ font-family:'IBM Plex Mono',monospace; font-size:.68rem; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.06em; }
+  .top-controls{ display:flex; align-items:center; gap:.6rem; }
+  #theme-toggle, #refresh-btn{
+    font-family:'IBM Plex Mono',monospace; font-size:.72rem;
+    background:var(--paper-2); color:var(--ink); border:1px solid var(--rule-strong);
+    border-radius:999px; padding:.35rem .8rem; cursor:pointer; display:inline-flex; align-items:center; gap:.4rem;
+  }
+  #theme-toggle:hover, #refresh-btn:hover{ border-color:var(--accent); }
+
+  .status-strip{
+    display:flex; flex-wrap:wrap; gap:.4rem 1.1rem; align-items:center;
+    font-family:'IBM Plex Mono',monospace; font-size:.72rem; color:var(--ink-faint);
+    margin-top:.9rem; padding-bottom:.9rem; border-bottom:1px solid var(--rule);
+  }
+  .status-strip span{ display:inline-flex; align-items:center; gap:.4rem; }
+  .pulse{ width:6px; height:6px; border-radius:50%; background:var(--good); flex:none; }
+  .pulse.err{ background:var(--bad); }
+  @media (prefers-reduced-motion:no-preference){ .pulse{ animation:pulse 2s ease-in-out infinite; } }
+  @keyframes pulse{ 0%,100%{opacity:1;} 50%{opacity:.35;} }
+
+  /* ---- Loading / error ---- */
+  #loading{ padding:4rem 1rem; text-align:center; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace; font-size:.85rem; }
+  #error{ padding:1.4rem; background:var(--lean-left-bg); border-left:3px solid var(--bad); margin-top:1.4rem; color:var(--ink); }
+  #error h3{ font-size:1rem; margin-bottom:.4rem; }
+  #error p{ font-size:.88rem; color:var(--ink-soft); margin:0 0 .8rem; }
+  #error button{ font-family:'IBM Plex Mono',monospace; font-size:.75rem; background:var(--paper-2); border:1px solid var(--rule-strong); padding:.4rem .9rem; border-radius:4px; cursor:pointer; }
+
+  /* ---- Ticker ---- */
+  .ticker-box{ overflow:hidden; border:1px solid var(--rule-strong); background:var(--paper-2); margin-top:1.3rem; padding:.7rem 0; }
+  .ticker-track{ display:flex; gap:2.4rem; width:max-content; padding:0 1rem; font-family:'IBM Plex Mono',monospace; font-size:.85rem; }
+  @media (prefers-reduced-motion:no-preference){ .ticker-track{ animation:ticker 26s linear infinite; } .ticker-box:hover .ticker-track{ animation-play-state:paused; } }
+  @keyframes ticker{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+  .ticker-track b{ color:var(--ink); }
+  .up{ color:var(--good); } .down{ color:var(--bad); }
+
+  /* ---- Grid ---- */
+  .grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin-top:1.2rem; }
+  @media (max-width:800px){ .grid{ grid-template-columns:1fr 1fr; } }
+  .card{ background:var(--paper-2); border:1px solid var(--rule-strong); padding:1rem 1.1rem; }
+  .card-label{ font-family:'IBM Plex Mono',monospace; font-size:.64rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-faint); display:block; margin-bottom:.5rem; }
+  .stat{ font-family:'Fraunces',serif; font-weight:700; font-size:1.5rem; line-height:1.15; }
+  .stat small{ display:block; font-family:'IBM Plex Sans'; font-weight:400; font-size:.78rem; color:var(--ink-soft); margin-top:.35rem; }
+  .stat a{ text-decoration:none; color:var(--ink); }
+  .stat a:hover{ color:var(--accent-text); }
+
+  .donut-wrap{ display:flex; align-items:center; gap:.9rem; }
+  .donut{ width:72px; height:72px; border-radius:50%; flex:none; position:relative;
+    background:conic-gradient(var(--lean-right) 0% 20%, var(--lean-left) 20% 40%, var(--lean-center) 40% 60%, var(--lean-tech) 60% 100%); }
+  .donut::after{ content:""; position:absolute; inset:13px; border-radius:50%; background:var(--paper-2); }
+  .legend{ display:flex; flex-direction:column; gap:.3rem; font-size:.72rem; color:var(--ink-soft); }
+  .legend span{ display:flex; align-items:center; gap:.4rem; font-family:'IBM Plex Mono',monospace; }
+  .swatch{ width:9px; height:9px; border-radius:2px; display:inline-block; }
+
+  /* ---- Filters + feed ---- */
+  .feed-head{ display:flex; justify-content:space-between; align-items:baseline; flex-wrap:wrap; gap:.6rem; margin-top:2rem; }
+  .feed-head h2{ font-size:1.25rem; }
+  .tabs{ display:flex; gap:.4rem; flex-wrap:wrap; }
+  .tab{ font-family:'IBM Plex Mono',monospace; font-size:.72rem; padding:.3rem .7rem; border:1px solid var(--rule-strong); background:var(--paper); cursor:pointer; border-radius:2px; }
+  .tab.on{ background:var(--ink); color:var(--paper); border-color:var(--ink); }
+  .tab:hover:not(.on){ border-color:var(--accent); }
+
+  .feed-list{ margin-top:.9rem; border-top:1px solid var(--rule); }
+  .feed-item{ display:grid; grid-template-columns:auto 1fr auto auto; gap:.8rem; align-items:center; padding:.65rem 0; border-bottom:1px solid var(--rule); font-size:.88rem; }
+  .feed-item:hover{ background:var(--paper-3); }
+  .feed-item a{ color:var(--ink); text-decoration:none; }
+  .feed-item a:hover{ color:var(--accent-text); text-decoration:underline; }
+  .feed-item .src{ color:var(--ink-faint); font-family:'IBM Plex Mono',monospace; font-size:.7rem; white-space:nowrap; }
+  .feed-item .time{ color:var(--ink-faint); font-family:'IBM Plex Mono',monospace; font-size:.7rem; white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .badge{ display:inline-block; font-size:.66rem; font-weight:600; padding:.12rem .45rem; border-radius:3px; font-family:'IBM Plex Mono',monospace; white-space:nowrap; }
+  .b-direita{ color:var(--lean-right); background:var(--lean-right-bg); }
+  .b-esquerda{ color:var(--lean-left); background:var(--lean-left-bg); }
+  .b-centro{ color:var(--lean-center); background:var(--lean-center-bg); }
+  .b-tecnica_neutra{ color:var(--lean-tech); background:var(--lean-tech-bg); }
+  .star{ color:var(--accent-text); margin-right:.3rem; }
+
+  footer{ margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--rule); display:flex; justify-content:space-between; flex-wrap:wrap; gap:.5rem;
+    font-family:'IBM Plex Mono',monospace; font-size:.7rem; color:var(--ink-faint); }
+  footer a{ color:var(--ink-faint); }
+
+  [hidden]{ display:none!important; }
+</style>
+
+<div class="wrap">
+  <div class="masthead-top">
+    <div class="brand">
+      <h1>Sala de Redação</h1>
+      <span class="tag">Telex BR · painel ao vivo</span>
+    </div>
+    <div class="top-controls">
+      <button id="refresh-btn" type="button">↻ atualizar</button>
+      <button id="theme-toggle" type="button"><span id="theme-icon">◐</span><span id="theme-label">sistema</span></button>
+    </div>
+  </div>
+  <div class="status-strip">
+    <span><span class="pulse" id="status-pulse"></span><span id="status-text">conectando ao ciclo…</span></span>
+    <span id="countdown">—</span>
+    <span><a href="https://github.com/Hardcastro/telex-br" target="_blank" rel="noopener">github.com/Hardcastro/telex-br</a></span>
+  </div>
+
+  <div id="loading">carregando o ciclo mais recente…</div>
+  <div id="error" hidden>
+    <h3>Não consegui carregar o ciclo</h3>
+    <p id="error-detail"></p>
+    <button id="retry-btn" type="button">Tentar de novo</button>
+  </div>
+
+  <div id="content" hidden>
+    <div class="ticker-box">
+      <div class="ticker-track" id="ticker-track"></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <span class="card-label">Top view (proxy)</span>
+        <div class="stat" id="top-view-stat">—</div>
+      </div>
+      <div class="card">
+        <span class="card-label">Top réplica (proxy)</span>
+        <div class="stat" id="top-reply-stat">—</div>
+      </div>
+      <div class="card" style="grid-column:span 2;">
+        <span class="card-label">Balanço editorial do ciclo</span>
+        <div class="donut-wrap">
+          <div class="donut" role="img" id="donut"></div>
+          <div class="legend" id="legend"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feed-head">
+      <h2 id="feed-title">Feed do ciclo</h2>
+      <div class="tabs" id="tabs">
+        <button class="tab on" data-cat="todas">Todas</button>
+        <button class="tab" data-cat="politica">Política</button>
+        <button class="tab" data-cat="macroeconomia">Macro</button>
+        <button class="tab" data-cat="manchete">Manchetes</button>
+      </div>
+    </div>
+    <div class="feed-list" id="feed-list"></div>
+  </div>
+
+  <footer>
+    <span id="foot-cycle">—</span>
+    <span><a id="foot-raw" href="#" target="_blank" rel="noopener">JSON bruto do ciclo</a> · <a href="https://claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31" target="_blank" rel="noopener">blueprint técnico</a></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var DATA_URL = "https://raw.githubusercontent.com/Hardcastro/telex-br/main/data/cycles/latest.json";
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---- theme toggle ---- */
+  var root = document.documentElement;
+  var tbtn = document.getElementById('theme-toggle');
+  var ticon = document.getElementById('theme-icon');
+  var tlabel = document.getElementById('theme-label');
+  var states = ['system','light','dark'];
+  var icons = { system:'◐', light:'☀', dark:'☾' };
+  var current = 'system';
+  try { current = localStorage.getItem('salaredacao-theme') || 'system'; } catch(e){}
+  function applyTheme(t){
+    current = t;
+    if (t==='system') root.removeAttribute('data-theme'); else root.setAttribute('data-theme', t);
+    ticon.textContent = icons[t]; tlabel.textContent = t;
+    try { localStorage.setItem('salaredacao-theme', t); } catch(e){}
+  }
+  applyTheme(current);
+  tbtn.addEventListener('click', function(){ applyTheme(states[(states.indexOf(current)+1)%states.length]); });
+
+  /* ---- countdown ---- */
+  var cd = document.getElementById('countdown');
+  function fmt2(n){ return String(n).padStart(2,'0'); }
+  function tick(){
+    var now = new Date();
+    var bounds = [3,15];
+    var next = null;
+    for (var i=0;i<bounds.length;i++){
+      var c = new Date(now); c.setUTCHours(bounds[i],0,0,0);
+      if (c > now){ next = c; break; }
+    }
+    if (!next){ next = new Date(now); next.setUTCDate(next.getUTCDate()+1); next.setUTCHours(3,0,0,0); }
+    var diff = next-now;
+    var hh=Math.floor(diff/3600000), mm=Math.floor((diff%3600000)/60000), ss=Math.floor((diff%60000)/1000);
+    cd.textContent = 'Próximo ciclo em ' + fmt2(hh)+':'+fmt2(mm)+':'+fmt2(ss);
+  }
+  tick(); setInterval(tick, 1000);
+
+  /* ---- helpers ---- */
+  function brtTime(iso){
+    try { return new Date(iso).toLocaleTimeString('pt-BR', {hour:'2-digit', minute:'2-digit', timeZone:'America/Sao_Paulo'}); }
+    catch(e){ return ''; }
+  }
+  function brtFull(iso){
+    try { return new Date(iso).toLocaleString('pt-BR', {dateStyle:'short', timeStyle:'short', timeZone:'America/Sao_Paulo'}) + ' BRT'; }
+    catch(e){ return iso; }
+  }
+  var MACRO_LABELS = { selic_meta:['Selic','% a.a.'], ipca_mensal:['IPCA (mensal)','%'], cambio_usd:['USD/BRL','R$'], pib:['PIB',''], desemprego:['Desemprego','%'] };
+  var CAT_LABELS = { politica:'política', macroeconomia:'macro', manchete:'manchete' };
+  var LEAN_LABELS = { direita:'direita', esquerda:'esquerda', centro:'centro', tecnica_neutra:'técnica' };
+
+  function renderTicker(macro){
+    var track = document.getElementById('ticker-track');
+    var keys = Object.keys(macro || {});
+    if (!keys.length){ track.innerHTML = '<span>Sem indicadores macro neste ciclo.</span>'; return; }
+    var pieces = keys.map(function(k){
+      var meta = MACRO_LABELS[k] || [k, ''];
+      var val = macro[k];
+      var display = (typeof val === 'number') ? val.toLocaleString('pt-BR', {maximumFractionDigits:2}) : val;
+      return '<span><b>' + meta[0] + '</b> ' + display + ' ' + meta[1] + '</span>';
+    });
+    // duplicate for seamless loop
+    track.innerHTML = pieces.join('') + pieces.map(function(p){ return p.replace('<span>', '<span aria-hidden="true">'); }).join('');
+  }
+
+  function renderDonut(balance){
+    var total = Object.values(balance).reduce(function(a,b){return a+b;}, 0) || 1;
+    var order = ['direita','esquerda','centro','tecnica_neutra'];
+    var colors = { direita:'var(--lean-right)', esquerda:'var(--lean-left)', centro:'var(--lean-center)', tecnica_neutra:'var(--lean-tech)' };
+    var acc = 0, stops = [];
+    order.forEach(function(k){
+      var v = balance[k] || 0;
+      var start = acc/total*100, end = (acc+v)/total*100;
+      stops.push(colors[k] + ' ' + start.toFixed(1) + '% ' + end.toFixed(1) + '%');
+      acc += v;
+    });
+    document.getElementById('donut').style.background = 'conic-gradient(' + stops.join(',') + ')';
+    var legend = document.getElementById('legend');
+    legend.innerHTML = order.map(function(k){
+      return '<span><span class="swatch" style="background:'+colors[k]+'"></span>'+LEAN_LABELS[k]+' · '+(balance[k]||0)+'</span>';
+    }).join('');
+  }
+
+  var allItems = [];
+  function renderFeed(filter){
+    var list = document.getElementById('feed-list');
+    var items = filter === 'todas' ? allItems : allItems.filter(function(i){ return i.category === filter; });
+    if (!items.length){ list.innerHTML = '<p style="padding:1rem 0; color:var(--ink-faint); font-size:.85rem;">Nenhum item nessa categoria neste ciclo.</p>'; return; }
+    list.innerHTML = items.map(function(it){
+      var star = it.is_top_view ? '<span class="star" title="Top view">★</span>' : (it.is_top_reply ? '<span class="star" title="Top réplica">◆</span>' : '');
+      return '<div class="feed-item">' +
+        '<span class="badge b-'+it.source_lean+'">'+LEAN_LABELS[it.source_lean]+'</span>' +
+        '<span>'+star+'<a href="'+it.url+'" target="_blank" rel="noopener">'+it.headline+'</a></span>' +
+        '<span class="src">'+it.source+'</span>' +
+        '<span class="time">'+brtTime(it.published_at)+'</span>' +
+      '</div>';
+    }).join('');
+  }
+
+  document.getElementById('tabs').addEventListener('click', function(ev){
+    var btn = ev.target.closest('.tab');
+    if (!btn) return;
+    document.querySelectorAll('.tab').forEach(function(b){ b.classList.remove('on'); });
+    btn.classList.add('on');
+    renderFeed(btn.getAttribute('data-cat'));
+  });
+
+  function render(envelope){
+    allItems = (envelope.items || []).slice();
+    renderTicker(envelope.macro_snapshot);
+    renderDonut(envelope.editorial_balance || {});
+
+    var viewItem = allItems.find(function(i){ return i.id === (envelope.highlights||{}).top_view_id; });
+    var replyItem = allItems.find(function(i){ return i.id === (envelope.highlights||{}).top_reply_id; });
+    document.getElementById('top-view-stat').innerHTML = viewItem
+      ? '<a href="'+viewItem.url+'" target="_blank" rel="noopener">'+viewItem.headline+'</a><small>'+viewItem.source+' · cluster '+viewItem.coverage_cluster_size+'</small>'
+      : 'sem destaque';
+    document.getElementById('top-reply-stat').innerHTML = replyItem
+      ? '<a href="'+replyItem.url+'" target="_blank" rel="noopener">'+replyItem.headline+'</a><small>'+replyItem.source+' · índice '+replyItem.engagement_proxy_index+'</small>'
+      : 'sem destaque';
+
+    document.getElementById('feed-title').textContent = 'Feed do ciclo · ' + envelope.total_items + ' itens';
+    renderFeed('todas');
+    document.querySelectorAll('.tab').forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-cat')==='todas'); });
+
+    document.getElementById('foot-cycle').textContent = 'Ciclo gerado em ' + brtFull(envelope.generated_at);
+    document.getElementById('foot-raw').href = DATA_URL;
+
+    document.getElementById('status-text').textContent = 'ciclo real · ' + envelope.total_items + '/20 itens · atualizado ' + brtFull(envelope.generated_at);
+    document.getElementById('status-pulse').classList.remove('err');
+  }
+
+  function showError(msg){
+    document.getElementById('loading').hidden = true;
+    document.getElementById('content').hidden = true;
+    document.getElementById('error').hidden = false;
+    document.getElementById('error-detail').textContent = msg;
+    document.getElementById('status-text').textContent = 'falha ao carregar o ciclo';
+    document.getElementById('status-pulse').classList.add('err');
+  }
+
+  function load(){
+    document.getElementById('loading').hidden = false;
+    document.getElementById('error').hidden = true;
+    document.getElementById('content').hidden = true;
+    fetch(DATA_URL + '?t=' + Date.now())
+      .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function(envelope){
+        document.getElementById('loading').hidden = true;
+        document.getElementById('content').hidden = false;
+        render(envelope);
+      })
+      .catch(function(err){
+        showError('Não deu para buscar ' + DATA_URL + ' (' + err.message + '). O arquivo pode estar temporariamente indisponível, ou o repositório mudou de lugar.');
+      });
+  }
+
+  document.getElementById('retry-btn').addEventListener('click', load);
+  document.getElementById('refresh-btn').addEventListener('click', load);
+  load();
+  if (!reduceMotion) setInterval(load, 5 * 60 * 1000); // re-checa a cada 5min sem precisar recarregar a página
+})();
+</script>
