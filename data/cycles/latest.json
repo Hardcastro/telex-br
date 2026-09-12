@@ -1,12 +1,12 @@
 {
-  "cycle_id": "2026-09-12T00:00:40.422706-03:00",
-  "generated_at": "2026-09-12T00:00:40.422706-03:00",
+  "cycle_id": "2026-09-12T00:00:45.422365-03:00",
+  "generated_at": "2026-09-12T00:00:45.422365-03:00",
   "window_hours": 12,
   "total_items": 20,
   "macro_snapshot": {
     "selic_meta": 14.0,
     "ipca_mensal": -0.32,
-    "cambio_usd": null
+    "cambio_usd": 5.0918
   },
   "editorial_balance": {
     "direita": 4,
@@ -266,9 +266,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-pelo-tocantins-to-veja-a-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:24:07+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": true,
       "is_top_reply": true,
       "tags": [
@@ -288,9 +288,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-sergipe-se-veja-a-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:18:51+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -310,9 +310,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-sao-paulo-sp-veja-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:13:55+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -332,9 +332,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-santa-catarina-sc-veja-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:10:16+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -354,9 +354,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-roraima-rr-veja-a-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:08:38+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -376,9 +376,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-por-rondonia-ro-veja-a-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:07:10+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -398,9 +398,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-no-rio-grande-do-sul-rs-veja-a-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:05:43+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -420,9 +420,9 @@
       "category": "politica",
       "url": "https://valor.globo.com/politica/eleicoes-2026/noticia/2026/09/11/candidatos-a-senador-no-rn-veja-a-lista-das-eleicoes-2026.ghtml",
       "published_at": "2026-09-11T21:04:23+00:00",
-      "coverage_cluster_size": 51,
+      "coverage_cluster_size": 50,
       "trends_interest_score": null,
-      "engagement_proxy_index": 51.0,
+      "engagement_proxy_index": 50.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
