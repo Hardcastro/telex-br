@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import logging
 import os
+import threading
 from pathlib import Path
 
 from flask import Flask, jsonify, request, send_from_directory
@@ -38,6 +39,12 @@ DATA_DIR = PROJECT_ROOT / "data" / "cycles"
 RUN_TOKEN = os.environ.get("RUN_TOKEN")  # obrigatório em produção — ver checagem abaixo
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
 GITHUB_REPO = os.environ.get("GITHUB_REPO")  # ex.: "Hardcastro/telex-br"
+
+# Evita dois ciclos rodando ao mesmo tempo (ex.: um disparo manual caindo
+# bem no instante do cron agendado, como aconteceu de verdade em
+# 2026-09-12 00:00 BRT) — sem isso, as duas execuções competem pelo mesmo
+# processo e podem gravar data/cycles/latest.json em cima uma da outra.
+_run_lock = threading.Lock()
 
 
 @app.get("/")
@@ -65,14 +72,19 @@ def run_cycle():
     if token != RUN_TOKEN:
         return jsonify(ok=False, error="token inválido ou ausente"), 401
 
-    demo = request.args.get("demo") == "1"
-    window_hours = int(request.args.get("window", 12))
+    if not _run_lock.acquire(blocking=False):
+        return jsonify(ok=False, error="já tem um ciclo rodando agora — tenta de novo em alguns segundos"), 429
 
     try:
-        envelope = run_pipeline(demo=demo, window_hours=window_hours)
-    except Exception as exc:  # noqa: BLE001 — nunca deixar o processo do Render cair
-        logger.exception("pipeline falhou")
-        return jsonify(ok=False, error=f"pipeline falhou: {exc}"), 500
+        demo = request.args.get("demo") == "1"
+        window_hours = int(request.args.get("window", 12))
+        try:
+            envelope = run_pipeline(demo=demo, window_hours=window_hours)
+        except Exception as exc:  # noqa: BLE001 — nunca deixar o processo do Render cair
+            logger.exception("pipeline falhou")
+            return jsonify(ok=False, error=f"pipeline falhou: {exc}"), 500
+    finally:
+        _run_lock.release()
 
     sync_results = {}
     if GITHUB_TOKEN and GITHUB_REPO:
@@ -104,4 +116,4 @@ def run_cycle():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 10000))
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, threaded=True)
