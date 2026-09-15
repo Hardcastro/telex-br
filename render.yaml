@@ -9,6 +9,18 @@ services:
     plan: free
     buildCommand: "pip install -r requirements.txt -r requirements-web.txt"
     startCommand: "python -m web.app"
+    buildFilter:
+      # Sem isso, cada ciclo commitava data/cycles/latest.{json,csv} de
+      # volta no repo (ver web/github_sync.py) e o auto-deploy do Render
+      # redeployava o servico em cima disso -- 2 redeploys por ciclo, a
+      # cada 12h, so por causa de um arquivo de dados que nao muda o
+      # codigo. Foi a causa raiz de dias de falha silenciosa do gatilho
+      # (o servico ficava instavel demais entre um redeploy e outro pra
+      # responder ao cron-job.org a tempo). Configurado primeiro pelo
+      # painel do Render, replicado aqui pra sobreviver a um re-sync do
+      # blueprint.
+      ignoredPaths:
+        - data/cycles/**
     envVars:
       - key: RUN_TOKEN
         sync: false   # gere um valor aleatório qualquer — é a "senha" do endpoint
