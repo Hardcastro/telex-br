@@ -1,6 +1,6 @@
 {
-  "cycle_id": "2026-09-15T16:38:16.894224-03:00",
-  "generated_at": "2026-09-15T16:38:16.894224-03:00",
+  "cycle_id": "2026-09-15T16:55:12.886494-03:00",
+  "generated_at": "2026-09-15T16:55:12.886494-03:00",
   "window_hours": 12,
   "total_items": 20,
   "macro_snapshot": {
@@ -33,12 +33,86 @@
     }
   },
   "highlights": {
-    "top_view_id": "direita-1:55f839",
-    "top_reply_id": "direita-1:55f839"
+    "top_view_id": "direita-1:edd67f",
+    "top_reply_id": "direita-1:edd67f"
   },
   "items": [
     {
-      "id": "esquerda-1:70e48b",
+      "id": "direita-1:2f50b3",
+      "headline": "Possível blindagem a Moraes aproxima campanhas de Lula e Flávio",
+      "source": "O Antagonista",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://oantagonista.com.br/brasil/possivel-blindagem-a-moraes-aproxima-campanhas-de-lula-e-flavio/",
+      "published_at": "2026-09-15T19:52:22+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "planalto",
+        "presidente",
+        "ministro",
+        "senador"
+      ]
+    },
+    {
+      "id": "centro-1:43644e",
+      "headline": "Ex-ministro da Venezuela aliado de Maduro se declara culpado por lavar dinheiro nos Estados Unidos",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mundo/2026/09/ex-ministro-da-venezuela-aliado-de-maduro-se-declara-culpado-por-lavar-dinheiro-nos-estados-unidos.shtml",
+      "published_at": "2026-09-15T19:49:00+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministro"
+      ]
+    },
+    {
+      "id": "esquerda-1:62fcfa",
+      "headline": "Zanin acompanha Dino e forma 3 a 1 para unir casos de Moraes e Mendonça no plenário do STF",
+      "source": "Brasil 247",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://www.brasil247.com/brasil/zanin-acompanha-dino-e-forma-3-a-1-para-unir-casos-de-moraes-e-mendonca-no-plenario-do-stf/",
+      "published_at": "2026-09-15T19:38:31+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "ministro"
+      ]
+    },
+    {
+      "id": "centro-2:aeb80d",
+      "headline": "Fachin vota para manter separados casos de Moraes e Mendonça, mas Dino e Zanin divergem; colunistas do GLOBO comentam ao vivo",
+      "source": "O Globo",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://oglobo.globo.com/politica/ao-vivo/stf-julga-se-abre-investigacao-contra-alexandre-de-moraes-por-mensagens-com-vorcaro-siga-ao-vivo.ghtml",
+      "published_at": "2026-09-15T19:27:05+00:00",
+      "coverage_cluster_size": 5,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 5.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "esquerda-1:240bef",
       "headline": "Campanha de Flávio Bolsonaro é surpreendida por impedimento de Nunes Marques em julgamento no STF",
       "source": "Brasil 247",
       "source_lean": "esquerda",
@@ -56,42 +130,7 @@
       ]
     },
     {
-      "id": "infomoney:6286e5",
-      "headline": "Gilmar chama Mendonça de “boneco eleitoral” e “pixuleco” durante sessão no STF",
-      "source": "InfoMoney",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.infomoney.com.br/politica/gilmar-chama-mendonca-de-boneco-eleitoral-e-pixuleco-durante-sessao-no-stf/",
-      "published_at": "2026-09-15T19:08:21+00:00",
-      "coverage_cluster_size": 3,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 3.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "eleitoral"
-      ]
-    },
-    {
-      "id": "centro-2:2ae08c",
-      "headline": "Fachin vota para manter separados casos de Moraes e Mendonça; colunistas do GLOBO comentam ao vivo",
-      "source": "O Globo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://oglobo.globo.com/politica/ao-vivo/stf-julga-se-abre-investigacao-contra-alexandre-de-moraes-por-mensagens-com-vorcaro-siga-ao-vivo.ghtml",
-      "published_at": "2026-09-15T19:07:53+00:00",
-      "coverage_cluster_size": 6,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf"
-      ]
-    },
-    {
-      "id": "esquerda-2:424f8f",
+      "id": "esquerda-2:694928",
       "headline": "O bilhete de Mendonça a Toffoli durante sessão do STF",
       "source": "Diário do Centro do Mundo",
       "source_lean": "esquerda",
@@ -108,7 +147,27 @@
       ]
     },
     {
-      "id": "bbc-brasil:560a3c",
+      "id": "valor-economico:cbb9cf",
+      "headline": "Dino e Zanin votam para adiar julgamento de Moraes; placar está em 2 a 1",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://valor.globo.com/politica/noticia/2026/09/15/ministros-do-stf-decidem-se-processos-de-moraes-e-mendonca-devem-ser-votados-ao-mesmo-tempo.ghtml",
+      "published_at": "2026-09-15T19:02:52+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
+        "ministro"
+      ]
+    },
+    {
+      "id": "bbc-brasil:30eaac",
       "headline": "Os bate-bocas entre ministros que marcaram primeira parte da sessão sobre caso Moraes-Vorcaro no STF",
       "source": "BBC News Brasil",
       "source_lean": "tecnica_neutra",
@@ -127,33 +186,16 @@
       ]
     },
     {
-      "id": "esquerda-3:729631",
-      "headline": "Lula: não se renda ao financismo!",
-      "source": "Revista Fórum",
-      "source_lean": "esquerda",
-      "category": "macroeconomia",
-      "url": "https://revistaforum.com.br/opiniao/lula-nao-se-renda-ao-financismo/",
-      "published_at": "2026-09-15T18:48:53+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "renda"
-      ]
-    },
-    {
-      "id": "direita-1:55f839",
+      "id": "direita-1:edd67f",
       "headline": "Fachin vota para manter julgamento do caso Moraes-Vorcaro",
       "source": "O Antagonista",
       "source_lean": "direita",
       "category": "politica",
       "url": "https://oantagonista.com.br/brasil/fachin-vota-para-manter-julgamento-do-caso-moraes-vorcaro/",
       "published_at": "2026-09-15T18:47:02+00:00",
-      "coverage_cluster_size": 6,
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": true,
       "is_top_reply": true,
       "tags": [
@@ -164,16 +206,16 @@
       ]
     },
     {
-      "id": "cnn-brasil:3f81b7",
+      "id": "cnn-brasil:014ae5",
       "headline": "Fachin vota para manter casos Moraes e Mendonça separados no STF",
       "source": "CNN Brasil",
       "source_lean": "tecnica_neutra",
       "category": "politica",
       "url": "https://www.cnnbrasil.com.br/politica/fachin-vota-para-manter-casos-moraes-e-mendonca-separados-no-stf/",
       "published_at": "2026-09-15T18:44:08+00:00",
-      "coverage_cluster_size": 6,
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -182,7 +224,7 @@
       ]
     },
     {
-      "id": "metropoles:f96d04",
+      "id": "metropoles:8eca58",
       "headline": "STF: campanha de Flávio é surpreendida com impedimento de Nunes Marques",
       "source": "Metrópoles",
       "source_lean": "tecnica_neutra",
@@ -200,35 +242,16 @@
       ]
     },
     {
-      "id": "direita-1:2dc8d1",
-      "headline": "Dino recomenda a Fachin vídeo do humorista Fábio Porchat",
-      "source": "O Antagonista",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://oantagonista.com.br/brasil/dino-recomenda-a-fachin-video-do-humorista-fabio-porchat/",
-      "published_at": "2026-09-15T18:36:04+00:00",
-      "coverage_cluster_size": 4,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "supremo tribunal",
-        "presidente",
-        "ministro"
-      ]
-    },
-    {
-      "id": "g1:6d4771",
+      "id": "g1:0c07b9",
       "headline": "Crise no STF: na retomada da sessão, Fachin vota para manter casos de Moraes e Mendonça separados; Dino e Zanin divergem",
       "source": "G1",
       "source_lean": "tecnica_neutra",
       "category": "politica",
       "url": "https://g1.globo.com/politica/noticia/2026/09/15/na-retomada-de-julgamento-fachin-vota-para-rejeitar-pedido-para-adiar-julgamento-de-moraes-e-de-analisar-caso-com-o-de-mendonca.ghtml",
       "published_at": "2026-09-15T18:35:56+00:00",
-      "coverage_cluster_size": 6,
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -240,16 +263,16 @@
       ]
     },
     {
-      "id": "centro-2:c63184",
-      "headline": "Fachin vota para manter separados casos de Moraes e Mendonça, e Dino diverge; placar está em 1 a 1",
+      "id": "centro-2:f26ce3",
+      "headline": "Dino e Zanin votam por proposta de Gilmar de julgar casos de Moraes e Mendonça em conjunto, e Fachin é contra; placar está em 3 a 1",
       "source": "O Globo",
       "source_lean": "centro",
       "category": "politica",
       "url": "https://oglobo.globo.com/politica/noticia/2026/09/15/fachin-vota.ghtml",
       "published_at": "2026-09-15T18:34:08+00:00",
-      "coverage_cluster_size": 6,
+      "coverage_cluster_size": 4,
       "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
+      "engagement_proxy_index": 4.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -268,7 +291,7 @@
       ]
     },
     {
-      "id": "esquerda-2:2680aa",
+      "id": "esquerda-2:3acf52",
       "headline": "Vorcaro recebeu convite para evento de Mendonça com “poucos convidados”, mostram mensagens",
       "source": "Diário do Centro do Mundo",
       "source_lean": "esquerda",
@@ -285,7 +308,7 @@
       ]
     },
     {
-      "id": "centro-1:e58cf6",
+      "id": "centro-1:ec4c5c",
       "headline": "Sessão no STF tem bate-boca e ofensas entre ministros, de 'aprendiz de feiticeiro' a 'leviano'; veja vídeo",
       "source": "Folha de S.Paulo",
       "source_lean": "centro",
@@ -303,7 +326,24 @@
       ]
     },
     {
-      "id": "direita-4:606e62",
+      "id": "cnn-brasil:49e646",
+      "headline": "Impedimento de Kassio surpreende campanha de Flávio Bolsonaro",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.cnnbrasil.com.br/politica/impedimento-de-kassio-surpreende-campanha-de-flavio-bolsonaro/",
+      "published_at": "2026-09-15T17:40:44+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministro"
+      ]
+    },
+    {
+      "id": "direita-4:d4c682",
       "headline": "Prefeito de cidade natal de Kimi Antonelli confirma homenagem ao piloto",
       "source": "IstoÉ",
       "source_lean": "direita",
@@ -320,7 +360,7 @@
       ]
     },
     {
-      "id": "direita-4:83e0aa",
+      "id": "direita-4:601fa8",
       "headline": "Amizade com Melania teria aberto portas da Casa Branca para Joesley Batista, diz mídi",
       "source": "IstoÉ",
       "source_lean": "direita",
@@ -337,35 +377,16 @@
       ]
     },
     {
-      "id": "cnn-brasil:56bc78",
-      "headline": "“Não tive tempo”, diz Fachin a Dino ao responder se viu vídeo de Porchat",
-      "source": "CNN Brasil",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.cnnbrasil.com.br/politica/nao-tive-tempo-diz-fachin-a-dino-ao-responder-se-viu-video-de-porchat/",
-      "published_at": "2026-09-15T16:58:43+00:00",
-      "coverage_cluster_size": 4,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "supremo tribunal",
-        "ministro"
-      ]
-    },
-    {
-      "id": "bbc-brasil:b61267",
+      "id": "bbc-brasil:80cd9b",
       "headline": "'Vossa Excelência viu o vídeo do Porchat?', perguntou Flávio Dino ao ministro Edson Fachin",
       "source": "BBC News Brasil",
       "source_lean": "tecnica_neutra",
       "category": "politica",
       "url": "https://www.bbc.co.uk/programmes/p0p9rd89?at_medium=RSS&at_campaign=rss",
       "published_at": "2026-09-15T16:23:05+00:00",
-      "coverage_cluster_size": 4,
+      "coverage_cluster_size": 2,
       "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
+      "engagement_proxy_index": 2.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -374,7 +395,7 @@
       ]
     },
     {
-      "id": "valor-economico:16f5df",
+      "id": "valor-economico:e4f1a2",
       "headline": "Leitura de relatório e bate-boca entre ministros: como foi a primeira parte da sessão do STF para julgar Moraes",
       "source": "Valor Econômico",
       "source_lean": "tecnica_neutra",
@@ -395,23 +416,6 @@
         "tse",
         "tribunal superior eleitoral",
         "pgr"
-      ]
-    },
-    {
-      "id": "centro-1:421ce5",
-      "headline": "Lula sanciona incentivo fiscal de R$ 5 bi para data centers e veta jabuti de emendas",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/09/lula-sanciona-incentivo-fiscal-de-r-5-bilhoes-para-data-centers.shtml",
-      "published_at": "2026-09-15T15:36:00+00:00",
-      "coverage_cluster_size": 3,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 3.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "presidente"
       ]
     }
   ]
