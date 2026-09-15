@@ -1,12 +1,12 @@
 {
-  "cycle_id": "2026-09-12T08:35:49.378878-03:00",
-  "generated_at": "2026-09-12T08:35:49.378878-03:00",
+  "cycle_id": "2026-09-15T16:38:16.894224-03:00",
+  "generated_at": "2026-09-15T16:38:16.894224-03:00",
   "window_hours": 12,
   "total_items": 20,
   "macro_snapshot": {
     "selic_meta": 14.0,
     "ipca_mensal": -0.32,
-    "cambio_usd": 5.0918
+    "cambio_usd": 5.149
   },
   "editorial_balance": {
     "direita": 4,
@@ -33,143 +33,320 @@
     }
   },
   "highlights": {
-    "top_view_id": "g1:642a06",
-    "top_reply_id": "g1:642a06"
+    "top_view_id": "direita-1:55f839",
+    "top_reply_id": "direita-1:55f839"
   },
   "items": [
     {
-      "id": "esquerda-1:4f195a",
-      "headline": "Gilmar cobra acesso aos dados do celular de Vorcaro e pede que Fachin acione a PF caso Mendonça recuse",
+      "id": "esquerda-1:70e48b",
+      "headline": "Campanha de Flávio Bolsonaro é surpreendida por impedimento de Nunes Marques em julgamento no STF",
       "source": "Brasil 247",
       "source_lean": "esquerda",
       "category": "politica",
-      "url": "https://www.brasil247.com/brasil/gilmar-cobra-acesso-aos-dados-do-celular-de-vorcaro-e-pede-que-fachin-acione-a-pf-caso-mendonca-recuse/",
-      "published_at": "2026-09-12T11:34:14+00:00",
+      "url": "https://www.brasil247.com/brasil/campanha-de-flavio-bolsonaro-e-surpreendida-por-impedimento-de-nunes-marques-em-julgamento-no-stf/",
+      "published_at": "2026-09-15T19:20:19+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "ministro"
+      ]
+    },
+    {
+      "id": "infomoney:6286e5",
+      "headline": "Gilmar chama Mendonça de “boneco eleitoral” e “pixuleco” durante sessão no STF",
+      "source": "InfoMoney",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.infomoney.com.br/politica/gilmar-chama-mendonca-de-boneco-eleitoral-e-pixuleco-durante-sessao-no-stf/",
+      "published_at": "2026-09-15T19:08:21+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "eleitoral"
+      ]
+    },
+    {
+      "id": "centro-2:2ae08c",
+      "headline": "Fachin vota para manter separados casos de Moraes e Mendonça; colunistas do GLOBO comentam ao vivo",
+      "source": "O Globo",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://oglobo.globo.com/politica/ao-vivo/stf-julga-se-abre-investigacao-contra-alexandre-de-moraes-por-mensagens-com-vorcaro-siga-ao-vivo.ghtml",
+      "published_at": "2026-09-15T19:07:53+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "esquerda-2:424f8f",
+      "headline": "O bilhete de Mendonça a Toffoli durante sessão do STF",
+      "source": "Diário do Centro do Mundo",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://www.diariodocentrodomundo.com.br/o-bilhete-de-mendonca-a-toffoli-durante-sessao-do-stf/",
+      "published_at": "2026-09-15T19:03:59+00:00",
       "coverage_cluster_size": 2,
       "trends_interest_score": null,
       "engagement_proxy_index": 2.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "ministro"
+        "stf"
       ]
     },
     {
-      "id": "direita-1:4c87fb",
-      "headline": "“Lula, Xandão e Flávio vão ter que responder pelos crimes deles”, diz Renan",
-      "source": "O Antagonista",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://oantagonista.com.br/brasil/lula-xandao-e-flavio-vao-ter-que-responder-pelos-crimes-deles-diz-renan/",
-      "published_at": "2026-09-12T11:20:06+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "supremo tribunal",
-        "candidato"
-      ]
-    },
-    {
-      "id": "poder360:1f3ba9",
-      "headline": "“Vou até o fim com isso”, disse Vorcaro sobre Dark Horse",
-      "source": "Poder360",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.poder360.com.br/poder-justica/vou-ate-o-fim-com-isso-disse-vorcaro-sobre-dark-horse/",
-      "published_at": "2026-09-12T11:03:56+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "presidente"
-      ]
-    },
-    {
-      "id": "centro-3:b8aefe",
-      "headline": "A linha do tempo das conversas de Flávio Bolsonaro e Vorcaro e o financiamento de ‘Dark Horse’",
-      "source": "Veja",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://veja.abril.com.br/brasil/a-linha-do-tempo-das-conversas-de-flavio-bolsonaro-e-vorcaro-e-o-financiamento-de-dark-horse/",
-      "published_at": "2026-09-12T11:01:33+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senador"
-      ]
-    },
-    {
-      "id": "centro-3:f8bbc7",
-      "headline": "Na reta final, disputa acirrada entre Lula e Flávio acende alerta na campanha petista",
-      "source": "Veja",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://veja.abril.com.br/politica/na-reta-final-disputa-acirrada-entre-lula-e-flavio-acende-alerta-na-campanha-petista/",
-      "published_at": "2026-09-12T11:00:43+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "presidente"
-      ]
-    },
-    {
-      "id": "bbc-brasil:aac289",
-      "headline": "Flávio Bolsonaro e 'Dark Horse': 6 perguntas para entender inquérito — e o que falta ser esclarecido",
+      "id": "bbc-brasil:560a3c",
+      "headline": "Os bate-bocas entre ministros que marcaram primeira parte da sessão sobre caso Moraes-Vorcaro no STF",
       "source": "BBC News Brasil",
       "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://www.bbc.com/portuguese/articles/crr4jg9pveeo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-09-12T10:53:10+00:00",
-      "coverage_cluster_size": 1,
+      "url": "https://www.bbc.com/portuguese/articles/cm4gv32zgljeo?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-15T18:49:29+00:00",
+      "coverage_cluster_size": 4,
       "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 4.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "ministro",
-        "inquerito"
+        "stf",
+        "presidente",
+        "ministro"
       ]
     },
     {
-      "id": "direita-1:ada87e",
-      "headline": "A capital mundial das árvores premiada 7 anos consecutivos: a cidade mais verde do Brasil que entrou no top 5 das capitais em qualidade de vida e tem 91% das ruas cobertas por sombra",
-      "source": "O Antagonista",
-      "source_lean": "direita",
+      "id": "esquerda-3:729631",
+      "headline": "Lula: não se renda ao financismo!",
+      "source": "Revista Fórum",
+      "source_lean": "esquerda",
       "category": "macroeconomia",
-      "url": "https://oantagonista.com.br/ladooa/turismo/a-capital-mundial-das-arvores-premiada-7-anos-consecutivos-a-cidade-mais-verde-do-brasil-que-entrou-no-top-5-das-capitais-em-qualidade-de-vida-e-tem-91-das-ruas-cobertas-por-sombra/",
-      "published_at": "2026-09-12T10:43:00+00:00",
-      "coverage_cluster_size": 1,
+      "url": "https://revistaforum.com.br/opiniao/lula-nao-se-renda-ao-financismo/",
+      "published_at": "2026-09-15T18:48:53+00:00",
+      "coverage_cluster_size": 2,
       "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 2.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "orcamento"
+        "renda"
       ]
     },
     {
-      "id": "direita-1:584ce8",
-      "headline": "Ex-chefe do BC pede a Mendonça retirada de tornozeleira",
+      "id": "direita-1:55f839",
+      "headline": "Fachin vota para manter julgamento do caso Moraes-Vorcaro",
       "source": "O Antagonista",
       "source_lean": "direita",
       "category": "politica",
-      "url": "https://oantagonista.com.br/brasil/ex-chefe-do-bc-pede-a-mendonca-retirada-de-tornozeleira/",
-      "published_at": "2026-09-12T10:27:06+00:00",
+      "url": "https://oantagonista.com.br/brasil/fachin-vota-para-manter-julgamento-do-caso-moraes-vorcaro/",
+      "published_at": "2026-09-15T18:47:02+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": true,
+      "is_top_reply": true,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
+        "ministro"
+      ]
+    },
+    {
+      "id": "cnn-brasil:3f81b7",
+      "headline": "Fachin vota para manter casos Moraes e Mendonça separados no STF",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.cnnbrasil.com.br/politica/fachin-vota-para-manter-casos-moraes-e-mendonca-separados-no-stf/",
+      "published_at": "2026-09-15T18:44:08+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "presidente"
+      ]
+    },
+    {
+      "id": "metropoles:f96d04",
+      "headline": "STF: campanha de Flávio é surpreendida com impedimento de Nunes Marques",
+      "source": "Metrópoles",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.metropoles.com/brasil/stf-campanha-de-flavio-e-surpreendida-com-impedimento-de-nunes-marques",
+      "published_at": "2026-09-15T18:44:03+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "ministro"
+      ]
+    },
+    {
+      "id": "direita-1:2dc8d1",
+      "headline": "Dino recomenda a Fachin vídeo do humorista Fábio Porchat",
+      "source": "O Antagonista",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://oantagonista.com.br/brasil/dino-recomenda-a-fachin-video-do-humorista-fabio-porchat/",
+      "published_at": "2026-09-15T18:36:04+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "supremo tribunal",
+        "presidente",
+        "ministro"
+      ]
+    },
+    {
+      "id": "g1:6d4771",
+      "headline": "Crise no STF: na retomada da sessão, Fachin vota para manter casos de Moraes e Mendonça separados; Dino e Zanin divergem",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://g1.globo.com/politica/noticia/2026/09/15/na-retomada-de-julgamento-fachin-vota-para-rejeitar-pedido-para-adiar-julgamento-de-moraes-e-de-analisar-caso-com-o-de-mendonca.ghtml",
+      "published_at": "2026-09-15T18:35:56+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
+        "ministro",
+        "pgr"
+      ]
+    },
+    {
+      "id": "centro-2:c63184",
+      "headline": "Fachin vota para manter separados casos de Moraes e Mendonça, e Dino diverge; placar está em 1 a 1",
+      "source": "O Globo",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://oglobo.globo.com/politica/noticia/2026/09/15/fachin-vota.ghtml",
+      "published_at": "2026-09-15T18:34:08+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
+        "ministerio",
+        "ministro",
+        "eleitoral",
+        "candidato",
+        "tse",
+        "pgr",
+        "procurador-geral",
+        "inquerito",
+        "delacao premiada"
+      ]
+    },
+    {
+      "id": "esquerda-2:2680aa",
+      "headline": "Vorcaro recebeu convite para evento de Mendonça com “poucos convidados”, mostram mensagens",
+      "source": "Diário do Centro do Mundo",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://www.diariodocentrodomundo.com.br/vorcaro-recebeu-convite-para-evento-de-mendonca-com-poucos-convidados-mostram-mensagens/",
+      "published_at": "2026-09-15T17:59:07+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "ministro"
+      ]
+    },
+    {
+      "id": "centro-1:e58cf6",
+      "headline": "Sessão no STF tem bate-boca e ofensas entre ministros, de 'aprendiz de feiticeiro' a 'leviano'; veja vídeo",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/09/sessao-no-stf-tem-bate-boca-e-ofensas-entre-ministros-de-aprendiz-de-feiticeiro-a-leviano-veja-video.shtml",
+      "published_at": "2026-09-15T17:46:00+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal"
+      ]
+    },
+    {
+      "id": "direita-4:606e62",
+      "headline": "Prefeito de cidade natal de Kimi Antonelli confirma homenagem ao piloto",
+      "source": "IstoÉ",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://istoe.com.br/bolonha-planeja-homenagem-kimi-antonelli-f1",
+      "published_at": "2026-09-15T17:26:00+00:00",
       "coverage_cluster_size": 1,
       "trends_interest_score": null,
       "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "prefeito"
+      ]
+    },
+    {
+      "id": "direita-4:83e0aa",
+      "headline": "Amizade com Melania teria aberto portas da Casa Branca para Joesley Batista, diz mídi",
+      "source": "IstoÉ",
+      "source_lean": "direita",
+      "category": "macroeconomia",
+      "url": "https://istoe.com.br/amizade-melania-trump-joesley-batista-intrigua-eua",
+      "published_at": "2026-09-15T17:01:00+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "importacao"
+      ]
+    },
+    {
+      "id": "cnn-brasil:56bc78",
+      "headline": "“Não tive tempo”, diz Fachin a Dino ao responder se viu vídeo de Porchat",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.cnnbrasil.com.br/politica/nao-tive-tempo-diz-fachin-a-dino-ao-responder-se-viu-video-de-porchat/",
+      "published_at": "2026-09-15T16:58:43+00:00",
+      "coverage_cluster_size": 4,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 4.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -179,84 +356,31 @@
       ]
     },
     {
-      "id": "esquerda-3:5437e4",
-      "headline": "PF põe em xeque versão de Flávio Bolsonaro sobre fundo nos EUA e “Dark Horse”",
-      "source": "Revista Fórum",
-      "source_lean": "esquerda",
+      "id": "bbc-brasil:b61267",
+      "headline": "'Vossa Excelência viu o vídeo do Porchat?', perguntou Flávio Dino ao ministro Edson Fachin",
+      "source": "BBC News Brasil",
+      "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://revistaforum.com.br/politica/pf-versao-flavio-bolsonaro-fundo-dark-horse/",
-      "published_at": "2026-09-12T10:20:37+00:00",
-      "coverage_cluster_size": 2,
+      "url": "https://www.bbc.co.uk/programmes/p0p9rd89?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-15T16:23:05+00:00",
+      "coverage_cluster_size": 4,
       "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "senador"
-      ]
-    },
-    {
-      "id": "esquerda-2:cc0abe",
-      "headline": "Na GloboNews, Natuza denuncia lentidão de Mendonça no caso “Dark Horse”: “Não fez nada”",
-      "source": "Diário do Centro do Mundo",
-      "source_lean": "esquerda",
-      "category": "politica",
-      "url": "https://www.diariodocentrodomundo.com.br/na-globonews-natuza-denuncia-lentidao-de-mendonca-no-caso-dark-horse/",
-      "published_at": "2026-09-12T10:17:59+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
+      "engagement_proxy_index": 4.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
         "stf",
-        "supremo tribunal",
-        "ministro",
-        "eleicoes"
+        "ministro"
       ]
     },
     {
-      "id": "esquerda-2:c53d8b",
-      "headline": "Estadão: Flávio Bolsonaro vive ‘falência ética’ e não está qualificado para governar",
-      "source": "Diário do Centro do Mundo",
-      "source_lean": "esquerda",
-      "category": "politica",
-      "url": "https://www.diariodocentrodomundo.com.br/estadao-flavio-bolsonaro-falencia-etica-nao-qualificado-governar/",
-      "published_at": "2026-09-12T10:11:27+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "candidato"
-      ]
-    },
-    {
-      "id": "direita-1:07d5f2",
-      "headline": "Aposentado continua recebendo IPTU de imóvel que vendeu em 2011",
-      "source": "O Antagonista",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://oantagonista.com.br/ladooa/entretenimento/aposentado-continua-recebendo-iptu-de-imovel-que-vendeu-em-2011/",
-      "published_at": "2026-09-12T10:03:00+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "prefeitura"
-      ]
-    },
-    {
-      "id": "valor-economico:c49b39",
-      "headline": "Defesa de Flávio tentou 4 vezes tirar de Dino investigação sobre \"Dark Horse\"",
+      "id": "valor-economico:16f5df",
+      "headline": "Leitura de relatório e bate-boca entre ministros: como foi a primeira parte da sessão do STF para julgar Moraes",
       "source": "Valor Econômico",
       "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://valor.globo.com/politica/noticia/2026/09/12/defesa-de-flvio-tentou-4-vezes-tirar-de-dino-investigao-sobre-dark-horse.ghtml",
-      "published_at": "2026-09-12T06:47:54+00:00",
+      "url": "https://valor.globo.com/politica/noticia/2026/09/15/leitura-de-relatorio-e-bate-boca-entre-ministros-como-foi-a-primeira-etapa-da-sessao-do-stf-para-julgar-moraes.ghtml",
+      "published_at": "2026-09-15T16:06:17+00:00",
       "coverage_cluster_size": 4,
       "trends_interest_score": null,
       "engagement_proxy_index": 4.0,
@@ -267,136 +391,26 @@
         "supremo tribunal",
         "presidente",
         "ministro",
-        "candidato",
-        "senador"
+        "eleitoral",
+        "tse",
+        "tribunal superior eleitoral",
+        "pgr"
       ]
     },
     {
-      "id": "metropoles:6904eb",
-      "headline": "Produtor de Dark Horse se negou a entregar documentos à PF",
-      "source": "Metrópoles",
-      "source_lean": "tecnica_neutra",
+      "id": "centro-1:421ce5",
+      "headline": "Lula sanciona incentivo fiscal de R$ 5 bi para data centers e veta jabuti de emendas",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
       "category": "politica",
-      "url": "https://www.metropoles.com/brasil/produtor-de-dark-horse-se-negou-a-entregar-documentos-a-pf",
-      "published_at": "2026-09-12T05:16:26+00:00",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://c-level.folha.uol.com.br/negocios/2026/09/lula-sanciona-incentivo-fiscal-de-r-5-bilhoes-para-data-centers.shtml",
+      "published_at": "2026-09-15T15:36:00+00:00",
       "coverage_cluster_size": 3,
       "trends_interest_score": null,
       "engagement_proxy_index": 3.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "presidente"
-      ]
-    },
-    {
-      "id": "valor-economico:c77df7",
-      "headline": "Relatório da PF sobre “Dark Horse” mostra mensagens de Flávio cobrando Vorcaro",
-      "source": "Valor Econômico",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://valor.globo.com/politica/noticia/2026/09/12/relatrio-da-pf-sobre-dark-horse-mostra-mensagens-de-flvio-cobrando-vorcaro.ghtml",
-      "published_at": "2026-09-12T04:21:37+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "supremo tribunal",
-        "presidencia da republica",
-        "ministro",
-        "candidato",
-        "deputado",
-        "senador"
-      ]
-    },
-    {
-      "id": "g1:642a06",
-      "headline": "Previsão do tempo hoje para Brasília (DF): sol com algumas nuvens; não chove",
-      "source": "G1",
-      "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://g1.globo.com/df/distrito-federal/previsao-do-tempo/noticia/2026/09/12/previsao-do-tempo-hoje-para-brasilia-df-sol-com-algumas-nuvens-nao-chove.ghtml",
-      "published_at": "2026-09-12T04:07:39+00:00",
-      "coverage_cluster_size": 21,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 21.0,
-      "is_top_view": true,
-      "is_top_reply": true,
-      "tags": [
-        "real"
-      ]
-    },
-    {
-      "id": "g1:8b1f3f",
-      "headline": "Previsão do tempo hoje para São Paulo (SP): tempo chuvoso durante o dia e à noite",
-      "source": "G1",
-      "source_lean": "tecnica_neutra",
-      "category": "macroeconomia",
-      "url": "https://g1.globo.com/sp/sao-paulo/previsao-do-tempo/noticia/2026/09/12/previsao-do-tempo-hoje-para-sao-paulo-sp-tempo-chuvoso-durante-o-dia-e-a-noite.ghtml",
-      "published_at": "2026-09-12T04:07:15+00:00",
-      "coverage_cluster_size": 21,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 21.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "real"
-      ]
-    },
-    {
-      "id": "centro-1:14c55b",
-      "headline": "Defesa de Flávio fez 4 pedidos seguidos para caso 'Dark Horse' ficar com Mendonça em vez de Dino",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/09/defesa-de-flavio-fez-4-pedidos-seguidos-para-caso-dark-horse-ficar-com-mendonca-em-vez-de-dino.shtml",
-      "published_at": "2026-09-12T03:28:00+00:00",
-      "coverage_cluster_size": 4,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "supremo tribunal",
-        "ministro"
-      ]
-    },
-    {
-      "id": "metropoles:9d98d1",
-      "headline": "“Vou até o fim com isso”, disse Vorcaro sobre financiamento de Dark Horse",
-      "source": "Metrópoles",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.metropoles.com/brasil/vou-ate-o-fim-com-isso-disse-vorcaro-sobre-financiamento-de-dark-horse",
-      "published_at": "2026-09-12T02:28:26+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf"
-      ]
-    },
-    {
-      "id": "centro-1:34c9c9",
-      "headline": "Quebra de sigilo do Master expõe Flávio Bolsonaro investigado e gera nova troca de ataques no STF",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/09/quebra-de-sigilo-do-master-expoe-flavio-bolsonaro-investigado-e-gera-nova-troca-de-ataques-no-stf.shtml",
-      "published_at": "2026-09-12T02:00:00+00:00",
-      "coverage_cluster_size": 3,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 3.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "supremo tribunal",
         "presidente"
       ]
     }
