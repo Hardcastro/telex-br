@@ -6,6 +6,15 @@ respeitando um equilíbrio editorial fixo (4 direita · 4 esquerda · 4 centro �
 maior repercussão (proxy) do ciclo. Implementação do blueprint técnico
 publicado em [claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31](https://claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31).
 
+## Painel ao vivo
+
+**[telex-br.vercel.app](https://telex-br.vercel.app)** — lê `data/cycles/latest.json`
+direto do GitHub no navegador de quem abrir, então sempre mostra o ciclo mais
+recente. Site 100% estático (`dashboard-live.html` + `vercel.json`), sem
+servidor próprio nem build — a Vercel só serve o HTML. O mesmo arquivo
+também responde em `https://telex-br-trigger.onrender.com/dashboard` (espelho,
+servido pelo Render — ver seção de gatilho abaixo).
+
 ## Rodando agora, em 2 minutos
 
 ```bash
@@ -72,7 +81,9 @@ tests/          smoke test em cima do modo --demo
 web/
   app.py         endpoint HTTP que roda o pipeline (gatilho via Render)
   github_sync.py commita latest.json/latest.csv de volta no repo via API
-render.yaml     blueprint do Render (deploy do web/app.py)
+dashboard-live.html   painel público (fetch client-side do latest.json — ver "Painel ao vivo")
+render.yaml     blueprint do Render (deploy do web/app.py) + buildFilter (ver seção de gatilho)
+vercel.json     serve dashboard-live.html como site estático na Vercel
 .github/workflows/cycle.yml   disparo manual (cron original, hoje pausado — ver seção de gatilho)
 ```
 
@@ -154,6 +165,20 @@ exigem confirmar login/e-mail no navegador):
 O serviço do Render "dorme" depois de 15min sem uso e leva ~1min pra
 acordar na chamada seguinte — sem problema aqui, já que só é chamado 2x/dia.
 
+**Pegadinha real que já aconteceu:** `web/github_sync.py` commita
+`data/cycles/latest.{json,csv}` de volta no repo a cada ciclo, e por padrão
+o Render redeploya o serviço inteiro a cada push no `main` — ou seja, 2
+redeploys completos a cada ciclo (json + csv = 2 commits), só por causa de
+um arquivo de dados, sem nenhuma mudança de código. Isso deixou o gatilho
+automático falhando silenciosamente por 3 dias (o cron-job.org batia no
+serviço bem no meio de um redeploy e recebia `x-render-routing: no-deploy`
+do Render, sem nem chegar no Flask). `render.yaml` já vem com
+`buildFilter.ignoredPaths: ["data/cycles/**"]` pra evitar isso — se algum
+dia parecer que o gatilho parou de novo, o primeiro lugar pra olhar é
+**Render → Deploys**: se tiver um deploy novo por ciclo, o filtro não está
+valendo (confere se o serviço ainda está "Blueprint managed" e se o
+`render.yaml` do repo bate com o que está configurado no painel).
+
 **Se resolver o problema de faturamento do GitHub depois:** o workflow
 `.github/workflows/cycle.yml` continua no repo, só sem o `schedule:` (fica
 só como disparo manual pela aba Actions). Para voltar a usá-lo como cron,
@@ -168,6 +193,27 @@ GitHub.
 100% gratuito nos dois desenhos: RSS + BCB/IBGE (coleta), Render + cron-job.org
 *ou* GitHub Actions (gatilho), Power BI free (visualização). Nenhuma peça
 paga é necessária para o ciclo de 12h funcionar de ponta a ponta.
+
+## Publicar o painel na Vercel
+
+Já está publicado em [telex-br.vercel.app](https://telex-br.vercel.app) — isto
+aqui é só o passo a passo caso precise recriar:
+
+1. [vercel.com/new](https://vercel.com/new) → **Import Git Repository** →
+   `Hardcastro/telex-br`.
+2. **Application Preset: `Other`** (não deixa cair em "Python" — o preset
+   errado tenta buildar o pipeline como app, e aqui é só um HTML estático).
+3. Zero variáveis de ambiente — apague qualquer uma que a Vercel sugerir
+   (ela escaneia `.env.example` e sugere as chaves de lá, mas
+   `dashboard-live.html` não usa nenhuma; são só do lado do pipeline).
+4. Deploy. `vercel.json` já redireciona toda rota pra `dashboard-live.html`.
+
+Sem build step: é puro HTML/CSS/JS buscando `latest.json` direto do GitHub
+no navegador. Um push no repo só atualiza a Vercel se mudar
+`dashboard-live.html` ou `vercel.json` — os commits de ciclo
+(`data/cycles/**`) não disparam rebuild aqui por padrão (a Vercel só
+redeploya em mudança de arquivo servido), mas o painel mostra dado novo de
+qualquer forma, já que o fetch é em tempo de carregamento, não em build.
 
 ## Limitações conhecidas / próximos passos
 
