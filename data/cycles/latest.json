@@ -1,6 +1,6 @@
 {
-  "cycle_id": "2026-09-15T20:10:26.646397-03:00",
-  "generated_at": "2026-09-15T20:10:26.646397-03:00",
+  "cycle_id": "2026-09-15T20:11:45.233499-03:00",
+  "generated_at": "2026-09-15T20:11:45.233499-03:00",
   "window_hours": 12,
   "total_items": 57,
   "macro_snapshot": {
@@ -169,29 +169,6 @@
       "is_top_view": false,
       "is_top_reply": false,
       "tags": []
-    },
-    {
-      "id": "g1:c50dc9",
-      "headline": "Eleições 2026: veja como foi o 31º dia de campanha dos candidatos ao governo do Amapá",
-      "source": "G1",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://g1.globo.com/ap/amapa/eleicoes/2026/noticia/2026/09/15/eleicoes-2026-veja-como-foi-o-31o-dia-de-campanha-dos-candidatos-ao-governo-do-amapa.ghtml",
-      "published_at": "2026-09-15T23:04:43+00:00",
-      "coverage_cluster_size": 6,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "eleicoes",
-        "eleitoral",
-        "candidato",
-        "turno",
-        "primeiro turno",
-        "segundo turno",
-        "campanha eleitoral"
-      ]
     },
     {
       "id": "cnn-brasil:f88aef",
@@ -523,9 +500,9 @@
       "category": "politica",
       "url": "https://g1.globo.com/pb/paraiba/eleicoes/2026/noticia/2026/09/15/veja-como-foi-o-dia-dos-candidatos-ao-governo-da-paraiba-nesta-terca-feira-15.ghtml",
       "published_at": "2026-09-15T22:29:24+00:00",
-      "coverage_cluster_size": 6,
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 6.0,
+      "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -633,6 +610,37 @@
       "tags": [
         "inflacao",
         "fed"
+      ]
+    },
+    {
+      "id": "g1:e1bbb8",
+      "headline": "Eleições 2026: veja como foi a agenda dos candidatos ao governo do Pará desta segunda,14, e terça,15",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://g1.globo.com/pa/para/eleicoes/2026/noticia/2026/09/15/eleicoes-2026-veja-como-foi-a-agenda-dos-candidatos-ao-governo-do-para-desta-segunda14-e-terca15.ghtml",
+      "published_at": "2026-09-15T22:08:36+00:00",
+      "coverage_cluster_size": 5,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 5.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado",
+        "presidencia da republica",
+        "eleicoes",
+        "eleitoral",
+        "candidato",
+        "candidata",
+        "turno",
+        "primeiro turno",
+        "segundo turno",
+        "partido",
+        "senador",
+        "governador",
+        "tse",
+        "tribunal superior eleitoral",
+        "campanha eleitoral"
       ]
     },
     {
@@ -872,6 +880,21 @@
       ]
     },
     {
+      "id": "centro-3:117186",
+      "headline": "‘Cangaço Novo’ é cancelada após duas temporadas",
+      "source": "Veja",
+      "source_lean": "centro",
+      "category": "manchete",
+      "url": "https://veja.abril.com.br/cultura/cangaco-novo-e-cancelada-apos-duas-temporadas/",
+      "published_at": "2026-09-15T21:07:48+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
       "id": "esquerda-3:8f9e04",
       "headline": "Flávio Dino pede vista após bate-boca entre Mendonça e Gilmar",
       "source": "Revista Fórum",
@@ -1040,21 +1063,6 @@
         "inquerito",
         "delacao premiada"
       ]
-    },
-    {
-      "id": "centro-6:986b8f",
-      "headline": "'Avenida Brasil 2' tem elenco confirmado pela Globo",
-      "source": "A Tarde (BA)",
-      "source_lean": "centro",
-      "category": "manchete",
-      "url": "https://atarde.com.br/televisao/avenida-brasil-2-tem-elenco-confirmado-pela-globo-1402182",
-      "published_at": "2026-09-15T18:27:26+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": []
     },
     {
       "id": "esquerda-13:2bb695",
