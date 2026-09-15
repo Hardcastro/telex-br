@@ -27,7 +27,24 @@ BRT = timezone(timedelta(hours=-3))
 
 def build_envelope(result: CurationResult, window_hours: int = 12, macro_snapshot: dict | None = None) -> dict:
     now = datetime.now(BRT)
-    balance = {lean: v["filled"] for lean, v in result.quota_status.items()}
+
+    # result.quota_status é aninhado por tópico desde que a cota passou a
+    # ser "20 por tópico" (política/macroeconomia/manchete) em vez de "20
+    # pro ciclo inteiro" — ver curate.py. editorial_balance no topo do
+    # envelope soma os três tópicos por lean, pra quem só quer o balanço
+    # agregado (ex.: o donut do painel); topics traz o detalhe por tópico.
+    balance: dict[str, int] = {}
+    for topic_quota in result.quota_status.values():
+        for lean, v in topic_quota.items():
+            balance[lean] = balance.get(lean, 0) + v["filled"]
+
+    topics_summary = {
+        topic: {
+            "editorial_balance": {lean: v["filled"] for lean, v in topic_quota.items()},
+            "quota_status": topic_quota,
+        }
+        for topic, topic_quota in result.quota_status.items()
+    }
 
     items_payload = []
     for s in result.items:
@@ -58,6 +75,7 @@ def build_envelope(result: CurationResult, window_hours: int = 12, macro_snapsho
         "macro_snapshot": macro_snapshot or {},
         "editorial_balance": balance,
         "quota_status": result.quota_status,
+        "topics": topics_summary,
         "highlights": {
             "top_view_id": result.top_view_id,
             "top_reply_id": result.top_reply_id,

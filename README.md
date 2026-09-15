@@ -1,10 +1,12 @@
 # Telex BR
 
-Pipeline que coleta, classifica e cura notícias brasileiras a cada 12 horas,
-respeitando um equilíbrio editorial fixo (4 direita · 4 esquerda · 4 centro ·
-8 técnica/neutra) e destacando a notícia de maior audiência (proxy) e a de
-maior repercussão (proxy) do ciclo. Implementação do blueprint técnico
-publicado em [claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31](https://claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31).
+Pipeline que coleta, classifica e cura notícias brasileiras a cada 12 horas.
+A cota de equilíbrio editorial (4 direita · 4 esquerda · 4 centro · 8
+técnica/neutra) é aplicada **por tópico de conteúdo** — política, macroeconomia
+e manchetes — então o ciclo sai com até 20 itens em cada um dos três (60 no
+total), sempre destacando a notícia de maior audiência (proxy) e a de maior
+repercussão (proxy) do ciclo. Implementação do blueprint técnico publicado em
+[claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31](https://claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31).
 
 ## Painel ao vivo
 
@@ -43,23 +45,36 @@ pytest -q
 
 ## Antes de rodar de verdade (`python -m src.pipeline`, sem `--demo`)
 
-Abra **`config/sources.json`**. Os buckets `direita`, `esquerda` e `centro`
-vêm com slots `"status": "pending_review"` e `"name"/"rss": "PREENCHER"` —
-**de propósito**. Não atribuímos linha editorial a veículos reais por conta
-própria (é uma chamada contestável e muda com o tempo — ver o blueprint,
-seção b). Para ativar um slot:
+`config/sources.json` já vem com **30 fontes ativas** em `direita`/`esquerda`/
+`centro` (10/14/6) — pesquisadas e testadas de verdade, cada uma com `note`
+citando de onde veio a classificação: **Monitor do Debate Político no Meio
+Digital** (USP/CEBRAP) e/ou o artigo acadêmico **"Classificação ideológica de
+fontes informacionais..."** (Opinião Pública/Unicamp-Cesop, 2024, SciELO) —
+ver `docs/pesquisa-classificacao-editorial.md` pro detalhe completo, inclusive
+os avisos de tier mais fraco (fonte "amplamente caracterizada" mas não citada
+academicamente, ou "extensão por analogia" pro bucket `centro`, o mais
+contestado dos quatro). Não atribuímos linha editorial a veículo nenhum por
+conta própria — é uma chamada contestável e muda com o tempo (ver o
+blueprint, seção b).
 
-1. Escolha o veículo, validando contra um observatório de mídia reconhecido
-   (não só uma impressão pessoal).
-2. Preencha `name` e `rss` (a URL do feed RSS do veículo).
-3. Troque `"status": "pending_review"` para `"status": "active"`.
+Pra adicionar mais uma fonte a qualquer bucket:
 
-Enquanto os slots continuarem `pending_review`, `curate.py` roda normalmente
-com o que tiver — o log avisa quantos slots faltam e o ciclo sai com menos
-de 20 itens (a lacuna fica registrada em `quota_status` no JSON de saída, não
-escondida). O bucket `tecnica_neutra` já vem preenchido com fontes
-factuais/institucionais (agências públicas, dados oficiais, imprensa
-econômica, checagem) — essa é uma classificação factual, não política.
+1. Escolha o veículo, validando contra observatório de mídia reconhecido (não
+   só impressão pessoal) — ou reaproveite um candidato já listado em
+   `docs/pesquisa-classificacao-editorial.md` que não entrou por falta de RSS
+   funcional na época.
+2. Teste o RSS de verdade contra a rede antes de adicionar (feeds mudam de
+   URL, saem do ar, viram 404 — não confie sem testar).
+3. Adicione um objeto `{ "id", "name", "rss", "status": "active", "note" }`
+   no bucket certo.
+
+`tecnica_neutra` (8 fontes) já vem preenchido com fontes factuais/institucionais
+(agências públicas, dados oficiais, imprensa econômica, checagem) — essa é
+uma classificação factual, não política, então não carrega o mesmo aviso de
+metodologia. Se algum bucket ficar sem fonte suficiente pra fechar a cota de
+20 num tópico, `curate.py` roda normalmente com o que tiver — a lacuna fica
+registrada em `quota_status` no JSON de saída, por tópico e por linha
+editorial, não escondida.
 
 ## Estrutura
 
@@ -68,7 +83,7 @@ src/
   collect.py    01 · RSS (feedparser) + indicadores BCB/IBGE
   classify.py   02 · linha editorial (do bucket da fonte) + categoria (por palavra-chave)
   score.py      03 · cluster de cobertura + proxies opcionais (Trends, Reddit)
-  curate.py     04 · seleciona 20 respeitando a cota 4·4·4·8, marca top view/réplica
+  curate.py     04 · seleciona até 20 por tópico (política/macro/manchete) respeitando 4·4·4·8, marca top view/réplica
   export.py     05 · grava JSON + CSV do ciclo
   pipeline.py   orquestra as 5 etapas, CLI (--demo, --window)
 config/

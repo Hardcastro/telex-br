@@ -17,21 +17,39 @@
     { "id": "direita-1", "name": "O Antagonista", "rss": "https://oantagonista.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024) — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
     { "id": "direita-2", "name": "Gazeta do Povo", "rss": "https://www.gazetadopovo.com.br/feed/rss/vida-publica.xml", "status": "active", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK." },
     { "id": "direita-3", "name": "Revista Crusoé", "rss": "https://crusoe.com.br/feed/", "status": "active", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK." },
-    { "id": "direita-4", "name": "IstoÉ", "rss": "https://istoe.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." }
+    { "id": "direita-4", "name": "IstoÉ", "rss": "https://istoe.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
+    { "id": "direita-5", "name": "Conexão Política", "rss": "https://conexaopolitica.com.br/feed/", "status": "active", "note": "Citado por Opinião Pública (2024). RSS testado 200 OK — 2026-09." },
+    { "id": "direita-6", "name": "Pensa Brasil", "rss": "https://pensabrasil.com/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de direita). RSS testado 200 OK — 2026-09." },
+    { "id": "direita-7", "name": "Revolta Brasil", "rss": "https://revoltabrasil.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de direita). RSS testado 200 OK — 2026-09." },
+    { "id": "direita-8", "name": "Política na Rede", "rss": "https://politicanarede.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de direita). RSS testado 200 OK — 2026-09." },
+    { "id": "direita-9", "name": "Pleno.News", "rss": "https://pleno.news/feed", "status": "active", "note": "AVISO: não está nas duas fontes acadêmicas do projeto (Monitor/Opinião Pública) — amplamente caracterizado como direita na cobertura pública, evidência de tier mais fraco que o resto da lista. RSS testado 200 OK — 2026-09." },
+    { "id": "direita-10", "name": "Revista Oeste", "rss": "https://revistaoeste.com/feed/", "status": "active", "note": "Mesmo aviso do Pleno.News — caracterização pública ampla (inclusive Wikipédia em inglês), não citação acadêmica direta. RSS testado 200 OK — 2026-09." }
   ],
 
   "esquerda": [
     { "id": "esquerda-1", "name": "Brasil 247", "rss": "https://www.brasil247.com/rss", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024) — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
     { "id": "esquerda-2", "name": "Diário do Centro do Mundo", "rss": "https://www.diariodocentrodomundo.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
     { "id": "esquerda-3", "name": "Revista Fórum", "rss": "https://revistaforum.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
-    { "id": "esquerda-4", "name": "Jornal GGN", "rss": "https://jornalggn.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." }
+    { "id": "esquerda-4", "name": "Jornal GGN", "rss": "https://jornalggn.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP + Opinião Pública (2024). RSS testado 200 OK." },
+    { "id": "esquerda-5", "name": "The Intercept Brasil", "rss": "https://www.intercept.com.br/feed/", "status": "active", "note": "Citado por Opinião Pública (2024, 'The Intercept'). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-6", "name": "Portal Vermelho", "rss": "https://vermelho.org.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda) + Opinião Pública (2024, 'Vermelho'). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-7", "name": "O Cafezinho", "rss": "https://www.ocafezinho.com/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-8", "name": "Pragmatismo Político", "rss": "https://www.pragmatismopolitico.com.br/feed", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-9", "name": "Jornalistas Livres", "rss": "https://jornalistaslivres.org/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-10", "name": "Opera Mundi", "rss": "https://operamundi.uol.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-11", "name": "Outras Palavras", "rss": "https://outraspalavras.net/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-12", "name": "Viomundo", "rss": "https://www.viomundo.com.br/feed", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-13", "name": "Sul21", "rss": "https://sul21.com.br/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." },
+    { "id": "esquerda-14", "name": "PassaPalavra", "rss": "https://passapalavra.info/feed/", "status": "active", "note": "Citado por Monitor USP/CEBRAP (alternativa de esquerda). RSS testado 200 OK — 2026-09." }
   ],
 
   "centro": [
     { "id": "centro-1", "name": "Folha de S.Paulo", "rss": "https://feeds.folha.uol.com.br/emcimadahora/rss091.xml", "status": "active", "note": "O bucket mais contestado — ver alerta de metodologia em docs/pesquisa-classificacao-editorial.md antes de ativar. RSS testado 200 OK." },
     { "id": "centro-2", "name": "O Globo", "rss": "https://oglobo.globo.com/rss/oglobo/", "status": "active", "note": "Mesmo alerta do slot 1 — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
     { "id": "centro-3", "name": "Veja", "rss": "https://veja.abril.com.br/feed/", "status": "active", "note": "Mesmo alerta do slot 1 — ver docs/pesquisa-classificacao-editorial.md. RSS testado 200 OK." },
-    { "id": "centro-4", "name": "PREENCHER", "rss": "PREENCHER", "status": "pending_review", "note": "Slot 4/4 — Estadão e R7 são candidatos citados na pesquisa, mas nenhum tem RSS público funcional hoje (ver docs/pesquisa-classificacao-editorial.md). Precisa de outro candidato." }
+    { "id": "centro-4", "name": "Correio Braziliense", "rss": "https://www.correiobraziliense.com.br/feed/", "status": "active", "note": "AVISO: extensão por analogia, não citação direta — SciELO classificou Folha/Globo/Veja como 'center/mainstream' por serem grande imprensa tradicional; Correio Braziliense está na mesma categoria de formato no Monitor USP/CEBRAP ('jornal impresso diário'), mas não foi citado nominalmente por nenhuma das duas fontes. RSS testado 200 OK — 2026-09." },
+    { "id": "centro-5", "name": "Extra", "rss": "https://extra.globo.com/rss.xml", "status": "active", "note": "Mesmo aviso do Correio Braziliense — extensão por analogia. RSS testado 200 OK — 2026-09." },
+    { "id": "centro-6", "name": "A Tarde (BA)", "rss": "https://atarde.com.br/rss", "status": "active", "note": "Mesmo aviso do Correio Braziliense — extensão por analogia, grande diário regional tradicional. RSS testado 200 OK — 2026-09." }
   ],
 
   "manchete_pool": [

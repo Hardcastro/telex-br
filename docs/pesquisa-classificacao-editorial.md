@@ -1,11 +1,20 @@
 # Pesquisa: candidatos para os buckets direita/esquerda/centro
 
 Este documento **não é uma decisão final** — é o material de apoio para o time
-validar e ativar os slots `pending_review` em `config/sources.json` (ver
-seção b do [blueprint](https://claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31)
-e o `README.md`). Os candidatos abaixo vêm de duas fontes publicadas — não de
+validar as fontes ativas em `config/sources.json` (ver seção b do
+[blueprint](https://claude.ai/code/artifact/7735ea40-7bab-4654-b95c-c0fe597cda31)
+e o `README.md`). Os candidatos abaixo vêm de fontes publicadas — não de
 opinião própria — e cada RSS foi testado contra a rede de verdade antes de
-entrar aqui.
+entrar aqui. Três tiers de evidência, sempre marcados explicitamente:
+
+- **Citação acadêmica** — Monitor USP/CEBRAP e/ou o artigo Opinião Pública
+  (2024), ver metodologia abaixo. Tier de maior confiança.
+- **Caracterização pública ampla** — sem citação nas duas fontes acadêmicas,
+  mas amplamente descrito como tal na cobertura pública (ex.: Wikipédia).
+  Tier intermediário.
+- **Extensão por analogia** — mesma categoria de formato (ex.: "grande
+  imprensa tradicional") que um veículo já citado, mas sem citação nominal
+  direta. Usado só no bucket `centro`, o mais pobre em fontes citáveis.
 
 ## Metodologia — duas fontes cruzadas
 
@@ -62,11 +71,77 @@ valide com mais cuidado antes de ativar.
 | Veja | Monitor (revista semanal) + Opinião Pública (center/mainstream) | `https://veja.abril.com.br/feed/` | ✅ 200 · 20 itens |
 | *(4º slot em aberto)* | Estadão e R7 também aparecem como *center/mainstream* no Opinião Pública, mas **nenhum dos dois tem RSS público funcional hoje** — testei `/rss/politica.xml`, `/rss/ultimas.xml`, `/arc/outboundfeeds/...` no Estadão e `/feed`, `/feed.xml`, `/rss.xml` no R7; todos falharam (404 ou feed vazio). Precisa de outro candidato ou de um caminho de coleta diferente de RSS (ex.: scraping, que este projeto não implementa). | — | ❌ |
 
+## Rodada 2 (2026-09-15) — expansão pra 20 itens por tópico
+
+A cota de equilíbrio editorial passou de "uma vez por ciclo" (4·4·4·8 = 20
+no total) pra "uma vez por tópico de conteúdo" — política, macroeconomia e
+manchete, cada um com sua própria cota 4·4·4·8 (60 no total). Isso exige
+muito mais fontes ativas por bucket pra não ficar sistematicamente aquém do
+alvo — o time pediu explicitamente pra aumentar as fontes. RSS testado de
+verdade contra a rede pra cada uma abaixo; **todas já entraram `active` em
+`config/sources.json`** (a pesquisa e o teste técnico foram feitos, então não
+faz sentido deixar `pending_review` de novo — mas revise se discordar de
+algum nome).
+
+### Direita — 6 novas (10 no total)
+
+| Veículo | Tier | Citado por |
+|---|---|---|
+| Conexão Política | Citação acadêmica | Opinião Pública (2024) |
+| Pensa Brasil | Citação acadêmica | Monitor (alternativa de direita) |
+| Revolta Brasil | Citação acadêmica | Monitor (alternativa de direita) |
+| Política na Rede | Citação acadêmica | Monitor (alternativa de direita) |
+| Pleno.News | Caracterização pública | — |
+| Revista Oeste | Caracterização pública | — (Wikipédia em inglês descreve como direita) |
+
+### Esquerda — 10 novas (14 no total)
+
+| Veículo | Tier | Citado por |
+|---|---|---|
+| The Intercept Brasil | Citação acadêmica | Opinião Pública (2024, "The Intercept") |
+| Portal Vermelho | Citação acadêmica | Monitor + Opinião Pública (2024, "Vermelho") |
+| O Cafezinho | Citação acadêmica | Monitor (alternativa de esquerda) |
+| Pragmatismo Político | Citação acadêmica | Monitor (alternativa de esquerda) |
+| Jornalistas Livres | Citação acadêmica | Monitor (alternativa de esquerda) |
+| Opera Mundi | Citação acadêmica | Monitor (alternativa de esquerda) |
+| Outras Palavras | Citação acadêmica | Monitor (alternativa de esquerda) |
+| Viomundo | Citação acadêmica | Monitor (alternativa de esquerda) |
+| Sul21 | Citação acadêmica | Monitor (alternativa de esquerda) |
+| PassaPalavra | Citação acadêmica | Monitor (alternativa de esquerda) |
+
+Vários nomes da lista "alternativa de esquerda" do Monitor não têm mais RSS
+funcional (o mapeamento é de ~2018): Carta Maior, Tijolaço, Rede Brasil
+Atual, Socialista Morena, Democratize, Blog do Rovai, Escrivinhador, A Nova
+Democracia, Maria Frô, Geledés, Agência PT, Diário Liberdade, Rede de
+Informações Anarquista, Canal Ibase — testados, sem feed ativo hoje.
+
+### Centro — 3 novas (6 no total)
+
+Continua o bucket mais pobre. Sem nenhum veículo novo citado nominalmente
+pelas duas fontes acadêmicas — os três abaixo são **extensão por analogia**:
+mesma categoria de formato que Folha/Globo/Veja (grande imprensa tradicional
+"center/mainstream" no Opinião Pública), sem citação direta.
+
+| Veículo | Tier |
+|---|---|
+| Correio Braziliense | Extensão por analogia |
+| Extra | Extensão por analogia |
+| A Tarde (BA) | Extensão por analogia |
+
+Com 6 fontes (vs. 10 em direita e 14 em esquerda), `centro` é o bucket com
+mais chance de ficar abaixo do alvo de 20 por tópico — verifique
+`quota_status.<topico>.centro` no JSON de saída antes de assumir que fechou.
+Estadão e R7 seguem sem RSS público funcional (testado de novo nesta rodada,
+sem sucesso); se algum dia voltarem a ter, são os primeiros candidatos
+óbvios pra reforçar esse bucket.
+
 ## O que já foi feito em `config/sources.json`
 
-Preenchi `name` e `rss` dos 11 slots com RSS confirmado (deixei o 12º —
-centro, slot 4 — como estava, já que não achei um candidato com feed
-funcional). **Todos continuam com `"status": "pending_review"`** — a
-ativação (trocar para `"active"`) é a etapa que falta, e é do time, não
-minha: dá uma olhada nos nomes/fontes acima, principalmente no bucket
-centro, e troca o status de quem aprovar.
+Todas as fontes citadas neste documento (rodada 1 e rodada 2) estão
+`"status": "active"` — não há mais slots `pending_review` em
+direita/esquerda/centro. `config/sources.json` tem 30 fontes políticas no
+total (10 direita, 14 esquerda, 6 centro) além das 8 `tecnica_neutra` e 5
+`manchete_pool`. Testado contra a rede real com o pool expandido: 731 itens
+brutos coletados em um ciclo, curadoria fechando 57/60 (só macroeconomia em
+direita ficou abaixo do alvo, 1/4 — natural, veículos de direita nesta lista
+publicam muito mais política que análise macroeconômica).

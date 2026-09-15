@@ -77,10 +77,14 @@ def run(demo: bool = False, window_hours: int = 12, data_dir: Path | None = None
     scored = score_all(classified)
 
     result = curate(scored)
+    total_target = sum(v["target"] for topic in result.quota_status.values() for v in topic.values())
+    per_topic = "; ".join(
+        f"{topic}: " + ", ".join(f"{lean}:{v['filled']}/{v['target']}" for lean, v in leans.items())
+        for topic, leans in result.quota_status.items()
+    )
     logger.info(
-        "curadoria: %d/20 itens selecionados — %s",
-        len(result.items),
-        ", ".join(f"{k}:{v['filled']}/{v['target']}" for k, v in result.quota_status.items()),
+        "curadoria: %d/%d itens selecionados — %s",
+        len(result.items), total_target, per_topic,
     )
 
     envelope = build_envelope(result, window_hours=window_hours, macro_snapshot=macro_snapshot)

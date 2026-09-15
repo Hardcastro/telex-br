@@ -1,15 +1,17 @@
 """
 curate.py — Camada de curadoria (etapa 04 do fluxo operacional).
 
-Seleciona até 20 itens respeitando a cota de equilíbrio editorial
-(4 direita, 4 esquerda, 4 centro, 8 técnica/neutra) e marca os
-destaques de impacto (top view / top réplica) dentro do conjunto
-selecionado.
+Seleciona até 20 itens **por tópico de conteúdo** (política, macroeconomia,
+manchete — 60 no total), respeitando dentro de cada tópico a mesma cota de
+equilíbrio editorial (4 direita, 4 esquerda, 4 centro, 8 técnica/neutra) que
+o projeto usava para o ciclo inteiro antes. Pedido do usuário: "20 em cada
+tópico" — a cota antiga já somava exatamente 20, então vira "uma cota por
+tópico" em vez de "uma cota pro ciclo".
 
-Se um bucket não tiver itens suficientes — o caso normal para
-direita/esquerda/centro até o time preencher config/sources.json —
-o ciclo sai com menos de 20 itens e a lacuna fica registrada em
-`quota_status`, em vez de o script quebrar ou inventar itens.
+Se um bucket não tiver itens suficientes dentro de um tópico — normal para
+direita/esquerda/centro em tópicos com pouca cobertura daquela fonte — esse
+tópico sai com menos itens e a lacuna fica registrada em `quota_status`
+(por tópico, por lean), em vez de o script quebrar ou inventar itens.
 """
 
 from __future__ import annotations
@@ -25,27 +27,21 @@ QUOTA = {
     "tecnica_neutra": 8,
 }
 
-# Política e macroeconomia entram na frente de manchete genérica dentro de
-# cada bucket de espectro — pedido explícito do usuário depois de ver o
-# ciclo dominado por conteúdo genérico. view_score continua desempatando
-# dentro da mesma prioridade, e continua sendo o critério puro pra top
-# view/réplica (não misturamos preferência editorial de pauta com o proxy
-# de audiência real).
-CATEGORY_PRIORITY = {"politica": 2, "macroeconomia": 2, "manchete": 0}
+TOPICS = ["politica", "macroeconomia", "manchete"]
 
 # Evita uma única fonte encher a cota sozinha com conteúdo repetitivo/
 # templated (ex.: uma série "Candidatos a senador por <Estado>" — mesma
 # fonte, 8 itens quase idênticos só trocando o nome do estado, que não
 # ficam no mesmo cluster de cobertura por não terem título parecido o
 # suficiente). Só é ultrapassado se não sobrar fonte diferente pra
-# completar a cota — preferimos isso a deixar o ciclo incompleto.
-MAX_PER_SOURCE_PER_BUCKET = 2
+# completar a cota — preferimos isso a deixar o tópico incompleto.
+MAX_PER_SOURCE_PER_BUCKET = 3
 
 
 @dataclass
 class CurationResult:
     items: list[ScoredItem]
-    quota_status: dict[str, dict[str, int]]  # lean -> {target, filled}
+    quota_status: dict[str, dict[str, dict[str, int]]]  # topico -> lean -> {target, filled}
     top_view_id: str | None
     top_reply_id: str | None
 
@@ -56,15 +52,11 @@ def item_id(scored: ScoredItem) -> str:
 
 
 def _select_bucket(pool: list[ScoredItem], target: int, max_per_source: int) -> list[ScoredItem]:
-    """Ordena por (prioridade de categoria, view_score) e escolhe até
-    `target` itens, respeitando o teto por fonte — mas prefere completar
-    a cota a deixar vaga, então itens além do teto entram por último se
-    não houver alternativa de outra fonte."""
-    ranked = sorted(
-        pool,
-        key=lambda s: (CATEGORY_PRIORITY.get(s.item.category, 0), s.view_score),
-        reverse=True,
-    )
+    """Ordena por view_score e escolhe até `target` itens, respeitando o
+    teto por fonte — mas prefere completar a cota a deixar vaga, então
+    itens além do teto entram por último se não houver alternativa de
+    outra fonte."""
+    ranked = sorted(pool, key=lambda s: s.view_score, reverse=True)
     chosen: list[ScoredItem] = []
     per_source: dict[str, int] = {}
     overflow: list[ScoredItem] = []
@@ -87,18 +79,34 @@ def _select_bucket(pool: list[ScoredItem], target: int, max_per_source: int) -> 
     return chosen
 
 
-def curate(scored_items: list[ScoredItem]) -> CurationResult:
+def _curate_topic(scored_items: list[ScoredItem]) -> tuple[list[ScoredItem], dict[str, dict[str, int]]]:
+    """Aplica a cota 4·4·4·8 dentro de um único tópico já filtrado."""
     by_lean: dict[str, list[ScoredItem]] = {lean: [] for lean in QUOTA}
     for s in scored_items:
         by_lean.setdefault(s.item.source_lean, []).append(s)
 
     selected: list[ScoredItem] = []
     quota_status: dict[str, dict[str, int]] = {}
-
     for lean, target in QUOTA.items():
         chosen = _select_bucket(by_lean.get(lean, []), target, MAX_PER_SOURCE_PER_BUCKET)
         selected.extend(chosen)
         quota_status[lean] = {"target": target, "filled": len(chosen)}
+
+    return selected, quota_status
+
+
+def curate(scored_items: list[ScoredItem]) -> CurationResult:
+    by_topic: dict[str, list[ScoredItem]] = {topic: [] for topic in TOPICS}
+    for s in scored_items:
+        by_topic.setdefault(s.item.category, []).append(s)
+
+    selected: list[ScoredItem] = []
+    quota_status: dict[str, dict[str, dict[str, int]]] = {}
+
+    for topic in TOPICS:
+        topic_items, topic_quota = _curate_topic(by_topic.get(topic, []))
+        selected.extend(topic_items)
+        quota_status[topic] = topic_quota
 
     if not selected:
         return CurationResult(items=[], quota_status=quota_status, top_view_id=None, top_reply_id=None)

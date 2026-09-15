@@ -1,50 +1,183 @@
 {
-  "cycle_id": "2026-09-15T16:55:12.886494-03:00",
-  "generated_at": "2026-09-15T16:55:12.886494-03:00",
+  "cycle_id": "2026-09-15T20:04:25.471144-03:00",
+  "generated_at": "2026-09-15T20:04:25.471144-03:00",
   "window_hours": 12,
-  "total_items": 20,
+  "total_items": 57,
   "macro_snapshot": {
     "selic_meta": 14.0,
     "ipca_mensal": -0.32,
     "cambio_usd": 5.149
   },
   "editorial_balance": {
-    "direita": 4,
-    "esquerda": 4,
-    "centro": 4,
-    "tecnica_neutra": 8
+    "direita": 9,
+    "esquerda": 12,
+    "centro": 12,
+    "tecnica_neutra": 24
   },
   "quota_status": {
-    "direita": {
-      "target": 4,
-      "filled": 4
+    "politica": {
+      "direita": {
+        "target": 4,
+        "filled": 4
+      },
+      "esquerda": {
+        "target": 4,
+        "filled": 4
+      },
+      "centro": {
+        "target": 4,
+        "filled": 4
+      },
+      "tecnica_neutra": {
+        "target": 8,
+        "filled": 8
+      }
     },
-    "esquerda": {
-      "target": 4,
-      "filled": 4
+    "macroeconomia": {
+      "direita": {
+        "target": 4,
+        "filled": 1
+      },
+      "esquerda": {
+        "target": 4,
+        "filled": 4
+      },
+      "centro": {
+        "target": 4,
+        "filled": 4
+      },
+      "tecnica_neutra": {
+        "target": 8,
+        "filled": 8
+      }
     },
-    "centro": {
-      "target": 4,
-      "filled": 4
+    "manchete": {
+      "direita": {
+        "target": 4,
+        "filled": 4
+      },
+      "esquerda": {
+        "target": 4,
+        "filled": 4
+      },
+      "centro": {
+        "target": 4,
+        "filled": 4
+      },
+      "tecnica_neutra": {
+        "target": 8,
+        "filled": 8
+      }
+    }
+  },
+  "topics": {
+    "politica": {
+      "editorial_balance": {
+        "direita": 4,
+        "esquerda": 4,
+        "centro": 4,
+        "tecnica_neutra": 8
+      },
+      "quota_status": {
+        "direita": {
+          "target": 4,
+          "filled": 4
+        },
+        "esquerda": {
+          "target": 4,
+          "filled": 4
+        },
+        "centro": {
+          "target": 4,
+          "filled": 4
+        },
+        "tecnica_neutra": {
+          "target": 8,
+          "filled": 8
+        }
+      }
     },
-    "tecnica_neutra": {
-      "target": 8,
-      "filled": 8
+    "macroeconomia": {
+      "editorial_balance": {
+        "direita": 1,
+        "esquerda": 4,
+        "centro": 4,
+        "tecnica_neutra": 8
+      },
+      "quota_status": {
+        "direita": {
+          "target": 4,
+          "filled": 1
+        },
+        "esquerda": {
+          "target": 4,
+          "filled": 4
+        },
+        "centro": {
+          "target": 4,
+          "filled": 4
+        },
+        "tecnica_neutra": {
+          "target": 8,
+          "filled": 8
+        }
+      }
+    },
+    "manchete": {
+      "editorial_balance": {
+        "direita": 4,
+        "esquerda": 4,
+        "centro": 4,
+        "tecnica_neutra": 8
+      },
+      "quota_status": {
+        "direita": {
+          "target": 4,
+          "filled": 4
+        },
+        "esquerda": {
+          "target": 4,
+          "filled": 4
+        },
+        "centro": {
+          "target": 4,
+          "filled": 4
+        },
+        "tecnica_neutra": {
+          "target": 8,
+          "filled": 8
+        }
+      }
     }
   },
   "highlights": {
-    "top_view_id": "direita-1:edd67f",
-    "top_reply_id": "direita-1:edd67f"
+    "top_view_id": "direita-10:204c45",
+    "top_reply_id": "direita-10:204c45"
   },
   "items": [
     {
-      "id": "direita-1:2f50b3",
-      "headline": "Possível blindagem a Moraes aproxima campanhas de Lula e Flávio",
+      "id": "esquerda-1:35ca8c",
+      "headline": "Edir Macedo e Record recebem condenação de R$ 1,5 mi por fala homofóbica",
+      "source": "Brasil 247",
+      "source_lean": "esquerda",
+      "category": "manchete",
+      "url": "https://www.brasil247.com/midia/edir-macedo-e-record-recebem-condenacao-de-r-15-mi-por-fala-homofobica/",
+      "published_at": "2026-09-16T02:03:37+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "direita-1:6b8bd7",
+      "headline": "Vieira diz que Cármen Lúcia “reconheceu o rídiculo da sessão” do STF",
       "source": "O Antagonista",
       "source_lean": "direita",
       "category": "politica",
-      "url": "https://oantagonista.com.br/brasil/possivel-blindagem-a-moraes-aproxima-campanhas-de-lula-e-flavio/",
-      "published_at": "2026-09-15T19:52:22+00:00",
+      "url": "https://oantagonista.com.br/brasil/vieira-diz-que-carmen-lucia-reconheceu-o-ridiculo-da-sessao-do-stf/",
+      "published_at": "2026-09-16T02:00:44+00:00",
       "coverage_cluster_size": 1,
       "trends_interest_score": null,
       "engagement_proxy_index": 1.0,
@@ -53,40 +186,187 @@
       "tags": [
         "stf",
         "supremo tribunal",
-        "planalto",
-        "presidente",
-        "ministro",
+        "ministra",
         "senador"
       ]
     },
     {
-      "id": "centro-1:43644e",
-      "headline": "Ex-ministro da Venezuela aliado de Maduro se declara culpado por lavar dinheiro nos Estados Unidos",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
+      "id": "direita-1:47e3db",
+      "headline": "Condenados da lista de Vorcaro “não merecem voto”, diz Cury",
+      "source": "O Antagonista",
+      "source_lean": "direita",
       "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/mundo/2026/09/ex-ministro-da-venezuela-aliado-de-maduro-se-declara-culpado-por-lavar-dinheiro-nos-estados-unidos.shtml",
-      "published_at": "2026-09-15T19:49:00+00:00",
+      "url": "https://oantagonista.com.br/brasil/condenados-da-lista-de-vorcaro-nao-merecem-voto-diz-cury/",
+      "published_at": "2026-09-16T02:00:35+00:00",
       "coverage_cluster_size": 2,
       "trends_interest_score": null,
       "engagement_proxy_index": 2.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "ministro"
+        "stf",
+        "candidato"
       ]
     },
     {
-      "id": "esquerda-1:62fcfa",
-      "headline": "Zanin acompanha Dino e forma 3 a 1 para unir casos de Moraes e Mendonça no plenário do STF",
+      "id": "esquerda-1:ed7d48",
+      "headline": "Sebrae aponta queda da inadimplência e recorde na aprovação de crédito",
+      "source": "Brasil 247",
+      "source_lean": "esquerda",
+      "category": "macroeconomia",
+      "url": "https://www.brasil247.com/sebrae/sebrae-aponta-queda-da-inadimplencia-e-recorde-na-aprovacao-de-credito/",
+      "published_at": "2026-09-16T02:00:23+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "credito",
+        "inadimplencia"
+      ]
+    },
+    {
+      "id": "direita-10:e6b61b",
+      "headline": "Conab projeta safra recorde de 366 milhões de toneladas de grãos",
+      "source": "Revista Oeste",
+      "source_lean": "direita",
+      "category": "macroeconomia",
+      "url": "https://revistaoeste.com/agronegocio/conab-projeta-safra-recorde-de-366-milhoes-de-toneladas-de-graos/",
+      "published_at": "2026-09-16T01:57:32+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "balanca comercial",
+        "agropecuaria",
+        "banco do brasil"
+      ]
+    },
+    {
+      "id": "direita-1:271c78",
+      "headline": "Ele não é SUV, mas leva malas, carrinho de bebê e compras com uma facilidade que muitos modelos mais altos não conseguem entregar",
+      "source": "O Antagonista",
+      "source_lean": "direita",
+      "category": "manchete",
+      "url": "https://oantagonista.com.br/ladooa/carros/ele-nao-e-suv-mas-leva-malas-carrinho-de-bebe-e-compras-com-uma-facilidade-que-muitos-modelos-mais-altos-nao-conseguem-entregar/",
+      "published_at": "2026-09-16T01:53:00+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "g1:b9f884",
+      "headline": "VÍDEOS: JL2 de terça-feira, 15 de setembro de 2026",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://g1.globo.com/pa/para/edicao/2026/09/15/videos-jl2-de-terca-feira-15-de-setembro-de-2026.ghtml",
+      "published_at": "2026-09-16T01:49:31+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "centro-2:0dc64b",
+      "headline": "LOC X capta R$ 1,5 milhão em crédito estruturado com FGI",
+      "source": "O Globo",
+      "source_lean": "centro",
+      "category": "macroeconomia",
+      "url": "https://oglobo.globo.com/patrocinado/dino/noticia/2026/09/15/loc-x-capta-r-15-milhao-em-credito-estruturado-com-fgi-1.ghtml",
+      "published_at": "2026-09-16T01:48:33+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "credito"
+      ]
+    },
+    {
+      "id": "valor-economico:25d218",
+      "headline": "LOC X capta R$ 1,5 milhão em crédito estruturado com FGI",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://valor.globo.com/patrocinado/dino/noticia/2026/09/15/loc-x-capta-r-15-milhao-em-credito-estruturado-com-fgi-1.ghtml",
+      "published_at": "2026-09-16T01:48:30+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "credito"
+      ]
+    },
+    {
+      "id": "esquerda-1:d99ee0",
+      "headline": "Dólar fecha quase estável no Brasil com cenário político no radar",
+      "source": "Brasil 247",
+      "source_lean": "esquerda",
+      "category": "macroeconomia",
+      "url": "https://www.brasil247.com/economia/dolar-fecha-quase-estavel-no-brasil-com-cenario-politico-no-radar/",
+      "published_at": "2026-09-16T01:45:30+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "dolar"
+      ]
+    },
+    {
+      "id": "g1:6917a0",
+      "headline": "VÍDEOS: NE2 de terça-feira, 15 de setembro de 2026",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://g1.globo.com/pe/pernambuco/videos-ne2/playlist/videos-ne2-de-terca-feira-15-de-setembro-de-2026.ghtml",
+      "published_at": "2026-09-16T01:44:40+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "g1:80bd1b",
+      "headline": "VÍDEOS: MG2 de terça-feira, 15 de setembro de 2026",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://g1.globo.com/mg/minas-gerais/videos-mg2/playlist/videos-mg2-de-terca-feira-15-de-setembro-de-2026.ghtml",
+      "published_at": "2026-09-16T01:38:56+00:00",
+      "coverage_cluster_size": 6,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 6.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "esquerda-1:74096c",
+      "headline": "Pedido de vista de Dino pode adiar julgamento de Mendonça, apontam interlocutores",
       "source": "Brasil 247",
       "source_lean": "esquerda",
       "category": "politica",
-      "url": "https://www.brasil247.com/brasil/zanin-acompanha-dino-e-forma-3-a-1-para-unir-casos-de-moraes-e-mendonca-no-plenario-do-stf/",
-      "published_at": "2026-09-15T19:38:31+00:00",
-      "coverage_cluster_size": 4,
+      "url": "https://www.brasil247.com/brasil/pedido-de-vista-de-dino-pode-adiar-julgamento-de-mendonca-apontam-interlocutores/",
+      "published_at": "2026-09-16T01:38:26+00:00",
+      "coverage_cluster_size": 17,
       "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
+      "engagement_proxy_index": 17.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -95,65 +375,243 @@
       ]
     },
     {
-      "id": "centro-2:aeb80d",
-      "headline": "Fachin vota para manter separados casos de Moraes e Mendonça, mas Dino e Zanin divergem; colunistas do GLOBO comentam ao vivo",
-      "source": "O Globo",
-      "source_lean": "centro",
+      "id": "g1:216bca",
+      "headline": "Acidente deixa um morto e três feridos na BR-407, em Petrolina",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://g1.globo.com/pe/petrolina-regiao/noticia/2026/09/15/acidente-deixa-um-morto-e-tres-feridos-na-br-407-em-petrolina.ghtml",
+      "published_at": "2026-09-16T01:35:12+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "real"
+      ]
+    },
+    {
+      "id": "direita-1:c49b43",
+      "headline": "É MEI? Veja 5 cuidados para não ultrapassar o teto de R$ 81 mil em 2026",
+      "source": "O Antagonista",
+      "source_lean": "direita",
+      "category": "manchete",
+      "url": "https://oantagonista.com.br/ladooa/variedades/e-mei-veja-5-cuidados-para-nao-ultrapassar-o-teto-de-r-81-mil-em-2026/",
+      "published_at": "2026-09-16T01:35:09+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "esquerda-2:676a14",
+      "headline": "Após reunião com Vorcaro, Mendonça travou ação sobre empresa ligada ao banqueiro",
+      "source": "Diário do Centro do Mundo",
+      "source_lean": "esquerda",
+      "category": "macroeconomia",
+      "url": "https://www.diariodocentrodomundo.com.br/apos-reuniao-com-vorcaro-mendonca-travou-acao-sobre-empresa-ligada-ao-banqueiro/",
+      "published_at": "2026-09-16T01:33:05+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "acoes"
+      ]
+    },
+    {
+      "id": "direita-1:ad1612",
+      "headline": "A antiga cidade portuária onde prédios de vários andares, lojas, armazéns e espaços públicos preservados mostram como era a rotina de pessoas comuns durante o Império Romano",
+      "source": "O Antagonista",
+      "source_lean": "direita",
+      "category": "manchete",
+      "url": "https://oantagonista.com.br/ladooa/entretenimento/a-antiga-cidade-portuaria-onde-predios-de-varios-andares-lojas-armazens-e-espacos-publicos-preservados-mostram-como-era-a-rotina-de-pessoas-comuns-durante-o-imperio-romano/",
+      "published_at": "2026-09-16T01:33:00+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "g1:7227be",
+      "headline": "Sabatinas, entrevistas e caminhadas: veja como foi o dia dos candidatos ao governo da Paraíba",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://oglobo.globo.com/politica/ao-vivo/stf-julga-se-abre-investigacao-contra-alexandre-de-moraes-por-mensagens-com-vorcaro-siga-ao-vivo.ghtml",
-      "published_at": "2026-09-15T19:27:05+00:00",
+      "url": "https://g1.globo.com/pb/paraiba/eleicoes/2026/noticia/2026/09/15/veja-como-foi-o-dia-dos-candidatos-ao-governo-da-paraiba-nesta-terca-feira-15.ghtml",
+      "published_at": "2026-09-16T01:29:24+00:00",
       "coverage_cluster_size": 5,
       "trends_interest_score": null,
       "engagement_proxy_index": 5.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "stf"
+        "eleitoral",
+        "candidato",
+        "turno",
+        "primeiro turno"
       ]
     },
     {
-      "id": "esquerda-1:240bef",
-      "headline": "Campanha de Flávio Bolsonaro é surpreendida por impedimento de Nunes Marques em julgamento no STF",
-      "source": "Brasil 247",
+      "id": "esquerda-6:752b4e",
+      "headline": "Dino pede vista; destino de Mendonça e Moraes segue em aberto",
+      "source": "Portal Vermelho",
       "source_lean": "esquerda",
       "category": "politica",
-      "url": "https://www.brasil247.com/brasil/campanha-de-flavio-bolsonaro-e-surpreendida-por-impedimento-de-nunes-marques-em-julgamento-no-stf/",
-      "published_at": "2026-09-15T19:20:19+00:00",
+      "url": "https://vermelho.org.br/2026/09/15/dino-pede-vista-e-suspende-julgamento-sobre-moraes-no-stf/?utm_source=rss&utm_medium=rss&utm_campaign=dino-pede-vista-e-suspende-julgamento-sobre-moraes-no-stf",
+      "published_at": "2026-09-16T01:27:20+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "inquerito"
+      ]
+    },
+    {
+      "id": "metropoles:1437a2",
+      "headline": "Mega-Sena 3058 sorteia R$ 95 milhões nesta terça (15/9). Veja resultado",
+      "source": "Metrópoles",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.metropoles.com/brasil/mega-sena-3058-sorteia-r-95-milhoes-nesta-terca-15-9-veja-resultado",
+      "published_at": "2026-09-16T01:20:05+00:00",
       "coverage_cluster_size": 3,
       "trends_interest_score": null,
       "engagement_proxy_index": 3.0,
       "is_top_view": false,
       "is_top_reply": false,
-      "tags": [
-        "stf",
-        "ministro"
-      ]
+      "tags": []
     },
     {
-      "id": "esquerda-2:694928",
-      "headline": "O bilhete de Mendonça a Toffoli durante sessão do STF",
-      "source": "Diário do Centro do Mundo",
-      "source_lean": "esquerda",
-      "category": "politica",
-      "url": "https://www.diariodocentrodomundo.com.br/o-bilhete-de-mendonca-a-toffoli-durante-sessao-do-stf/",
-      "published_at": "2026-09-15T19:03:59+00:00",
-      "coverage_cluster_size": 2,
+      "id": "g1:352f85",
+      "headline": "Terreno da Rioprevidência na Ilha dos Caiçaras é vendido por R$ 23,3 milhões",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/09/15/terreno-rioprevidencia-ilha-caicaras-venda.ghtml",
+      "published_at": "2026-09-16T01:18:22+00:00",
+      "coverage_cluster_size": 1,
       "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
+      "engagement_proxy_index": 1.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "stf"
+        "real"
       ]
     },
     {
-      "id": "valor-economico:cbb9cf",
-      "headline": "Dino e Zanin votam para adiar julgamento de Moraes; placar está em 2 a 1",
-      "source": "Valor Econômico",
+      "id": "metropoles:9452c2",
+      "headline": "Lotofácil da Independência sorteia R$ 300 milhões. Veja resultado",
+      "source": "Metrópoles",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.metropoles.com/brasil/lotofacil-da-independencia-sorteia-r-300-milhoes-veja-resultado",
+      "published_at": "2026-09-16T01:18:17+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "g1:294532",
+      "headline": "Polícia fecha fábrica clandestina de linha chilena em Jacarepaguá e prende 5 em flagrante",
+      "source": "G1",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://g1.globo.com/rj/rio-de-janeiro/noticia/2026/09/15/policia-fecha-fabrica-clandestina-de-linha-chilena-em-jacarepagua.ghtml",
+      "published_at": "2026-09-16T01:10:40+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "real"
+      ]
+    },
+    {
+      "id": "cnn-brasil:5e13ab",
+      "headline": "Treasury nos EUA fecha no maior patamar em 20 anos à espera do Fed",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://www.cnnbrasil.com.br/economia/money/mercado/treasury-nos-eua-fecha-no-maior-patamar-em-20-anos-a-espera-do-fed/",
+      "published_at": "2026-09-16T01:08:51+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "inflacao",
+        "fed"
+      ]
+    },
+    {
+      "id": "g1:1cfffa",
+      "headline": "Eleições 2026: veja como foi a agenda dos candidatos ao governo do Pará desta segunda,14, e terça,15",
+      "source": "G1",
       "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://valor.globo.com/politica/noticia/2026/09/15/ministros-do-stf-decidem-se-processos-de-moraes-e-mendonca-devem-ser-votados-ao-mesmo-tempo.ghtml",
-      "published_at": "2026-09-15T19:02:52+00:00",
+      "url": "https://g1.globo.com/pa/para/eleicoes/2026/noticia/2026/09/15/eleicoes-2026-veja-como-foi-a-agenda-dos-candidatos-ao-governo-do-para-desta-segunda14-e-terca15.ghtml",
+      "published_at": "2026-09-16T01:08:36+00:00",
+      "coverage_cluster_size": 5,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 5.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "senado",
+        "presidencia da republica",
+        "eleicoes",
+        "eleitoral",
+        "candidato",
+        "candidata",
+        "turno",
+        "primeiro turno",
+        "segundo turno",
+        "partido",
+        "senador",
+        "governador",
+        "tse",
+        "tribunal superior eleitoral",
+        "campanha eleitoral"
+      ]
+    },
+    {
+      "id": "esquerda-10:5fbe87",
+      "headline": "Chileno Patricio Guzmán, um dos maiores documentaristas da América Latina, morre aos 85 anos",
+      "source": "Opera Mundi",
+      "source_lean": "esquerda",
+      "category": "manchete",
+      "url": "https://operamundi.uol.com.br/obituario/chileno-patricio-guzman-um-dos-maiores-documentaristas-da-america-latina-morre-aos-85-anos/",
+      "published_at": "2026-09-16T01:08:13+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "direita-10:6b6e5d",
+      "headline": "Cármen Lúcia admite ‘mal-estar cívico’ causado pelo STF",
+      "source": "Revista Oeste",
+      "source_lean": "direita",
+      "category": "politica",
+      "url": "https://revistaoeste.com/politica/carmen-lucia-admite-mal-estar-civico-causado-pelo-stf/",
+      "published_at": "2026-09-16T01:05:57+00:00",
       "coverage_cluster_size": 4,
       "trends_interest_score": null,
       "engagement_proxy_index": 4.0,
@@ -163,39 +621,180 @@
         "stf",
         "supremo tribunal",
         "presidente",
-        "ministro"
+        "ministro",
+        "ministra",
+        "eleicao",
+        "poder judiciario"
       ]
     },
     {
-      "id": "bbc-brasil:30eaac",
-      "headline": "Os bate-bocas entre ministros que marcaram primeira parte da sessão sobre caso Moraes-Vorcaro no STF",
-      "source": "BBC News Brasil",
+      "id": "centro-2:ef411c",
+      "headline": "Chargeback ganha papel estratégico contra fraudes online",
+      "source": "O Globo",
+      "source_lean": "centro",
+      "category": "macroeconomia",
+      "url": "https://oglobo.globo.com/patrocinado/dino/noticia/2026/09/15/chargeback-ganha-papel-estrategico-contra-fraudes-online-1.ghtml",
+      "published_at": "2026-09-16T01:00:21+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "banco central",
+        "bcb"
+      ]
+    },
+    {
+      "id": "valor-economico:660a8c",
+      "headline": "Chargeback ganha papel estratégico contra fraudes online",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://valor.globo.com/patrocinado/dino/noticia/2026/09/15/chargeback-ganha-papel-estrategico-contra-fraudes-online-1.ghtml",
+      "published_at": "2026-09-16T01:00:18+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "banco central",
+        "bcb"
+      ]
+    },
+    {
+      "id": "g1:9bc614",
+      "headline": "Eleições 2026: saiba como foi o dia dos candidatos ao governo de Sergipe nesta terça-feira",
+      "source": "G1",
       "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://www.bbc.com/portuguese/articles/cm4gv32zgljeo?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-09-15T18:49:29+00:00",
-      "coverage_cluster_size": 4,
+      "url": "https://g1.globo.com/se/sergipe/eleicoes/2026/noticia/2026/09/15/eleicoes-2026-saiba-como-foi-o-dia-dos-candidatos-ao-governo-de-sergipe-nesta-terca-feira.ghtml",
+      "published_at": "2026-09-16T00:57:09+00:00",
+      "coverage_cluster_size": 5,
       "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
+      "engagement_proxy_index": 5.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "eleicoes",
+        "eleitoral",
+        "candidato",
+        "candidata",
+        "partido",
+        "tse",
+        "tribunal superior eleitoral"
+      ]
+    },
+    {
+      "id": "centro-1:59bda7",
+      "headline": "Justiça condena Edir Macedo e Record a pagar R$ 1,5 milhão por fala homofóbica",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
+      "category": "manchete",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/09/justica-condena-edir-macedo-e-record-a-pagar-r-15-milhao-por-fala-homofobica.shtml",
+      "published_at": "2026-09-16T00:48:00+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "centro-1:11f5d5",
+      "headline": "James Rodríguez anuncia aposentadoria da seleção da Colômbia",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
+      "category": "manchete",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/esporte/2026/09/james-rodriguez-anuncia-aposentadoria-da-selecao-da-colombia.shtml",
+      "published_at": "2026-09-16T00:48:00+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "esquerda-13:1971ce",
+      "headline": "Flávio Dino pede vista de julgamento sobre Moraes e Mendonça e sessão é encerrada sem decisão",
+      "source": "Sul21",
+      "source_lean": "esquerda",
+      "category": "manchete",
+      "url": "https://sul21.com.br/noticias/politica/2026/09/flavio-dino-pede-vista-de-julgamento-sobre-moraes-e-mendonca/",
+      "published_at": "2026-09-16T00:43:48+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "cnn-brasil:6a9859",
+      "headline": "Dino pede vista e STF adia decisão sobre unir casos de Moraes e Mendonça",
+      "source": "CNN Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.cnnbrasil.com.br/politica/dino-pede-vista-e-stf-adia-decisao-sobre-unir-casos-de-moraes-e-mendonca/",
+      "published_at": "2026-09-16T00:41:32+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "valor-economico:f0392d",
+      "headline": "O que é pedido de vista, feito por Dino no julgamento sobre Moraes no STF? Entenda",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://valor.globo.com/politica/noticia/2026/09/15/o-que-e-pedido-de-vista-feito-por-dino-no-julgamento-sobre-moraes-no-stf-entenda.ghtml",
+      "published_at": "2026-09-16T00:35:45+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
         "stf",
+        "supremo tribunal",
         "presidente",
-        "ministro"
+        "ministro",
+        "eleicao"
       ]
     },
     {
-      "id": "direita-1:edd67f",
-      "headline": "Fachin vota para manter julgamento do caso Moraes-Vorcaro",
-      "source": "O Antagonista",
+      "id": "infomoney:2647a4",
+      "headline": "Em sessão confusa, análise de abertura de investigação contra Moraes é suspensa",
+      "source": "InfoMoney",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.infomoney.com.br/politica/em-sessao-confusa-analise-de-abertura-de-investigacao-contra-moraes-e-suspensa/",
+      "published_at": "2026-09-16T00:35:40+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "direita-10:204c45",
+      "headline": "STF tem 4 votos para separar casos Moraes e Mendonça",
+      "source": "Revista Oeste",
       "source_lean": "direita",
       "category": "politica",
-      "url": "https://oantagonista.com.br/brasil/fachin-vota-para-manter-julgamento-do-caso-moraes-vorcaro/",
-      "published_at": "2026-09-15T18:47:02+00:00",
-      "coverage_cluster_size": 5,
+      "url": "https://revistaoeste.com/politica/stf-tem-4-votos-para-separar-casos-moraes-e-mendonca/",
+      "published_at": "2026-09-16T00:23:19+00:00",
+      "coverage_cluster_size": 17,
       "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
+      "engagement_proxy_index": 17.0,
       "is_top_view": true,
       "is_top_reply": true,
       "tags": [
@@ -206,52 +805,16 @@
       ]
     },
     {
-      "id": "cnn-brasil:014ae5",
-      "headline": "Fachin vota para manter casos Moraes e Mendonça separados no STF",
-      "source": "CNN Brasil",
-      "source_lean": "tecnica_neutra",
+      "id": "centro-2:459d29",
+      "headline": "Com pedido de vista de Dino, julgamento sobre Moraes pode ser retomado em dezembro; entenda",
+      "source": "O Globo",
+      "source_lean": "centro",
       "category": "politica",
-      "url": "https://www.cnnbrasil.com.br/politica/fachin-vota-para-manter-casos-moraes-e-mendonca-separados-no-stf/",
-      "published_at": "2026-09-15T18:44:08+00:00",
-      "coverage_cluster_size": 5,
+      "url": "https://oglobo.globo.com/politica/noticia/2026/09/15/com-pedido-de-vista-de-dino-julgamento-sobre-moraes-pode-ser-retomado-em-dezembro-entenda.ghtml",
+      "published_at": "2026-09-16T00:22:31+00:00",
+      "coverage_cluster_size": 17,
       "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "presidente"
-      ]
-    },
-    {
-      "id": "metropoles:8eca58",
-      "headline": "STF: campanha de Flávio é surpreendida com impedimento de Nunes Marques",
-      "source": "Metrópoles",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.metropoles.com/brasil/stf-campanha-de-flavio-e-surpreendida-com-impedimento-de-nunes-marques",
-      "published_at": "2026-09-15T18:44:03+00:00",
-      "coverage_cluster_size": 3,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 3.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "ministro"
-      ]
-    },
-    {
-      "id": "g1:0c07b9",
-      "headline": "Crise no STF: na retomada da sessão, Fachin vota para manter casos de Moraes e Mendonça separados; Dino e Zanin divergem",
-      "source": "G1",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://g1.globo.com/politica/noticia/2026/09/15/na-retomada-de-julgamento-fachin-vota-para-rejeitar-pedido-para-adiar-julgamento-de-moraes-e-de-analisar-caso-com-o-de-mendonca.ghtml",
-      "published_at": "2026-09-15T18:35:56+00:00",
-      "coverage_cluster_size": 5,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 5.0,
+      "engagement_proxy_index": 17.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -259,20 +822,149 @@
         "supremo tribunal",
         "presidente",
         "ministro",
-        "pgr"
+        "procurador-geral"
       ]
     },
     {
-      "id": "centro-2:f26ce3",
-      "headline": "Dino e Zanin votam por proposta de Gilmar de julgar casos de Moraes e Mendonça em conjunto, e Fachin é contra; placar está em 3 a 1",
+      "id": "centro-2:b61be8",
+      "headline": "O que é pedido de vista e como decisão de Dino pode impactar julgamento sobre Moraes no STF",
       "source": "O Globo",
       "source_lean": "centro",
       "category": "politica",
-      "url": "https://oglobo.globo.com/politica/noticia/2026/09/15/fachin-vota.ghtml",
-      "published_at": "2026-09-15T18:34:08+00:00",
-      "coverage_cluster_size": 4,
+      "url": "https://oglobo.globo.com/politica/noticia/2026/09/15/o-que-e-pedido-de-vista-e-como-decisao-de-dino-pode-impactar-julgamento-sobre-moraes-no-stf.ghtml",
+      "published_at": "2026-09-16T00:18:41+00:00",
+      "coverage_cluster_size": 17,
       "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
+        "ministro",
+        "procurador-geral"
+      ]
+    },
+    {
+      "id": "valor-economico:b70f9d",
+      "headline": "Após bate-boca entre Gilmar e Mendonça, Dino pede vista de julgamento",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://valor.globo.com/politica/noticia/2026/09/15/dino-pede-vista-e-suspende-julgamento-sobre-moraes-no-stf.ghtml",
+      "published_at": "2026-09-16T00:12:26+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
+        "ministro",
+        "ministra",
+        "eleicao"
+      ]
+    },
+    {
+      "id": "centro-3:2f001b",
+      "headline": "‘Cangaço Novo’ é cancelada após duas temporadas",
+      "source": "Veja",
+      "source_lean": "centro",
+      "category": "manchete",
+      "url": "https://veja.abril.com.br/cultura/cangaco-novo-e-cancelada-apos-duas-temporadas/",
+      "published_at": "2026-09-16T00:07:48+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "esquerda-3:47e183",
+      "headline": "Flávio Dino pede vista após bate-boca entre Mendonça e Gilmar",
+      "source": "Revista Fórum",
+      "source_lean": "esquerda",
+      "category": "politica",
+      "url": "https://revistaforum.com.br/politica/flavio-dino-pede-vista-apos-bate-boca-entre-mendonca-e-gilmar/",
+      "published_at": "2026-09-16T00:07:40+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "ministro"
+      ]
+    },
+    {
+      "id": "centro-6:25f8aa",
+      "headline": "Dino pede vista e interrompe sessão do STF após bate-boca entre ministros",
+      "source": "A Tarde (BA)",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://atarde.com.br/politica/dino-pede-vista-e-interrompe-sessao-do-stf-apos-bate-boca-entre-ministros-1402212",
+      "published_at": "2026-09-16T00:07:28+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf",
+        "supremo tribunal",
+        "ministro",
+        "procurador-geral"
+      ]
+    },
+    {
+      "id": "metropoles:76964e",
+      "headline": "Dino pede vista e chama de \"desastrada\" sessão do STF sobre Moraes",
+      "source": "Metrópoles",
+      "source_lean": "tecnica_neutra",
+      "category": "politica",
+      "url": "https://www.metropoles.com/brasil/dino-pede-vista-e-chama-de-desastrada-sessao-do-stf-sobre-moraes",
+      "published_at": "2026-09-16T00:06:17+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "stf"
+      ]
+    },
+    {
+      "id": "direita-4:854cf4",
+      "headline": "Médico demitido é acusado de cobrar R$ 5,2 mil por cirurgia de paciente do SUS",
+      "source": "IstoÉ",
+      "source_lean": "direita",
+      "category": "manchete",
+      "url": "https://istoe.com.br/medico-demitido-e-acusado-de-cobrar-r-52-mil-por-cirurgia-de-paciente-do-sus",
+      "published_at": "2026-09-15T23:53:25+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "centro-2:c149d5",
+      "headline": "Dino pede vista em julgamento no STF sobre mensagens de Vorcaro a Moraes",
+      "source": "O Globo",
+      "source_lean": "centro",
+      "category": "politica",
+      "url": "https://oglobo.globo.com/politica/noticia/2026/09/15/vista-em-julgamento-sobre-mensagens-de-vorcaro-a-moraes.ghtml",
+      "published_at": "2026-09-15T23:49:11+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -281,130 +973,108 @@
         "presidente",
         "ministerio",
         "ministro",
-        "eleitoral",
-        "candidato",
-        "tse",
         "pgr",
         "procurador-geral",
-        "inquerito",
-        "delacao premiada"
+        "inquerito"
       ]
     },
     {
-      "id": "esquerda-2:3acf52",
-      "headline": "Vorcaro recebeu convite para evento de Mendonça com “poucos convidados”, mostram mensagens",
-      "source": "Diário do Centro do Mundo",
+      "id": "infomoney:8d5f76",
+      "headline": "Por que a Petrobras (PETR3;PETR4) subiu forte hoje? Ações avançaram mais de 3%",
+      "source": "InfoMoney",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://www.infomoney.com.br/mercados/por-que-a-petrobras-petr3petr4-esta-subindo-forte-hoje-acoes-avancam-mais-de-3/",
+      "published_at": "2026-09-15T23:36:32+00:00",
+      "coverage_cluster_size": 1,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 1.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "acoes"
+      ]
+    },
+    {
+      "id": "esquerda-3:c41f8c",
+      "headline": "Moraes questiona sessão do STF: “Não há pedido de investigação”",
+      "source": "Revista Fórum",
       "source_lean": "esquerda",
       "category": "politica",
-      "url": "https://www.diariodocentrodomundo.com.br/vorcaro-recebeu-convite-para-evento-de-mendonca-com-poucos-convidados-mostram-mensagens/",
-      "published_at": "2026-09-15T17:59:07+00:00",
-      "coverage_cluster_size": 2,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 2.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "ministro"
-      ]
-    },
-    {
-      "id": "centro-1:ec4c5c",
-      "headline": "Sessão no STF tem bate-boca e ofensas entre ministros, de 'aprendiz de feiticeiro' a 'leviano'; veja vídeo",
-      "source": "Folha de S.Paulo",
-      "source_lean": "centro",
-      "category": "politica",
-      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/poder/2026/09/sessao-no-stf-tem-bate-boca-e-ofensas-entre-ministros-de-aprendiz-de-feiticeiro-a-leviano-veja-video.shtml",
-      "published_at": "2026-09-15T17:46:00+00:00",
-      "coverage_cluster_size": 4,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "stf",
-        "supremo tribunal"
-      ]
-    },
-    {
-      "id": "cnn-brasil:49e646",
-      "headline": "Impedimento de Kassio surpreende campanha de Flávio Bolsonaro",
-      "source": "CNN Brasil",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.cnnbrasil.com.br/politica/impedimento-de-kassio-surpreende-campanha-de-flavio-bolsonaro/",
-      "published_at": "2026-09-15T17:40:44+00:00",
+      "url": "https://revistaforum.com.br/politica/moraes-sessao-do-stf-investigacao/",
+      "published_at": "2026-09-15T23:34:59+00:00",
       "coverage_cluster_size": 3,
       "trends_interest_score": null,
       "engagement_proxy_index": 3.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
+        "stf",
+        "supremo tribunal",
+        "presidente",
         "ministro"
       ]
     },
     {
-      "id": "direita-4:d4c682",
-      "headline": "Prefeito de cidade natal de Kimi Antonelli confirma homenagem ao piloto",
-      "source": "IstoÉ",
-      "source_lean": "direita",
-      "category": "politica",
-      "url": "https://istoe.com.br/bolonha-planeja-homenagem-kimi-antonelli-f1",
-      "published_at": "2026-09-15T17:26:00+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "prefeito"
-      ]
-    },
-    {
-      "id": "direita-4:601fa8",
-      "headline": "Amizade com Melania teria aberto portas da Casa Branca para Joesley Batista, diz mídi",
-      "source": "IstoÉ",
-      "source_lean": "direita",
+      "id": "centro-2:3cb42a",
+      "headline": "Acer e ISD Tech fecham parceria para distribuir computadores",
+      "source": "O Globo",
+      "source_lean": "centro",
       "category": "macroeconomia",
-      "url": "https://istoe.com.br/amizade-melania-trump-joesley-batista-intrigua-eua",
-      "published_at": "2026-09-15T17:01:00+00:00",
-      "coverage_cluster_size": 1,
-      "trends_interest_score": null,
-      "engagement_proxy_index": 1.0,
-      "is_top_view": false,
-      "is_top_reply": false,
-      "tags": [
-        "importacao"
-      ]
-    },
-    {
-      "id": "bbc-brasil:80cd9b",
-      "headline": "'Vossa Excelência viu o vídeo do Porchat?', perguntou Flávio Dino ao ministro Edson Fachin",
-      "source": "BBC News Brasil",
-      "source_lean": "tecnica_neutra",
-      "category": "politica",
-      "url": "https://www.bbc.co.uk/programmes/p0p9rd89?at_medium=RSS&at_campaign=rss",
-      "published_at": "2026-09-15T16:23:05+00:00",
+      "url": "https://oglobo.globo.com/patrocinado/dino/noticia/2026/09/15/acer-e-isd-tech-fecham-parceria-para-distribuir-computadores-1.ghtml",
+      "published_at": "2026-09-15T23:27:30+00:00",
       "coverage_cluster_size": 2,
       "trends_interest_score": null,
       "engagement_proxy_index": 2.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
-        "stf",
-        "ministro"
+        "varejo"
       ]
     },
     {
-      "id": "valor-economico:e4f1a2",
-      "headline": "Leitura de relatório e bate-boca entre ministros: como foi a primeira parte da sessão do STF para julgar Moraes",
+      "id": "valor-economico:949ebb",
+      "headline": "Acer e ISD Tech fecham parceria para distribuir computadores",
+      "source": "Valor Econômico",
+      "source_lean": "tecnica_neutra",
+      "category": "macroeconomia",
+      "url": "https://valor.globo.com/patrocinado/dino/noticia/2026/09/15/acer-e-isd-tech-fecham-parceria-para-distribuir-computadores-1.ghtml",
+      "published_at": "2026-09-15T23:27:26+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "varejo"
+      ]
+    },
+    {
+      "id": "esquerda-4:09b09c",
+      "headline": "Morre Amelinha Teles, ativista política e feminista que enfrentou a ditadura",
+      "source": "Jornal GGN",
+      "source_lean": "esquerda",
+      "category": "manchete",
+      "url": "https://jornalggn.com.br/memoria/morre-amelinha-teles-ativista-politica-e-feminista-que-enfrentou-a-ditadura/",
+      "published_at": "2026-09-15T22:33:26+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "valor-economico:7a68ad",
+      "headline": "STF tem 4 a 3 para analisar casos de Moraes e Mendonça separados, mas pedido de vista adia julgamento",
       "source": "Valor Econômico",
       "source_lean": "tecnica_neutra",
       "category": "politica",
-      "url": "https://valor.globo.com/politica/noticia/2026/09/15/leitura-de-relatorio-e-bate-boca-entre-ministros-como-foi-a-primeira-etapa-da-sessao-do-stf-para-julgar-moraes.ghtml",
-      "published_at": "2026-09-15T16:06:17+00:00",
-      "coverage_cluster_size": 4,
+      "url": "https://valor.globo.com/politica/noticia/2026/09/15/ministros-do-stf-decidem-se-processos-de-moraes-e-mendonca-devem-ser-votados-ao-mesmo-tempo.ghtml",
+      "published_at": "2026-09-15T22:02:52+00:00",
+      "coverage_cluster_size": 17,
       "trends_interest_score": null,
-      "engagement_proxy_index": 4.0,
+      "engagement_proxy_index": 17.0,
       "is_top_view": false,
       "is_top_reply": false,
       "tags": [
@@ -412,10 +1082,89 @@
         "supremo tribunal",
         "presidente",
         "ministro",
-        "eleitoral",
-        "tse",
-        "tribunal superior eleitoral",
-        "pgr"
+        "eleicao",
+        "eleicoes",
+        "inquerito",
+        "delacao premiada"
+      ]
+    },
+    {
+      "id": "esquerda-12:b26905",
+      "headline": "Paulo Kliass: Lula, não se renda ao financismo!",
+      "source": "Viomundo",
+      "source_lean": "esquerda",
+      "category": "macroeconomia",
+      "url": "https://www.viomundo.com.br/politica/paulo-kliass-lula-nao-se-renda-ao-financismo.html",
+      "published_at": "2026-09-15T21:31:57+00:00",
+      "coverage_cluster_size": 2,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 2.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "renda"
+      ]
+    },
+    {
+      "id": "centro-1:e5273f",
+      "headline": "Morre Patricio Guzmán, um dos principais diretores de cinema do Chile, aos 85 anos",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
+      "category": "manchete",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/ilustrada/2026/09/morre-patricio-guzman-um-dos-principais-diretores-de-cinema-do-chile-aos-85-anos.shtml",
+      "published_at": "2026-09-15T20:50:00+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "bbc-brasil:40d0e8",
+      "headline": "'Não aponte o dedo pra mim': o bate-boca entre Gilmar Mendes e André Mendonça",
+      "source": "BBC News Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.bbc.co.uk/programmes/p0p9rr5h?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-15T20:35:14+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "bbc-brasil:40d0e8",
+      "headline": "'Não aponte o dedo pra mim': o bate-boca entre Gilmar Mendes e André Mendonça",
+      "source": "BBC News Brasil",
+      "source_lean": "tecnica_neutra",
+      "category": "manchete",
+      "url": "https://www.bbc.co.uk/programmes/p0p9rr5h?at_medium=RSS&at_campaign=rss",
+      "published_at": "2026-09-15T20:35:14+00:00",
+      "coverage_cluster_size": 17,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 17.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": []
+    },
+    {
+      "id": "centro-1:f8e2a2",
+      "headline": "Confira a partir das 21h desta terça (15) o resultado do concurso 3058 da Mega-Sena",
+      "source": "Folha de S.Paulo",
+      "source_lean": "centro",
+      "category": "macroeconomia",
+      "url": "https://redir.folha.com.br/redir/online/emcimadahora/rss091/*https://www1.folha.uol.com.br/cotidiano/2026/09/confira-a-partir-das-21h-desta-terca-15-o-resultado-do-concurso-3058-da-mega-sena.shtml",
+      "published_at": "2026-09-15T20:03:00+00:00",
+      "coverage_cluster_size": 3,
+      "trends_interest_score": null,
+      "engagement_proxy_index": 3.0,
+      "is_top_view": false,
+      "is_top_reply": false,
+      "tags": [
+        "caixa economica"
       ]
     }
   ]
