@@ -1,13 +1,18 @@
 """
 Smoke test do pipeline completo, rodando 100% sobre data/sample/sample_items.json
 — nenhuma chamada de rede, então roda em CI sem depender de feeds no ar.
+
+Cada teste passa data_dir=tmp_path pro pipeline: sem isso, run() grava em
+cima de data/cycles/latest.{json,csv} de verdade a cada execução — o
+arquivo que fica versionado no repo como exemplo (e que o dashboard/README
+apontam) ficava sendo pisado toda vez que alguém rodava `pytest` localmente.
 """
 
 from src.pipeline import run
 
 
-def test_demo_cycle_shape():
-    envelope = run(demo=True)
+def test_demo_cycle_shape(tmp_path):
+    envelope = run(demo=True, data_dir=tmp_path)
 
     assert envelope["total_items"] > 0
     assert envelope["window_hours"] == 12
@@ -19,10 +24,11 @@ def test_demo_cycle_shape():
     assert envelope["editorial_balance"] == {
         "direita": 4, "esquerda": 4, "centro": 4, "tecnica_neutra": 8,
     }
+    assert (tmp_path / "latest.json").exists()
 
 
-def test_highlights_point_to_real_items():
-    envelope = run(demo=True)
+def test_highlights_point_to_real_items(tmp_path):
+    envelope = run(demo=True, data_dir=tmp_path)
     ids = {item["id"] for item in envelope["items"]}
 
     assert envelope["highlights"]["top_view_id"] in ids
@@ -34,7 +40,7 @@ def test_highlights_point_to_real_items():
     assert len(flagged_reply) == 1
 
 
-def test_every_item_has_a_category():
-    envelope = run(demo=True)
+def test_every_item_has_a_category(tmp_path):
+    envelope = run(demo=True, data_dir=tmp_path)
     for item in envelope["items"]:
         assert item["category"] in {"politica", "macroeconomia", "manchete"}

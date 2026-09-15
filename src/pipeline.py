@@ -56,7 +56,7 @@ def _load_sample_items() -> list[RawItem]:
     return items
 
 
-def run(demo: bool = False, window_hours: int = 12) -> dict:
+def run(demo: bool = False, window_hours: int = 12, data_dir: Path | None = None) -> dict:
     if demo:
         logger.info("modo demo: usando data/sample/sample_items.json (nenhuma chamada de rede)")
         raw_items = _load_sample_items()
@@ -84,7 +84,8 @@ def run(demo: bool = False, window_hours: int = 12) -> dict:
     )
 
     envelope = build_envelope(result, window_hours=window_hours, macro_snapshot=macro_snapshot)
-    json_path, latest_json, latest_csv = write_cycle(envelope)
+    write_kwargs = {"data_dir": data_dir} if data_dir is not None else {}
+    json_path, latest_json, latest_csv = write_cycle(envelope, **write_kwargs)
     logger.info("ciclo gravado em %s", json_path)
     logger.info("apontar o Power BI para: %s (ou o .json equivalente)", latest_csv)
 
